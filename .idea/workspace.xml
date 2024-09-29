@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/letskodeit_project_aoutomation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration_files/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/home/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/home/login_tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/custom_logger.py" afterDir="false" />
+    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vladmeera"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vladmeera/letskodeit_project_aoutomation.git",
+    "accountId": "d8ef5722-b22e-405e-a325-ac2a56393a6f"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -121,6 +116,30 @@
       <option name="presentableId" value="Default" />
       <updated>1726323922453</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included.">
+      <option name="closed" value="true" />
+      <created>1727627202170</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727627202170</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included." />
   </component>
 </project>

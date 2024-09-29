@@ -1,8 +1,19 @@
-from selenium.common import NoSuchElementException, WebDriverException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.common.exceptions import (
+    NoSuchElementException,
+    ElementNotVisibleException,
+    ElementNotSelectableException,
+    TimeoutException, WebDriverException,
+)
+from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.webdriver.remote.webelement import WebElement
+from typing import Optional
+from traceback import print_stack
 
 class SeleniumDriver:
-    def __init__(self, driver):
+    def __init__(self, driver: WebDriver):
         """
         Initializes the SeleniumDriver instance with the provided Webdriver.
 
@@ -10,7 +21,7 @@ class SeleniumDriver:
         """
         self.driver = driver
 
-    def get_by_type(self, locator_type: str) -> bool:
+    def get_by_type(self, locator_type: str):
         """
         Converts a locator type string to a Selenium By object for use in locating elements.
 
@@ -78,6 +89,10 @@ class SeleniumDriver:
             print(f"WebDriverException occurred: {str(e)}")
         return None
 
+    def click_element(self, locator: str, locator_type: str ="id") -> None:
+        element = self.get_element(locator, locator_type)
+        element.click()
+
     # To make sure element is presented on the page
     def is_element_presented(self, locator: str, by_type: str) -> bool:
         """
@@ -121,3 +136,43 @@ class SeleniumDriver:
         except WebDriverException as e:
             print(f"WebDriverException occurred: {str(e)}")
         return False
+
+    def wait_for_element(self, locator: str, locator_type: str="id",
+                       timeout: int = 10, poll_frequency: float = 0.5) -> Optional[WebElement]:
+        """Waits for an element to be visible on the web page.
+
+        Args:
+            locator (str): The locator for the element to be found.
+            locator_type (str): Type of locator (id, name, xpath, etc). Default is "id".
+            timeout (int): Duration to wait before timing out. Default is 10 seconds.
+            poll_frequency (float): Frequency to poll the DOM. Default is 0.5 seconds.
+
+        Returns:
+            Optional[WebElement]: The WebElement if found, else None.
+        """
+        element = None
+        try:
+            by_type = self.get_by_type(locator_type)
+            print(f"Waiting for maximum :: {str(timeout)} :: seconds for element to be visible")
+            wait = WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll_frequency, ignored_exceptions=[NoSuchElementException,
+                                                                                           ElementNotVisibleException,
+                                                                                           ElementNotSelectableException])
+            element = wait.until(ec.visibility_of_element_located((by_type, locator)))
+
+            print("Element appeared on the web page")
+
+        except TimeoutException:
+            print(f"Element did not appear on the web page within {timeout} seconds.")
+        except NoSuchElementException:
+            print("Element not found in the DOM.")
+        except ElementNotVisibleException:
+            print("Element is not visible in the DOM.")
+        except ElementNotSelectableException:
+            print("Element is not selectable in the DOM.")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+        finally:
+            if not element:
+                print_stack()
+        return element
+
