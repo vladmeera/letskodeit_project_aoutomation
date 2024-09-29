@@ -94,13 +94,9 @@ class SeleniumDriver:
         Attempts to click on a web element located by the specified locator and locator type.
 
         :param locator: The locator to identify the web element.
-        :param locator_type: The type of locator to use (default is "id").
-        It can be other types like "name", "xpath", etc.
+        :param locator_type: The type of locator to use (default is "id"). It can be other types like "name", "xpath", etc.
         :return: None
-        :raises: NoSuchElementException if the element is not found.
-                 ElementNotInteractableException if the element is not interactable.
-                 StaleElementReferenceException if the element is no longer attached to the DOM.
-                 WebDriverException for any driver-related issues.
+        :raises: NoSuchElementException if the element is not found. ElementNotInteractableException if the element is not interactable. StaleElementReferenceException if the element is no longer attached to the DOM. WebDriverException for any driver-related issues.
 
         This method tries to find the specified web element and perform a click action on it.
         It handles exceptions to ensure that the appropriate error message is displayed
@@ -123,6 +119,41 @@ class SeleniumDriver:
             print(f"WebDriverException occurred: {str(e)}")
         except Exception as e:
             print(f"An unexpected exception occurred: {str(e)}")
+            print_stack()
+
+    def send_keys_element(self, text: str, locator: str, locator_type: str = "id") -> None:
+        """
+        Attempts to send text to a web element located by the specified locator and locator type.
+
+        :param locator: The locator to identify the web element.
+        :param text: The text to send to the web element.
+        :param locator_type: The type of locator to use (default is "id"). It can be other types like "name", "xpath", etc.
+        :return: None
+        :raises: NoSuchElementException if the element is not found. ElementNotInteractableException if the element is not interactable. StaleElementReferenceException if the element is no longer attached to the DOM. WebDriverException for any driver-related issues.
+
+        This method tries to find the specified web element and sends the given text to it.
+        It handles exceptions to ensure that the appropriate error message is displayed
+        if the element is not found or if there are driver-related issues.
+        """
+        try:
+            element = self.get_element(locator, locator_type)
+            if element:
+                element.send_keys(text)
+                print(f"Sent keys to element with locator: {locator} and locator_type: {locator_type}")
+            else:
+                print(
+                    f"Unable to send keys to element. Element with locator: {locator} and locator_type: {locator_type} not found.")
+        except NoSuchElementException:
+            print(f"Element not found using locator: {locator} and locator_type: {locator_type}")
+        except ElementNotInteractableException:
+            print(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
+        except StaleElementReferenceException:
+            print(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
+        except WebDriverException as e:
+            print(f"WebDriverException occurred: {str(e)}")
+        except Exception as e:
+            print(f"An unexpected exception occurred: {str(e)}")
+            print_stack()
 
     # To make sure element is presented on the page
     def is_element_presented(self, locator: str, by_type: str) -> bool:

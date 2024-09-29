@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Enhance click_element with detailed error handling&#10;&#10;Added comprehensive exception handling to `click_element` for better debugging and robustness. New exceptions handled include `ElementNotInteractableException` and `StaleElementReferenceException`, with corresponding error messages to diagnose issues effectively.">
       <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727627202170</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add element interaction and waiting utility methods&#10;&#10;Enhanced SeleniumDriver with click and wait utilities for elements. New methods include `click_element` and `wait_for_element` to improve element interaction and synchronization on the web page. Updated import statements and type annotations to support these functionalities.">
+      <option name="closed" value="true" />
+      <created>1727631033688</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727631033688</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Enhance click_element with detailed error handling&#10;&#10;Added comprehensive exception handling to `click_element` for better debugging and robustness. New exceptions handled include `ElementNotInteractableException` and `StaleElementReferenceException`, with corresponding error messages to diagnose issues effectively.">
+      <option name="closed" value="true" />
+      <created>1727631505935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727631505935</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included." />
+    <MESSAGE value="Add element interaction and waiting utility methods&#10;&#10;Enhanced SeleniumDriver with click and wait utilities for elements. New methods include `click_element` and `wait_for_element` to improve element interaction and synchronization on the web page. Updated import statements and type annotations to support these functionalities." />
+    <MESSAGE value="Enhance click_element with detailed error handling&#10;&#10;Added comprehensive exception handling to `click_element` for better debugging and robustness. New exceptions handled include `ElementNotInteractableException` and `StaleElementReferenceException`, with corresponding error messages to diagnose issues effectively." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance click_element with detailed error handling&#10;&#10;Added comprehensive exception handling to `click_element` for better debugging and robustness. New exceptions handled include `ElementNotInteractableException` and `StaleElementReferenceException`, with corresponding error messages to diagnose issues effectively." />
   </component>
 </project>
