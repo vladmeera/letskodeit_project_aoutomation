@@ -1,7 +1,14 @@
-from logging import getLogger, DEBUG, FileHandler, Formatter
+from logging import getLogger, DEBUG, FileHandler, Formatter, Logger
 from inspect import stack
 
-def custom_logger(log_level):
+def custom_logger(log_level=DEBUG) -> Logger:
+    """
+    Creates a custom logger configured to log to a file named after the caller function.
+
+    :param log_level: Logging level, default is DEBUG.
+    :return: Configured logger instance.
+    """
+
     # Gets the name of the class / method from where this method is called
     logger_name = stack()[1][3]
 
@@ -10,7 +17,7 @@ def custom_logger(log_level):
     # By default, log all messages
     logger.setLevel(DEBUG)
 
-    file_handler = FileHandler("{0}.log".format(logger_name), mode='w')
+    file_handler = FileHandler("automation.log", mode='a')
     file_handler.setLevel(log_level)
 
     formatter = Formatter(

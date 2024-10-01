@@ -11,8 +11,13 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from typing import Optional
 from traceback import print_stack
+from utilities.custom_logger import custom_logger as cl
+# from logging import DEBUG
 
 class SeleniumDriver:
+
+    log = cl()
+
     def __init__(self, driver: WebDriver):
         """
         Initializes the SeleniumDriver instance with the provided Webdriver.
@@ -43,7 +48,7 @@ class SeleniumDriver:
               or locatorType == "classname"):
             return By.CLASS_NAME
         else:
-            print("Locator type is not supported")
+            self.log.info("Locator type is not supported")
         return False
 
     # To find elements (default locator type is ID)
@@ -60,13 +65,14 @@ class SeleniumDriver:
             locator_type = locator_type.lower()
             by_type = self.get_by_type(locator_type)
             element = self.driver.find_element(by_type, locator)
+            self.log.info(f"Found element with locator: {locator} and locator_type: {locator_type}")
             return element
 
         except NoSuchElementException:
-            print(f"Element not found using locator: {locator} and locator type: {locator_type}")
+            self.log.warning(f"Element not found using locator: {locator} and locator type: {locator_type}")
 
         except WebDriverException as e:
-            print(f"WebDriverException occurred: {str(e)}")
+            self.log.critical(f"WebDriverException occurred: {str(e)}")
         return element
 
 
@@ -82,11 +88,12 @@ class SeleniumDriver:
             locator_type = locator_type.lower()
             by_type = self.get_by_type(locator_type)
             elements = self.driver.find_elements(by_type, locator)
+            self.log.info(f"Found elements with locator: {locator} and locator_type: {locator_type}")
             return elements
         except NoSuchElementException:
-            print(f"Elements not found using locator: {locator}, and locator_type: {locator_type}")
+            self.log.warning(f"Elements not found using locator: {locator}, and locator_type: {locator_type}")
         except WebDriverException as e:
-            print(f"WebDriverException occurred: {str(e)}")
+            self.log.critical(f"WebDriverException occurred: {str(e)}")
         return None
 
     def click_element(self, locator: str, locator_type: str ="id") -> None:
@@ -106,19 +113,19 @@ class SeleniumDriver:
             element = self.get_element(locator, locator_type)
             if element:
                 element.click()
-                print(f"Clicked on element with locator: {locator} and locator_type: {locator_type}")
+                self.log.info(f"Clicked on element with locator: {locator} and locator_type: {locator_type}")
             else:
-                print(f"Unable to click on element. Element with locator: {locator} and locator_type: {locator_type} not found.")
+                self.log.info(f"Unable to click on element. Element with locator: {locator} and locator_type: {locator_type} not found.")
         except NoSuchElementException:
-            print(f"Element not found using locator: {locator} and locator_type: {locator_type}")
+            self.log.warning(f"Element not found using locator: {locator} and locator_type: {locator_type}")
         except ElementNotInteractableException:
-            print(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
+            self.log.warning(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
         except StaleElementReferenceException:
-            print(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
+            self.log.critical(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
         except WebDriverException as e:
-            print(f"WebDriverException occurred: {str(e)}")
+            self.log.critical(f"WebDriverException occurred: {str(e)}")
         except Exception as e:
-            print(f"An unexpected exception occurred: {str(e)}")
+            self.log.debug(f"An unexpected exception occurred: {str(e)}")
             print_stack()
 
     def send_keys_element(self, text: str, locator: str, locator_type: str = "id") -> None:
@@ -139,46 +146,46 @@ class SeleniumDriver:
             element = self.get_element(locator, locator_type)
             if element:
                 element.send_keys(text)
-                print(f"Sent keys to element with locator: {locator} and locator_type: {locator_type}")
+                self.log.info(f"Sent keys to element with locator: {locator} and locator_type: {locator_type}")
             else:
-                print(
+                self.log.info(
                     f"Unable to send keys to element. Element with locator: {locator} and locator_type: {locator_type} not found.")
         except NoSuchElementException:
-            print(f"Element not found using locator: {locator} and locator_type: {locator_type}")
+            self.log.warning(f"Element not found using locator: {locator} and locator_type: {locator_type}")
         except ElementNotInteractableException:
-            print(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
+            self.log.warning(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
         except StaleElementReferenceException:
-            print(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
+            self.log.critical(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
         except WebDriverException as e:
-            print(f"WebDriverException occurred: {str(e)}")
+            self.log.critical(f"WebDriverException occurred: {str(e)}")
         except Exception as e:
-            print(f"An unexpected exception occurred: {str(e)}")
+            self.log.debug(f"An unexpected exception occurred: {str(e)}")
             print_stack()
 
     # To make sure element is presented on the page
-    def is_element_presented(self, locator: str, by_type: str) -> bool:
+    def is_element_presented(self, locator: str, locator_type: str = "id") -> bool:
         """
         Checks if a specific web element is present on the page.
 
         :param locator: The locator to identify the web element.
-        :param by_type: The By object type to use for locating the element. ("id", "xpath", "css_selector", etc.)
+        :param locator_type: The By object type to use for locating the element. ("id", "xpath", "css_selector", etc.)
         :return: True if the element is found and presented on the page, else False.
         """
         try:
-            element = self.driver.find_element(by_type, locator)
+            element = self.get_element(locator, locator_type)
             if element is not None:
-                print("Element is presented")
+                self.log.info(f"Element is presented using locator: {locator} and locator_type: {locator_type}")
                 return True
             else:
-                print("Element isn't presented on the page!")
+                self.log.info(f"Element isn't presented on the page using locator: {locator} and locator_type: {locator_type}")
         except NoSuchElementException:
-            print(f"Element not found using locator: {locator}, and locator type: {by_type}")
+            self.log.warning(f"Element not found using locator: {locator}, and locator type: {locator_type}")
         except WebDriverException as e:
-            print(f"WebDriverException occurred: {str(e)}")
+            self.log.critical(f"WebDriverException occurred: {str(e)}")
         return False
 
     # To check if elements are on the page
-    def are_elements_presented(self, locator: str, by_type: str) -> bool:
+    def are_elements_presented(self, locator: str, by_type: str = "id") -> bool:
         """
         Checks if one or more web elements are present on the page.
 
@@ -189,14 +196,14 @@ class SeleniumDriver:
         try:
             element_list = self.driver.find_elements(by_type, locator)
             if len(element_list) > 0:
-                print(f"Elements are found using: {by_type}")
+                self.log.info(f"Elements are presented locator: {locator} and locator type: {by_type}")
                 return True
             else:
-                print("Elements are not found")
+                self.log.info(f"Elements aren't presented on the page using locator: {locator} and locator type: {by_type}")
         except NoSuchElementException:
-            print(f"Elements not found using locator: {locator} and locator type: {by_type}")
+            self.log.warning(f"Elements not found using locator: {locator} and locator type: {by_type}")
         except WebDriverException as e:
-            print(f"WebDriverException occurred: {str(e)}")
+            self.log.critical(f"WebDriverException occurred: {str(e)}")
         return False
 
     def wait_for_element(self, locator: str, locator_type: str="id",
@@ -215,24 +222,24 @@ class SeleniumDriver:
         element = None
         try:
             by_type = self.get_by_type(locator_type)
-            print(f"Waiting for maximum :: {str(timeout)} :: seconds for element to be visible")
+            self.log.info(f"Waiting for {timeout} seconds for element to appear: {locator}")
             wait = WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll_frequency, ignored_exceptions=[NoSuchElementException,
                                                                                            ElementNotVisibleException,
                                                                                            ElementNotSelectableException])
             element = wait.until(ec.visibility_of_element_located((by_type, locator)))
 
-            print("Element appeared on the web page")
+            self.log.info(f"Element appeared on the web page using locator: {locator} and locator_type: {locator_type}")
 
         except TimeoutException:
-            print(f"Element did not appear on the web page within {timeout} seconds.")
+            self.log.warning(f"Element did not appear on the web page within {timeout} seconds.")
         except NoSuchElementException:
-            print("Element not found in the DOM.")
+            self.log.warning("Element not found in the DOM.")
         except ElementNotVisibleException:
-            print("Element is not visible in the DOM.")
+            self.log.warning("Element is not visible in the DOM.")
         except ElementNotSelectableException:
-            print("Element is not selectable in the DOM.")
+            self.log.warning("Element is not selectable in the DOM.")
         except Exception as e:
-            print(f"An unexpected error occurred: {e}")
+            self.log.critical(f"An unexpected error occurred: {e}")
         finally:
             if not element:
                 print_stack()

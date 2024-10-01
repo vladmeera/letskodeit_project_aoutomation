@@ -1,33 +1,41 @@
-# import logging
 from pages.home.login_page import LoginPage
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from utilities.custom_logger import custom_logger as cl
 from unittest import TestCase
-from base.selenium_driver import SeleniumDriver as Driver
+from inspect import currentframe
+import pytest
 
 class LoginTest(TestCase):
+    base_url: str = "https://www.letskodeit.com/"
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(4)
+    driver.maximize_window()
 
-    # log = cl(logging.DEBUG)
+    lp = LoginPage(driver)
 
-    def test_valid_login(self):
-        base_url = "https://www.letskodeit.com/"
-        driver = webdriver.Chrome()
-        driver.implicitly_wait(4)
-        driver.maximize_window()
-        driver.get(base_url)
-        s_driver = Driver(driver)
+    #Credentials
+    _email = 'va3zdkh68@mozmail.com'
+    _password = '"%+eH3>@w8nPp,'
 
-        lp = LoginPage(driver)
-        lp.login(
-            email="va3zdkh68@mozmail.com",
-            password='"%+eH3>@w8nPp,')
+    @pytest.mark.run(order=2)
+    def test_valid_login(self) -> None:
+        print(f"Run {currentframe().f_code.co_name} test method")
 
-        profile_btn = s_driver.get_element("//button[@id='dropdownMenu1']", "xpath")
-        # profile_btn = driver.find_element(By.XPATH, "//button[@id='dropdownMenu1']")
-        if profile_btn is not None:
-            print("Login successful")
-        else:
-            print("Login failed")
+        self.lp.login(
+            email="{}".format(self._email),
+            password="{}".format(self._password))
 
-        driver.quit()
+        result = self.lp.verify_login_successful()
+        assert result == True
+
+        self.driver.quit()
+
+    @pytest.mark.run(order=1)
+    def test_invalid_login(self) -> None:
+        self.driver.get(self.base_url)
+        print(f"Run {currentframe().f_code.co_name} test method")
+
+        self.lp.login_invalid(
+            email="{}".format(self._email))
+
+        result = self.lp.verify_login_unsuccessful()
+        assert result == True
