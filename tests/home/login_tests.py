@@ -4,13 +4,13 @@ from unittest import TestCase
 from inspect import currentframe
 import pytest
 
-class LoginTest(TestCase):
-    base_url: str = "https://www.letskodeit.com/"
-    driver = webdriver.Chrome()
-    driver.implicitly_wait(4)
-    driver.maximize_window()
 
-    lp = LoginPage(driver)
+@pytest.mark.usefixtures("one_time_setup", "setup")
+class LoginTest(TestCase):
+
+    @pytest.fixture(autouse=True)
+    def before_each(self, one_time_setup):
+        self.lp = LoginPage(self.driver)
 
     #Credentials
     _email = 'va3zdkh68@mozmail.com'
@@ -27,11 +27,9 @@ class LoginTest(TestCase):
         result = self.lp.verify_login_successful()
         assert result == True
 
-        self.driver.quit()
-
     @pytest.mark.run(order=1)
     def test_invalid_login(self) -> None:
-        self.driver.get(self.base_url)
+
         print(f"Run {currentframe().f_code.co_name} test method")
 
         self.lp.login_invalid(

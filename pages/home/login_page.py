@@ -1,3 +1,5 @@
+from time import sleep
+
 from base.selenium_driver import SeleniumDriver
 from utilities.custom_logger import custom_logger as cl
 # from logging import DEBUG
@@ -38,6 +40,7 @@ class LoginPage(SeleniumDriver):
         self.click_login_link()
         self.enter_email(email)
         self.enter_password(password)
+        sleep(2)
         self.click_login_btn()
 
     def verify_login_successful(self) -> bool:
@@ -48,6 +51,7 @@ class LoginPage(SeleniumDriver):
         self.click_login_link()
         self.enter_email(email)
         self.enter_password(password)
+        sleep(2)
         self.click_login_btn()
 
     def verify_login_unsuccessful(self) -> bool:
