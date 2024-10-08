@@ -12,7 +12,9 @@ from selenium.webdriver.remote.webelement import WebElement
 from typing import Optional
 from traceback import print_stack
 from utilities.custom_logger import custom_logger as cl
-# from logging import DEBUG
+from time import time
+from datetime import datetime
+import os
 
 class SeleniumDriver:
 
@@ -26,6 +28,36 @@ class SeleniumDriver:
         """
         self.driver = driver
 
+    def screenshot(self, result_message: str = ""):
+        """
+        Attempts to take a screenshot and save it to the specified path.
+        """
+
+        current_date = datetime.now().date()
+        file_name: str = f"{result_message}_{current_date}_{str(round(time() * 1000))}.png"
+        screenshots_directory: str = "../screenshots/"
+        relative_path: str = f"{screenshots_directory}{file_name}"
+        current_directory: str = os.path.dirname(__file__)
+        destination_path: str = os.path.join(current_directory, relative_path)
+        destination_directory: str = os.path.join(current_directory, screenshots_directory)
+
+        try:
+            if not os.path.exists(destination_directory):
+                os.makedirs(destination_directory)
+            self.driver.save_screenshot(destination_path)
+            self.log.info(f"Screenshot saved to: {destination_path}. Name of screenshot: {file_name}")
+
+        except WebDriverException as e:
+            self.log.error(f"WebDriverException while taking screenshot: {e}")
+        except FileNotFoundError as e:
+            self.log.error(f"FileNotFoundError while saving screenshot: {e}")
+        except PermissionError as e:
+            self.log.error(f"PermissionError while saving screenshot: {e}")
+        except OSError as e:
+            self.log.error(f"OSError while saving screenshot: {e}")
+
+
+
     def get_title(self) -> str:
         """
         Gets title of the current page.
@@ -33,7 +65,6 @@ class SeleniumDriver:
         :return: title as a string.
         """
         title = self.driver.title
-        self.log.debug(f"Page title: {title}")
         return title
 
     def get_by_type(self, locator_type: str) -> By:
