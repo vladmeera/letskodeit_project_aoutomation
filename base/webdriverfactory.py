@@ -31,28 +31,34 @@ class WebDriverFactory:
 
         if self.browser == "chrome":
             driver = webdriver.Chrome()
-            self.log.info("Running tests on chrome")
-            self.log.info(f"Open browser with provided url: {base_url}")
+            self.log.warning(f"{"#" * 25} NEW SESSION STARTED {'#' * 25}")
+            self.log.warning("Running tests on chrome")
+            self.log.warning(f"Open browser with provided url: {base_url}")
         elif self.browser == "firefox":
             driver = webdriver.Firefox()
-            self.log.info("Running tests on firefox")
-            self.log.info(f"Open browser with provided url: {base_url}")
+            self.log.warning(f"{"#" * 25} NEW SESSION STARTED {'#' * 25}")
+            self.log.warning("Running tests on firefox")
+            self.log.warning(f"Open browser with provided url: {base_url}")
         elif self.browser == "safari":
             driver = webdriver.Safari()
-            self.log.info("Running tests on safari")
-            self.log.info(f"Open browser with provided url: {base_url}")
+            self.log.warning(f"{"#" * 25} NEW SESSION STARTED {'#' * 25}")
+            self.log.warning("Running tests on safari")
+            self.log.warning(f"Open browser with provided url: {base_url}")
         elif self.browser == "iexplorer":
             driver = webdriver.Ie()
-            self.log.info("Running tests on internet explorer")
-            self.log.info(f"Open browser with provided url: {base_url}")
+            self.log.warning(f"{"#" * 25} NEW SESSION STARTED {'#' * 25}")
+            self.log.warning("Running tests on internet explorer")
+            self.log.warning(f"Open browser with provided url: {base_url}")
         elif self.browser == "edge":
             driver = webdriver.Edge()
-            self.log.info("Running tests on edge")
-            self.log.info(f"Open browser with provided url: {base_url}")
+            self.log.warning(f"{"#" * 25} NEW SESSION STARTED {'#' * 25}")
+            self.log.warning("Running tests on edge")
+            self.log.warning(f"Open browser with provided url: {base_url}")
         else:
             driver = webdriver.Chrome()
-            self.log.info("Running tests on chrome")
-            self.log.info(f"Open browser with provided url: {base_url}")
+            self.log.warning(f"{"#" * 25} NEW SESSION STARTED {'#' * 25}")
+            self.log.warning("Running tests on chrome")
+            self.log.warning(f"Open browser with provided url: {base_url}")
 
         driver.implicitly_wait(5)
         driver.maximize_window()

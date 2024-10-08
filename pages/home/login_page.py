@@ -18,8 +18,15 @@ class LoginPage(SeleniumDriver):
     _email_field: str = "email" #id
     _password_field: str = "login-password" #id
     _login_btn: str = "login" #id
-    _element_to_verify: str = "//button[@id='dropdownMenu1']" #xpath
-    _error_to_verify: str = "//span[text()='The password field is required.']" #xpath
+
+    # Element occurs after successful login
+    _element_to_verify_login: str = "//button[@id='dropdownMenu1']" #xpath
+
+    #Wrong password error
+    _error_to_verify_password: str = "//span[text()='The password field is required.']" #xpath
+
+    # Titles
+    _titles = ["Login"]
 
 
 
@@ -44,10 +51,10 @@ class LoginPage(SeleniumDriver):
         self.click_login_btn()
 
     def verify_login_successful(self) -> bool:
-        return self.is_element_presented(self._element_to_verify, "xpath")
+        return self.is_element_present(self._element_to_verify_login, "xpath")
 
 
-    def login_invalid(self, email: str, password: str = "") -> None:
+    def invalid_login(self, email: str, password: str = "") -> None:
         self.click_login_link()
         self.enter_email(email)
         self.enter_password(password)
@@ -55,4 +62,10 @@ class LoginPage(SeleniumDriver):
         self.click_login_btn()
 
     def verify_login_unsuccessful(self) -> bool:
-        return self.is_element_presented(self._error_to_verify, "xpath")
+        return self.is_element_present(self._error_to_verify_password, "xpath")
+
+    def verify_title(self):
+        if self.get_title() in self._titles:
+            return True
+        else:
+            return False

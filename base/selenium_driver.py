@@ -26,35 +26,42 @@ class SeleniumDriver:
         """
         self.driver = driver
 
-    def get_by_type(self, locator_type: str):
+    def get_title(self) -> str:
         """
-        Converts a locator type string to a Selenium By object for use in locating elements.
+        Gets title of the current page.
+
+        :return: title as a string.
+        """
+        title = self.driver.title
+        self.log.debug(f"Page title: {title}")
+        return title
+
+    def get_by_type(self, locator_type: str) -> By:
+        """
+        Get the Selenium By type based on a string identifier.
 
         :param locator_type: A string representing the type of locator (e.g., 'id', 'css_selector', 'xpath', etc.).
         :return: Corresponding Selenium By method for the provided locator type. Returns False if the locator type is not supported.
         """
-        locatorType = locator_type.lower()
-        if locatorType == "id":
-            return By.ID
-        elif (locatorType == "css_selector"
-              or locatorType == "css selector"
-              or locatorType == "css"):
-            return By.CSS_SELECTOR
-        elif locatorType == "xpath":
-            return By.XPATH
-        elif (locatorType == "class"
-              or locatorType == "class_name"
-              or locatorType == "class name"
-              or locatorType == "classname"):
-            return By.CLASS_NAME
-        else:
-            self.log.info("Locator type is not supported")
-        return False
+        locator_type = locator_type.lower()
+        by_types = {
+            "id": By.ID,
+            "name": By.NAME,
+            "xpath": By.XPATH,
+            "css": By.CSS_SELECTOR,
+            "class": By.CLASS_NAME,
+            "link": By.LINK_TEXT,
+            "partial_link": By.PARTIAL_LINK_TEXT,
+            "tag": By.TAG_NAME
+        }
+        by_type = by_types.get(locator_type, By.ID)
+        self.log.info(f"Using locator type: {locator_type}, parsed as By.{by_type}")
+        return by_type
 
     # To find elements (default locator type is ID)
     def get_element(self, locator: str, locator_type: str ="id") -> WebElement | None:
         """
-        Attempts to locate a single web element using the specified locator and locator type.
+        Get a single web element
 
         :param locator: The locator to identify the web element.
         :param locator_type: The type of the locator (default is "id"). It can be other types like "name", "xpath", etc.
@@ -69,7 +76,7 @@ class SeleniumDriver:
             return element
 
         except NoSuchElementException:
-            self.log.warning(f"Element not found using locator: {locator} and locator type: {locator_type}")
+            self.log.error(f"Element not found using locator: {locator} and locator type: {locator_type}")
 
         except WebDriverException as e:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
@@ -91,7 +98,7 @@ class SeleniumDriver:
             self.log.info(f"Found elements with locator: {locator} and locator_type: {locator_type}")
             return elements
         except NoSuchElementException:
-            self.log.warning(f"Elements not found using locator: {locator}, and locator_type: {locator_type}")
+            self.log.error(f"Elements not found using locator: {locator}, and locator_type: {locator_type}")
         except WebDriverException as e:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
         return None
@@ -115,13 +122,13 @@ class SeleniumDriver:
                 element.click()
                 self.log.info(f"Clicked on element with locator: {locator} and locator_type: {locator_type}")
             else:
-                self.log.info(f"Unable to click on element. Element with locator: {locator} and locator_type: {locator_type} not found.")
+                self.log.warning(f"Unable to click on element. Element with locator: {locator} and locator_type: {locator_type} not found.")
         except NoSuchElementException:
-            self.log.warning(f"Element not found using locator: {locator} and locator_type: {locator_type}")
+            self.log.error(f"Element not found using locator: {locator} and locator_type: {locator_type}")
         except ElementNotInteractableException:
-            self.log.warning(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
+            self.log.error(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
         except StaleElementReferenceException:
-            self.log.critical(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
+            self.log.error(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
         except WebDriverException as e:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
         except Exception as e:
@@ -148,18 +155,18 @@ class SeleniumDriver:
                 element.send_keys(text)
                 self.log.info(f"Sent keys to element with locator: {locator} and locator_type: {locator_type}")
             else:
-                self.log.info(
+                self.log.warning(
                     f"Unable to send keys to element. Element with locator: {locator} and locator_type: {locator_type} not found.")
         except NoSuchElementException:
-            self.log.warning(f"Element not found using locator: {locator} and locator_type: {locator_type}")
+            self.log.error(f"Element not found using locator: {locator} and locator_type: {locator_type}")
         except ElementNotInteractableException:
-            self.log.warning(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
+            self.log.error(f"Element not interactable using locator: {locator} and locator_type: {locator_type}")
         except StaleElementReferenceException:
-            self.log.critical(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
+            self.log.error(f"Element is stale using locator: {locator} and locator_type: {locator_type}")
         except WebDriverException as e:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
         except Exception as e:
-            self.log.debug(f"An unexpected exception occurred: {str(e)}")
+            self.log.critical(f"An unexpected exception occurred: {str(e)}")
             print_stack()
 
     # To make sure element is presented on the page
@@ -177,9 +184,9 @@ class SeleniumDriver:
                 self.log.info(f"Element is presented using locator: {locator} and locator_type: {locator_type}")
                 return True
             else:
-                self.log.info(f"Element isn't presented on the page using locator: {locator} and locator_type: {locator_type}")
+                self.log.warning(f"Element isn't presented on the page using locator: {locator} and locator_type: {locator_type}")
         except NoSuchElementException:
-            self.log.warning(f"Element not found using locator: {locator}, and locator type: {locator_type}")
+            self.log.error(f"Element not found using locator: {locator}, and locator type: {locator_type}")
         except WebDriverException as e:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
         return False
@@ -199,9 +206,9 @@ class SeleniumDriver:
                 self.log.info(f"Elements are presented locator: {locator} and locator type: {by_type}")
                 return True
             else:
-                self.log.info(f"Elements aren't presented on the page using locator: {locator} and locator type: {by_type}")
+                self.log.warning(f"Elements aren't presented on the page using locator: {locator} and locator type: {by_type}")
         except NoSuchElementException:
-            self.log.warning(f"Elements not found using locator: {locator} and locator type: {by_type}")
+            self.log.error(f"Elements not found using locator: {locator} and locator type: {by_type}")
         except WebDriverException as e:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
         return False
@@ -233,11 +240,11 @@ class SeleniumDriver:
         except TimeoutException:
             self.log.warning(f"Element did not appear on the web page within {timeout} seconds.")
         except NoSuchElementException:
-            self.log.warning("Element not found in the DOM.")
+            self.log.error("Element not found in the DOM.")
         except ElementNotVisibleException:
-            self.log.warning("Element is not visible in the DOM.")
+            self.log.error("Element is not visible in the DOM.")
         except ElementNotSelectableException:
-            self.log.warning("Element is not selectable in the DOM.")
+            self.log.error("Element is not selectable in the DOM.")
         except Exception as e:
             self.log.critical(f"An unexpected error occurred: {e}")
         finally:
