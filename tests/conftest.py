@@ -1,5 +1,4 @@
 import pytest
-from selenium import webdriver
 from utilities.custom_logger import custom_logger as cl
 from base.webdriverfactory import WebDriverFactory
 

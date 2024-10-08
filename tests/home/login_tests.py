@@ -1,5 +1,4 @@
 from pages.home.login_page import LoginPage
-from selenium import webdriver
 from unittest import TestCase
 from inspect import currentframe
 import pytest

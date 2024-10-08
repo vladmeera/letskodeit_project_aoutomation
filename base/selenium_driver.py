@@ -52,7 +52,7 @@ class SeleniumDriver:
         return False
 
     # To find elements (default locator type is ID)
-    def get_element(self, locator: str, locator_type: str ="id"):
+    def get_element(self, locator: str, locator_type: str ="id") -> WebElement | None:
         """
         Attempts to locate a single web element using the specified locator and locator type.
 
@@ -76,7 +76,7 @@ class SeleniumDriver:
         return element
 
 
-    def get_elements(self, locator: str, locator_type: str ="id"):
+    def get_elements(self, locator: str, locator_type: str ="id") -> list[WebElement] | None:
         """
         Attempts to locate multiple web elements using the specified locator and locator type.
 
@@ -163,7 +163,7 @@ class SeleniumDriver:
             print_stack()
 
     # To make sure element is presented on the page
-    def is_element_presented(self, locator: str, locator_type: str = "id") -> bool:
+    def is_element_present(self, locator: str, locator_type: str = "id") -> bool:
         """
         Checks if a specific web element is present on the page.
 
@@ -185,7 +185,7 @@ class SeleniumDriver:
         return False
 
     # To check if elements are on the page
-    def are_elements_presented(self, locator: str, by_type: str = "id") -> bool:
+    def are_elements_present(self, locator: str, by_type: str = "id") -> bool:
         """
         Checks if one or more web elements are present on the page.
 
@@ -207,7 +207,7 @@ class SeleniumDriver:
         return False
 
     def wait_for_element(self, locator: str, locator_type: str="id",
-                       timeout: int = 10, poll_frequency: float = 0.5) -> Optional[WebElement]:
+                       timeout: int = 10, poll_frequency: float = 0.5) -> WebElement | None:
         """Waits for an element to be visible on the web page.
 
         Args:
