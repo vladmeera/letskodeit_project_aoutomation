@@ -2,7 +2,6 @@ from time import sleep
 
 from base.selenium_driver import SeleniumDriver
 from utilities.custom_logger import custom_logger as cl
-# from logging import DEBUG
 
 class LoginPage(SeleniumDriver):
 
@@ -11,6 +10,7 @@ class LoginPage(SeleniumDriver):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+
 
 
     # Locators

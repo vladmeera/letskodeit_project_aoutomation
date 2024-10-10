@@ -3,6 +3,7 @@ from unittest import TestCase
 from inspect import currentframe
 import pytest
 from utilities.test_status import TestStatus
+import os
 
 
 @pytest.mark.usefixtures("one_time_setup", "setup")
@@ -14,8 +15,8 @@ class LoginTest(TestCase):
         self.ts = TestStatus(self.driver)
 
     #Credentials
-    _email = 'va3zdkh68@mozmail.com'
-    _password = '"%+eH3>@w8nPp,'
+    _email = os.environ.get('LETSKODEIT_EMAIL')
+    _password = os.environ.get('LETSKODEIT_PASS')
 
 
     @pytest.mark.run(order=2)
@@ -29,7 +30,7 @@ class LoginTest(TestCase):
         self.ts.mark(result1, "Title is not matching")
 
         result2 = self.lp.verify_login_successful()
-        self.ts.mark_final("test_valid_login" ,result2, "Login is not successful")
+        self.ts.mark_final("test_valid_login" ,result2, "login_is_not_successful")
 
     @pytest.mark.run(order=1)
     def test_invalid_login(self) -> None:
@@ -40,4 +41,4 @@ class LoginTest(TestCase):
             email="{}".format(self._email))
 
         result = self.lp.verify_login_unsuccessful()
-        self.ts.mark_final("test_invalid_login" ,result, "Login is successful | The wrong message is displayed/Not displayed at all")
+        self.ts.mark_final("test_invalid_login" ,result, "login_is_successful_message_not_displayed")

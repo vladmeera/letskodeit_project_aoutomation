@@ -23,19 +23,24 @@ class TestStatus(SeleniumDriver):
                 else:
                     self.result_list.append("Fail")
                     self.log.warning(f"| TEST FAILED | {result_message}")
+                    self.screenshot(result_message)
             else:
                 self.result_list.append("Fail")
                 self.log.info(f"| TEST FAILED | {result_message}")
+                self.screenshot(result_message)
 
         except AttributeError as e:
             self.result_list.append("Fail")
             self.log.error(f"| ATTRIBUTE ERROR | {result_message} | {e}")
+            self.screenshot(result_message)
         except TypeError as e:
             self.result_list.append("Fail")
             self.log.error(f"| TYPE ERROR | {result_message} | {e}")
+            self.screenshot(result_message)
         except Exception as e:
             self.result_list.append("Fail")
             self.log.error(f"| EXCEPTION OCCURRED | {result_message} | {e}")
+            self.screenshot(result_message)
 
     def mark(self, result: bool, result_message: str = ""):
         """
