@@ -42,13 +42,13 @@ class TestStatus(SeleniumDriver):
             self.log.error(f"| EXCEPTION OCCURRED | {result_message} | {e}")
             self.screenshot(result_message)
 
-    def mark(self, result: bool, result_message: str = ""):
+    def mark(self, result: bool, result_message: str = "") -> None:
         """
         Mark the result of the verification point in a test case
         """
         self.set_result(result, result_message)
 
-    def mark_final(self, test_name: str, result: bool, result_message: str = ""):
+    def mark_final(self, test_name: str, result: bool, result_message: str = "") -> None:
         """
         Mark the final result of the verification point in a test case
         This needs to be called at least once in a test case

@@ -20,7 +20,7 @@ def setup():
     print('It runs after each test')
 
 def pytest_addoption(parser):
-    parser.addoption('--browser')
+    parser.addoption('--browser', help='Choose your browser')
     parser.addoption('--osType', help='Choose your operating system')
 
 @pytest.fixture(scope='session')
