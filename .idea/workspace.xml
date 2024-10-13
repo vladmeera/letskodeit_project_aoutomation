@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/home/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home/login_tests.py" afterDir="false" />
-    </list>
+    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Add type hints and browser option help text" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +199,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728545872956</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Enhance login tests with comments and update task management&#10;&#10;Added docstrings to clarify the purpose of the login tests. Improved test status messages for better readability. Updated task management comments in workspace.xml for better tracking.">
+      <option name="closed" value="true" />
+      <created>1728827728396</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728827728396</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactor type annotations and improve code clarity">
+      <option name="closed" value="true" />
+      <created>1728828293760</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728828293760</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add type hints and browser option help text">
+      <option name="closed" value="true" />
+      <created>1728828664065</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728828664065</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -231,6 +252,9 @@
     <MESSAGE value="Add screenshot functionality to SeleniumDriver&#10;&#10;Implemented a method to capture and store screenshots in a defined directory. Included exception handling for potential errors during the screenshot saving process." />
     <MESSAGE value="Update login tests to use environment variables for credentials&#10;&#10;Replaced hardcoded email and password in login tests with environment variables to enhance security. Additionally, updated the `test_status.py` to capture screenshots on various exceptions. Removed the `automation.log` and adjusted message formats for better clarity." />
     <MESSAGE value="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging." />
+    <MESSAGE value="Enhance login tests with comments and update task management&#10;&#10;Added docstrings to clarify the purpose of the login tests. Improved test status messages for better readability. Updated task management comments in workspace.xml for better tracking." />
+    <MESSAGE value="Refactor type annotations and improve code clarity" />
+    <MESSAGE value="Add type hints and browser option help text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add type hints and browser option help text" />
   </component>
 </project>
