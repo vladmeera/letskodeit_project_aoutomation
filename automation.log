@@ -1,0 +1,38 @@
+10/13/2024 09:40:42 AM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
+10/13/2024 09:40:42 AM - WebDriverFactory - WARNING - Running tests on chrome
+10/13/2024 09:40:42 AM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/13/2024 09:40:46 AM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/13/2024 09:40:46 AM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+10/13/2024 09:40:49 AM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
+10/13/2024 09:40:49 AM - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/13/2024 09:40:49 AM - LoginPage - INFO - Found element with locator: email and locator_type: id
+10/13/2024 09:40:49 AM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
+10/13/2024 09:40:49 AM - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/13/2024 09:40:49 AM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+10/13/2024 09:40:49 AM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
+10/13/2024 09:40:51 AM - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/13/2024 09:40:51 AM - LoginPage - INFO - Found element with locator: login and locator_type: id
+10/13/2024 09:40:52 AM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
+10/13/2024 09:40:52 AM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/13/2024 09:40:52 AM - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
+10/13/2024 09:40:52 AM - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
+10/13/2024 09:40:52 AM - TestStatus - INFO - | TEST SUCCESSFUL | 
+10/13/2024 09:40:52 AM - TestStatus - INFO - test_invalid_login !!! PASSED !!!
+10/13/2024 09:40:52 AM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/13/2024 09:40:52 AM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+10/13/2024 09:40:53 AM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
+10/13/2024 09:40:53 AM - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/13/2024 09:40:53 AM - LoginPage - INFO - Found element with locator: email and locator_type: id
+10/13/2024 09:40:53 AM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
+10/13/2024 09:40:53 AM - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/13/2024 09:40:53 AM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+10/13/2024 09:40:53 AM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
+10/13/2024 09:40:55 AM - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/13/2024 09:40:55 AM - LoginPage - INFO - Found element with locator: login and locator_type: id
+10/13/2024 09:40:55 AM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
+10/13/2024 09:40:55 AM - TestStatus - INFO - | TEST SUCCESSFUL | 
+10/13/2024 09:40:55 AM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/13/2024 09:40:56 AM - LoginPage - INFO - Found element with locator: //button[@id='dropdownMenu1'] and locator_type: xpath
+10/13/2024 09:40:56 AM - LoginPage - INFO - Element is presented using locator: //button[@id='dropdownMenu1'] and locator_type: xpath
+10/13/2024 09:40:56 AM - TestStatus - INFO - | TEST SUCCESSFUL | 
+10/13/2024 09:40:56 AM - TestStatus - INFO - test_valid_login !!! PASSED !!!

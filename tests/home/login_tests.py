@@ -21,6 +21,11 @@ class LoginTest(TestCase):
 
     @pytest.mark.run(order=2)
     def test_valid_login(self) -> None:
+        """
+        Happy path
+        valid login
+        valid password
+        """
         print(f"Run {currentframe().f_code.co_name} test method")
 
         self.lp.login(
@@ -30,10 +35,15 @@ class LoginTest(TestCase):
         self.ts.mark(result1, "Title is not matching")
 
         result2 = self.lp.verify_login_successful()
-        self.ts.mark_final("test_valid_login" ,result2, "login_is_not_successful")
+        self.ts.mark_final("test_valid_login" ,result2, "Login is not successful")
 
     @pytest.mark.run(order=1)
-    def test_invalid_login(self) -> None:
+    def test_invalid_login_pass(self) -> None:
+        """
+        Invalid login
+        valid login
+        no password
+        """
 
         print(f"Run {currentframe().f_code.co_name} test method")
 
@@ -41,4 +51,4 @@ class LoginTest(TestCase):
             email="{}".format(self._email))
 
         result = self.lp.verify_login_unsuccessful()
-        self.ts.mark_final("test_invalid_login" ,result, "login_is_successful_message_not_displayed")
+        self.ts.mark_final("test_invalid_login" ,result, "Error message is not displayed")

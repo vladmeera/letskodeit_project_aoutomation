@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Add screenshot functionality to SeleniumDriver&#10;&#10;Implemented a method to capture and store screenshots in a defined directory. Included exception handling for potential errors during the screenshot saving process.">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/home/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home/login_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728420960309</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging.">
+      <option name="closed" value="true" />
+      <created>1728545872956</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728545872956</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -225,6 +229,8 @@
     <MESSAGE value="Refactor type hints and minor renaming in selenium_driver&#10;&#10;Added proper type hints to `get_element` and `get_elements` methods for clearer function signatures. Renamed `is_element_presented` to `is_element_present` and `are_elements_presented` to `are_elements_present` for consistency. Additionally, removed unused imports in the login_tests.py and conftest.py files." />
     <MESSAGE value="Enhance logging and test status handling &#10;&#10;Added customizable log filenames to `custom_logger`. Introduced `TestStatus` class for detailed pass/fail logging. Updated `login_page.py` for more robust login verification methods." />
     <MESSAGE value="Add screenshot functionality to SeleniumDriver&#10;&#10;Implemented a method to capture and store screenshots in a defined directory. Included exception handling for potential errors during the screenshot saving process." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add screenshot functionality to SeleniumDriver&#10;&#10;Implemented a method to capture and store screenshots in a defined directory. Included exception handling for potential errors during the screenshot saving process." />
+    <MESSAGE value="Update login tests to use environment variables for credentials&#10;&#10;Replaced hardcoded email and password in login tests with environment variables to enhance security. Additionally, updated the `test_status.py` to capture screenshots on various exceptions. Removed the `automation.log` and adjusted message formats for better clarity." />
+    <MESSAGE value="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging." />
   </component>
 </project>
