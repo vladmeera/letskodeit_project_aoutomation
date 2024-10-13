@@ -13,8 +13,9 @@ from typing import Optional
 from traceback import print_stack
 from utilities.custom_logger import custom_logger as cl
 from time import time
-from datetime import datetime
+from datetime import datetime, date
 import os
+
 
 class SeleniumDriver:
 
@@ -33,7 +34,7 @@ class SeleniumDriver:
         Attempts to take a screenshot and save it to the specified path.
         """
 
-        current_date = datetime.now().date()
+        current_date: date = datetime.now().date()
         file_name: str = f"{result_message}_{current_date}_{str(round(time() * 1000))}.png"
         screenshots_directory: str = "../screenshots/"
         relative_path: str = f"{screenshots_directory}{file_name}"
@@ -55,8 +56,6 @@ class SeleniumDriver:
             self.log.error(f"PermissionError while saving screenshot: {e}")
         except OSError as e:
             self.log.error(f"OSError while saving screenshot: {e}")
-
-
 
     def get_title(self) -> str:
         """
@@ -250,7 +249,7 @@ class SeleniumDriver:
 
         Args:
             locator (str): The locator for the element to be found.
-            locator_type (str): Type of locator (id, name, xpath, etc). Default is "id".
+            locator_type (str): Type of locator (id, name, xpath, etc.). Default is "id".
             timeout (int): Duration to wait before timing out. Default is 10 seconds.
             poll_frequency (float): Frequency to poll the DOM. Default is 0.5 seconds.
 
@@ -259,7 +258,7 @@ class SeleniumDriver:
         """
         element = None
         try:
-            by_type = self.get_by_type(locator_type)
+            by_type: By = self.get_by_type(locator_type)
             self.log.info(f"Waiting for {timeout} seconds for element to appear: {locator}")
             wait = WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll_frequency, ignored_exceptions=[NoSuchElementException,
                                                                                            ElementNotVisibleException,
