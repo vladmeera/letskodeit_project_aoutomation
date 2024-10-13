@@ -1,9 +1,9 @@
 from time import sleep
-
+from base.basepage import BasePage
 from base.selenium_driver import SeleniumDriver
 from utilities.custom_logger import custom_logger as cl
 
-class LoginPage(SeleniumDriver):
+class LoginPage(SeleniumDriver, BasePage):
 
     log = cl()
 
@@ -65,7 +65,4 @@ class LoginPage(SeleniumDriver):
         return self.is_element_present(self._error_to_verify_password, "xpath")
 
     def verify_title(self):
-        if self.get_title() in self._titles:
-            return True
-        else:
-            return False
+        return self.verify_page_title(self._titles)
