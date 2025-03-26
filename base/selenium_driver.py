@@ -7,9 +7,7 @@ from selenium.common.exceptions import (
     ElementNotSelectableException,
     TimeoutException, WebDriverException, ElementNotInteractableException, StaleElementReferenceException,
 )
-from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver.remote.webelement import WebElement
-from typing import Optional
+
 from traceback import print_stack
 from utilities.custom_logger import custom_logger as cl
 from time import time
@@ -21,7 +19,7 @@ class SeleniumDriver:
 
     log = cl()
 
-    def __init__(self, driver: WebDriver):
+    def __init__(self, driver):
         """
         Initializes the SeleniumDriver instance with the provided Webdriver.
 
@@ -57,7 +55,7 @@ class SeleniumDriver:
         except OSError as e:
             self.log.error(f"OSError while saving screenshot: {e}")
 
-    def get_title(self) -> str:
+    def get_title(self):
         """
         Gets title of the current page.
 
@@ -66,30 +64,36 @@ class SeleniumDriver:
         title = self.driver.title
         return title
 
-    def get_by_type(self, locator_type: str) -> By:
+    def get_by_type(self, locator_type):
         """
         Get the Selenium By type based on a string identifier.
 
         :param locator_type: A string representing the type of locator (e.g., 'id', 'css_selector', 'xpath', etc.).
         :return: Corresponding Selenium By method for the provided locator type. Returns False if the locator type is not supported.
         """
+        list_of_locators = ("id", "name", "xpath", "css", "class", "link", "partial_link", "tag")
         locator_type = locator_type.lower()
-        by_types = {
-            "id": By.ID,
-            "name": By.NAME,
-            "xpath": By.XPATH,
-            "css": By.CSS_SELECTOR,
-            "class": By.CLASS_NAME,
-            "link": By.LINK_TEXT,
-            "partial_link": By.PARTIAL_LINK_TEXT,
-            "tag": By.TAG_NAME
-        }
-        by_type = by_types.get(locator_type, By.ID)
-        self.log.info(f"Using locator type: {locator_type}, parsed as By.{by_type}")
-        return by_type
 
-    # To find elements (default locator type is ID)
-    def get_element(self, locator: str, locator_type: str ="id") -> WebElement | None:
+        if locator_type in list_of_locators:
+            by_types = {
+                "id": By.ID,
+                "name": By.NAME,
+                "xpath": By.XPATH,
+                "css": By.CSS_SELECTOR,
+                "class": By.CLASS_NAME,
+                "link": By.LINK_TEXT,
+                "partial_link": By.PARTIAL_LINK_TEXT,
+                "tag": By.TAG_NAME
+            }
+            by_type = by_types.get(locator_type, By.ID)
+            self.log.info(f"Using locator type: {locator_type}, parsed as By.{by_type}")
+            return by_type
+        else:
+            self.log.warning(f"Wrong locator type: {locator_type}"
+                             f"List of all locators: {list_of_locators}")
+
+    # To find element (default locator type is ID)
+    def get_element(self, locator: str, locator_type: str ="id"):
         """
         Get a single web element
 
@@ -113,7 +117,7 @@ class SeleniumDriver:
         return element
 
 
-    def get_elements(self, locator: str, locator_type: str ="id") -> list[WebElement] | None:
+    def get_elements(self, locator, locator_type ="id"):
         """
         Attempts to locate multiple web elements using the specified locator and locator type.
 
@@ -133,7 +137,7 @@ class SeleniumDriver:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
         return None
 
-    def click_element(self, locator: str, locator_type: str ="id") -> None:
+    def click_element(self, locator, locator_type ="id"):
         """
         Attempts to click on a web element located by the specified locator and locator type.
 
@@ -142,17 +146,16 @@ class SeleniumDriver:
         :return: None
         :raises: NoSuchElementException if the element is not found. ElementNotInteractableException if the element is not interactable. StaleElementReferenceException if the element is no longer attached to the DOM. WebDriverException for any driver-related issues.
 
-        This method tries to find the specified web element and perform a click action on it.
-        It handles exceptions to ensure that the appropriate error message is displayed
-        if the element is not found or if there are driver-related issues.
         """
         try:
+
             element = self.get_element(locator, locator_type)
             if element:
                 element.click()
                 self.log.info(f"Clicked on element with locator: {locator} and locator_type: {locator_type}")
             else:
-                self.log.warning(f"Unable to click on element. Element with locator: {locator} and locator_type: {locator_type} not found.")
+                self.log.warning(f"Unable to click on element."
+                                 f"Element with locator: {locator} and locator_type: {locator_type} not found.")
         except NoSuchElementException:
             self.log.error(f"Element not found using locator: {locator} and locator_type: {locator_type}")
         except ElementNotInteractableException:
@@ -165,7 +168,7 @@ class SeleniumDriver:
             self.log.debug(f"An unexpected exception occurred: {str(e)}")
             print_stack()
 
-    def send_keys_element(self, text: str, locator: str, locator_type: str = "id") -> None:
+    def send_keys_element(self, text, locator, locator_type = "id"):
         """
         Attempts to send text to a web element located by the specified locator and locator type.
 
@@ -200,7 +203,7 @@ class SeleniumDriver:
             print_stack()
 
     # To make sure element is presented on the page
-    def is_element_present(self, locator: str, locator_type: str = "id") -> bool:
+    def is_element_present(self, locator: str, locator_type: str = "id"):
         """
         Checks if a specific web element is present on the page.
 
@@ -222,7 +225,7 @@ class SeleniumDriver:
         return False
 
     # To check if elements are on the page
-    def are_elements_present(self, locator: str, by_type: str = "id") -> bool:
+    def are_elements_present(self, locator, by_type = "id"):
         """
         Checks if one or more web elements are present on the page.
 
@@ -243,8 +246,8 @@ class SeleniumDriver:
             self.log.critical(f"WebDriverException occurred: {str(e)}")
         return False
 
-    def wait_for_element(self, locator: str, locator_type: str="id",
-                       timeout: int = 10, poll_frequency: float = 0.5) -> WebElement | None:
+    def wait_for_element(self, locator, locator_type ="id",
+                       timeout = 10, poll_frequency = 0.5):
         """Waits for an element to be visible on the web page.
 
         Args:
@@ -258,7 +261,7 @@ class SeleniumDriver:
         """
         element = None
         try:
-            by_type: By = self.get_by_type(locator_type)
+            by_type = self.get_by_type(locator_type)
             self.log.info(f"Waiting for {timeout} seconds for element to appear: {locator}")
             wait = WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll_frequency, ignored_exceptions=[NoSuchElementException,
                                                                                            ElementNotVisibleException,

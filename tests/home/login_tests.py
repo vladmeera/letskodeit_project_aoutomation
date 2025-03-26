@@ -2,21 +2,26 @@ from pages.home.login_page import LoginPage
 from unittest import TestCase
 from inspect import currentframe
 import pytest
-from utilities.test_status import TestStatus
+from utilities.test_status import StatusOfTest
+from utilities import custom_logger as cl
 import os
 
 
 @pytest.mark.usefixtures("one_time_setup", "setup")
 class LoginTest(TestCase):
 
+    cl = cl.custom_logger()
+
     @pytest.fixture(autouse=True)
     def before_each(self, one_time_setup):
         self.lp = LoginPage(self.driver)
-        self.ts = TestStatus(self.driver)
+        self.ts = StatusOfTest(self.driver)
 
     #Credentials
-    _email = os.environ.get('LETSKODEIT_EMAIL')
-    _password = os.environ.get('LETSKODEIT_PASS')
+    _credentials_list = {"email_correct": "mirgorodvld@gmail.com", "password_correct": "xnDi!1Bxi09bU",
+                        "email_incorrect": "vld_123456@gmail.com", "password_incorrect": "123456"}
+    # _email = "mirgorodvld@gmail.com"
+    # _password = "xnDi!1Bxi09bU"
 
 
     @pytest.mark.run(order=2)
@@ -26,12 +31,12 @@ class LoginTest(TestCase):
         valid login
         valid password
         """
-        print(f"Run {currentframe().f_code.co_name} test method")
+        self.cl.info(f"Run {currentframe().f_code.co_name} test method")
 
         self.lp.login(
-            email="{}".format(self._email),
-            password="{}".format(self._password))
-        result1 = self.lp.verify_title()
+            email="{}".format(self._credentials_list["email_incorrect"]),
+            password="{}".format(self._credentials_list["password_correct"]))
+        result1 = self.lp.verify_title(0)
         self.ts.mark(result1, "Title is not matching")
 
         result2 = self.lp.verify_login_successful()
@@ -45,10 +50,10 @@ class LoginTest(TestCase):
         no password
         """
 
-        print(f"Run {currentframe().f_code.co_name} test method")
+        self.cl.info(f"Run {currentframe().f_code.co_name} test method")
 
         self.lp.invalid_login(
-            email="{}".format(self._email))
+            email="{}".format(self._credentials_list["email_correct"]))
 
         result = self.lp.verify_login_unsuccessful()
         self.ts.mark_final("test_invalid_login" ,result, "Error message is not displayed")

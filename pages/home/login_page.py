@@ -1,11 +1,14 @@
 from time import sleep
 from base.basepage import BasePage
-from base.selenium_driver import SeleniumDriver
 from utilities.custom_logger import custom_logger as cl
+import os
 
-class LoginPage(SeleniumDriver, BasePage):
+class LoginPage(BasePage):
 
     log = cl()
+
+    _email = os.environ.get('LETSKODEIT_EMAIL')
+    _password = os.environ.get('LETSKODEIT_PASS')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -20,35 +23,47 @@ class LoginPage(SeleniumDriver, BasePage):
     _login_btn: str = "login" #id
 
     # Element occurs after successful login
-    _element_to_verify_login: str = "//button[@id='dropdownMenu1']" #xpath
+    _element_to_verify_login: str = "//div[@class='zen-course-title']" #xpath
 
     #Wrong password error
     _error_to_verify_password: str = "//span[text()='The password field is required.']" #xpath
 
     # Titles
-    _titles = ["Login"]
+    _titles = ["My Courses"]
+
+    #Valid login
+    valid_credentials = {"valid_login": "mirgorodvld@gmail.com", "valid_password": "xnDi!1Bxi09bU"}
 
 
 
-    def click_login_link(self) -> None:
+    def click_login_link(self):
         self.click_element(self._login_link, "xpath")
 
-    def enter_email(self, email: str) -> None:
-        self.send_keys_element(email, self._email_field)
+    def enter_email(self, email):
+        if email == self.valid_credentials["valid_login"]:
+            self.log.info(f"{"*" * 20}Entered email ({email}) is correct{"*" * 20}")
+            self.send_keys_element(email, self._email_field)
+        else:
+            self.log.warning(f"{"!" * 20}Entered password ({email}) is INCORRECT{"!" * 20}")
 
-    def enter_password(self, password: str) -> None:
-        self.send_keys_element(password, self._password_field)
+    def enter_password(self, password):
+        if password == self.valid_credentials["valid_password"]:
+            self.log.info(f"{"*" * 20}Entered password ({password}) is correct!{"*" * 20}")
+            self.send_keys_element(password, self._password_field)
 
-    def click_login_btn(self) -> None:
+    def click_login_btn(self):
         self.click_element(self._login_btn)
+    def wait_until_presented(self):
+        self.wait_for_element("//div[@class='zen-course-title']", "xpath")
 
 
-    def login(self, email: str, password: str) -> None:
+    def login(self, email: str, password: str):
         self.click_login_link()
         self.enter_email(email)
         self.enter_password(password)
-        sleep(2)
         self.click_login_btn()
+        self.wait_until_presented()
+
 
     def verify_login_successful(self) -> bool:
         return self.is_element_present(self._element_to_verify_login, "xpath")
@@ -58,11 +73,11 @@ class LoginPage(SeleniumDriver, BasePage):
         self.click_login_link()
         self.enter_email(email)
         self.enter_password(password)
-        sleep(2)
         self.click_login_btn()
+
 
     def verify_login_unsuccessful(self) -> bool:
         return self.is_element_present(self._error_to_verify_password, "xpath")
 
-    def verify_title(self):
-        return self.verify_page_title(self._titles)
+    def verify_title(self, title_number):
+        return self.verify_page_title(self._titles[title_number])
