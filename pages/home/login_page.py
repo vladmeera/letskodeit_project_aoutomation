@@ -1,4 +1,3 @@
-from time import sleep
 from base.basepage import BasePage
 from utilities.custom_logger import custom_logger as cl
 import os
@@ -32,7 +31,8 @@ class LoginPage(BasePage):
     _titles = ["My Courses"]
 
     #Valid login
-    valid_credentials = {"valid_login": "mirgorodvld@gmail.com", "valid_password": "xnDi!1Bxi09bU"}
+    _credentials = {"valid_login": "mirgorodvld@gmail.com", "valid_password": "xnDi!1Bxi09bU",
+                    "invalid_login": "vld_123456@gmail.com", "invalid_password": "123456"}
 
 
 
@@ -40,19 +40,25 @@ class LoginPage(BasePage):
         self.click_element(self._login_link, "xpath")
 
     def enter_email(self, email):
-        if email == self.valid_credentials["valid_login"]:
+        if email == self._credentials["valid_login"]:
             self.log.info(f"{"*" * 20}Entered email ({email}) is correct{"*" * 20}")
             self.send_keys_element(email, self._email_field)
         else:
             self.log.warning(f"{"!" * 20}Entered password ({email}) is INCORRECT{"!" * 20}")
 
-    def enter_password(self, password):
-        if password == self.valid_credentials["valid_password"]:
+    def enter_password(self, password = ""):
+        if password == self._credentials["valid_password"]:
             self.log.info(f"{"*" * 20}Entered password ({password}) is correct!{"*" * 20}")
             self.send_keys_element(password, self._password_field)
 
+        elif password == self._credentials["invalid_password"]:
+            self.log.info(f"{"*" * 20}Entered invalid password ({password}) is correct!{"*" * 20}")
+            self.send_keys_element(password, self._password_field)
+
+
     def click_login_btn(self):
         self.click_element(self._login_btn)
+
     def wait_until_presented(self):
         self.wait_for_element("//div[@class='zen-course-title']", "xpath")
 
@@ -69,7 +75,7 @@ class LoginPage(BasePage):
         return self.is_element_present(self._element_to_verify_login, "xpath")
 
 
-    def invalid_login(self, email: str, password: str = "") -> None:
+    def invalid_login(self, email = "", password = ""):
         self.click_login_link()
         self.enter_email(email)
         self.enter_password(password)

@@ -6,8 +6,8 @@ log = cl()
 
 @pytest.fixture(scope='class')
 def one_time_setup(request, browser):
-    wdf = WebDriverFactory(browser)
-    driver = wdf.get_webdriver()
+    web_driver = WebDriverFactory(browser)
+    driver = web_driver.get_webdriver()
     if request.cls is not None:
         request.cls.driver = driver
     yield driver

@@ -13,24 +13,25 @@ import random, string
 import utilities.custom_logger as cl
 from logging import DEBUG
 
+
 class Util(object):
 
     log = cl.custom_logger(DEBUG)
 
-    def sleep(self, seconds: int, info: str = "") -> None:
+    def sleep(self, seconds, message = "") -> None:
         """
         Put the program to wait for the specified time
         """
 
-        if info is not None:
-            self.log.info(f"Wait :: {seconds} :: for :: {info}")
+        if message is not None:
+            self.log.info(f"Wait :: {seconds} :: for :: {message}")
         try:
             time.sleep(seconds)
         except InterruptedError as e:
             self.log.error(f"| INTERRUPTED ERROR | {e}")
             traceback.print_stack()
 
-    def get_alpha_numeric(self, length: int, char_type: str ="letters") -> str:
+    def get_alpha_numeric(self, length, char_type ="letters") -> str:
         """
         Get random string of characters
 
@@ -53,7 +54,7 @@ class Util(object):
             case = string.ascii_letters
         return alpha_num.join(random.choice(case) for i in range(length))
 
-    def get_unique_name(self, char_count: int = 5) -> str:
+    def get_unique_name(self, char_count: int = 5):
         """
         Get unique name
 

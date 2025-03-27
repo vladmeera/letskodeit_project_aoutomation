@@ -10,12 +10,12 @@ import os
 @pytest.mark.usefixtures("one_time_setup", "setup")
 class LoginTest(TestCase):
 
-    cl = cl.custom_logger()
+    log = cl.custom_logger()
 
     @pytest.fixture(autouse=True)
     def before_each(self, one_time_setup):
-        self.lp = LoginPage(self.driver)
-        self.ts = StatusOfTest(self.driver)
+        self.login_page = LoginPage(self.driver)
+        self.status_test = StatusOfTest(self.driver)
 
     #Credentials
     _credentials_list = {"email_correct": "mirgorodvld@gmail.com", "password_correct": "xnDi!1Bxi09bU",
@@ -28,32 +28,45 @@ class LoginTest(TestCase):
     def test_valid_login(self) -> None:
         """
         Happy path
-        valid login
+        valid email
         valid password
         """
-        self.cl.info(f"Run {currentframe().f_code.co_name} test method")
+        self.log.info(f"Run {currentframe().f_code.co_name} test method")
 
-        self.lp.login(
+        self.login_page.login(
             email="{}".format(self._credentials_list["email_incorrect"]),
             password="{}".format(self._credentials_list["password_correct"]))
-        result1 = self.lp.verify_title(0)
-        self.ts.mark(result1, "Title is not matching")
+        result1 = self.login_page.verify_title(0)
+        self.status_test.mark(result1, "Title is not matching")
 
-        result2 = self.lp.verify_login_successful()
-        self.ts.mark_final("test_valid_login" ,result2, "Login is not successful")
+        result2 = self.login_page.verify_login_successful()
+        self.status_test.mark_final("test_valid_login" ,result2, "Login is not successful")
 
     @pytest.mark.run(order=1)
-    def test_invalid_login_pass(self) -> None:
+    def test_invalid_login_no_pass(self) -> None:
         """
-        Invalid login
-        valid login
-        no password
+        Invalid login - negative
+            valid email
+
+            no password
         """
 
-        self.cl.info(f"Run {currentframe().f_code.co_name} test method")
+        self.log.info(f"Run {currentframe().f_code.co_name} test method")
 
-        self.lp.invalid_login(
+        self.login_page.invalid_login(
             email="{}".format(self._credentials_list["email_correct"]))
 
-        result = self.lp.verify_login_unsuccessful()
-        self.ts.mark_final("test_invalid_login" ,result, "Error message is not displayed")
+        result = self.login_page.verify_login_unsuccessful()
+        self.status_test.mark_final("test_invalid_login" ,result, "Error message is not displayed")
+
+    def test_invalid_login_wrong_pass(self):
+        """
+        Invalid login - negative
+            valid email
+
+            wrong password
+        """
+
+        self.log.info(f"Run {currentframe().f_code.co_name} test method")
+
+        self.login_page.go_back()

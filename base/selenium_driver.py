@@ -13,6 +13,9 @@ from utilities.custom_logger import custom_logger as cl
 from time import time
 from datetime import datetime, date
 import os
+# from selenium import webdriver
+# dr = webdriver.Chrome()
+# dr.back()
 
 
 class SeleniumDriver:
@@ -26,6 +29,12 @@ class SeleniumDriver:
         :param driver: The Selenium WebDriver instance used to interact with web elements.
         """
         self.driver = driver
+
+    def go_back(self):
+        try:
+            self.driver.back()
+        except Exception as e:
+            self.log.error(f"Error occurred - {e}")
 
     def screenshot(self, result_message: str = ""):
         """
