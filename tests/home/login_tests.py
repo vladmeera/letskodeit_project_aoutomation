@@ -4,7 +4,6 @@ from inspect import currentframe
 import pytest
 from utilities.test_status import StatusOfTest
 from utilities import custom_logger as cl
-import os
 
 
 @pytest.mark.usefixtures("one_time_setup", "setup")
@@ -17,56 +16,56 @@ class LoginTest(TestCase):
         self.login_page = LoginPage(self.driver)
         self.status_test = StatusOfTest(self.driver)
 
-    #Credentials
-    _credentials_list = {"email_correct": "mirgorodvld@gmail.com", "password_correct": "xnDi!1Bxi09bU",
-                        "email_incorrect": "vld_123456@gmail.com", "password_incorrect": "123456"}
-    # _email = "mirgorodvld@gmail.com"
-    # _password = "xnDi!1Bxi09bU"
 
 
-    @pytest.mark.run(order=2)
-    def test_valid_login(self) -> None:
+    # @pytest.mark.run(order=2)
+    def test_02_valid_login(self):
         """
-        Happy path
-        valid email
-        valid password
-        """
-        self.log.info(f"Run {currentframe().f_code.co_name} test method")
+        Test name - valid login (positive)
 
-        self.login_page.login(
-            email="{}".format(self._credentials_list["email_incorrect"]),
-            password="{}".format(self._credentials_list["password_correct"]))
-        result1 = self.login_page.verify_title(0)
-        self.status_test.mark(result1, "Title is not matching")
+        Valid email
+
+        Valid password
+        """
+        self.log.info(f"   -------> Running {currentframe().f_code.co_name} test method <-------")
+        self.log.info(f"---------------------------------------------------------------------")
+
+        self.login_page.successful_login()
+
+        result1 = self.login_page.verify_title_my_courses()
+        self.status_test.mark(1, 3, result1,
+                              "Title matches the original",
+                              "Title does not match the original")
 
         result2 = self.login_page.verify_login_successful()
-        self.status_test.mark_final("test_valid_login" ,result2, "Login is not successful")
+        self.status_test.mark(2, 3,
+                            result2,
+                            "Login is successful, my courses were on the page",
+                            "Login was not successful, my courses were not presented on the page")
 
-    @pytest.mark.run(order=1)
-    def test_invalid_login_no_pass(self) -> None:
+        result3 = self.login_page.verify_login_successful_avatar()
+        self.status_test.mark_final(3, 3,
+                                    "test_02_valid_login",
+                                    result3,
+                                    "Login was successful, avatar was presented on the page",
+                                    "Login was not successful, avatar was not presented on the page")
+
+    # @pytest.mark.run(order=1)
+    def test_01_invalid_login_no_pass(self):
         """
         Invalid login - negative
-            valid email
 
-            no password
+        valid email
+
+        no password
         """
+        self.log.info(f"   -------> Running {currentframe().f_code.co_name} test method <-------")
+        self.log.info(f"---------------------------------------------------------------------")
 
-        self.log.info(f"Run {currentframe().f_code.co_name} test method")
-
-        self.login_page.invalid_login(
-            email="{}".format(self._credentials_list["email_correct"]))
+        self.login_page.unsuccessful_login_no_pass()
 
         result = self.login_page.verify_login_unsuccessful()
-        self.status_test.mark_final("test_invalid_login" ,result, "Error message is not displayed")
-
-    def test_invalid_login_wrong_pass(self):
-        """
-        Invalid login - negative
-            valid email
-
-            wrong password
-        """
-
-        self.log.info(f"Run {currentframe().f_code.co_name} test method")
-
-        self.login_page.go_back()
+        self.status_test.mark_final(1, 1, "test_01_invalid_login_no_pass"
+                                    ,result,
+                                    "Error message is displayed",
+                                    "Error message is not displayed")

@@ -11,6 +11,7 @@ import time
 import traceback
 import random, string
 import utilities.custom_logger as cl
+import openpyxl
 from logging import DEBUG
 
 
@@ -63,32 +64,46 @@ class Util(object):
         """
         return self.get_alpha_numeric(char_count, char_type="lower")
 
-    def verify_text_contains(self, actual_text: str, expected_text: str ) -> bool:
+    def verify_text_contains(self, actual_text, expected_text):
         """
         Verify actual text contains expected text
 
         :return: True/False
         """
-        self.log.info(f"Actual text from application --> | {actual_text} |")
-        self.log.info(f"Expected text from test case --> | {expected_text} |")
+        self.log.info(f"------------------------------------------------------------------------")
+        self.log.info(f"---------------------| VERIFYING TEXT |---------------------------------")
+
+        self.log.info(f"--> Actual text from application --> | {actual_text} |")
+        self.log.info(f"->> Expected text from test case ->> | {expected_text} |")
         if expected_text.lower() in actual_text.lower():
-            self.log.info(f"!!! VERIFICATION PASSED !!! ACTUAL TEXT CONTAINS EXPECTED TEXT !!!")
+            self.log.info(f"{"-" * 10}VERIFICATION PASSED --> ACTUAL TEXT CONTAINS EXPECTED TEXT{"-" * 10}")
+            self.log.info(f"------------------------------------------------------------------------")
             return True
         else:
-            self.log.info(f"!!! VERIFICATION FAILED !!! ACTUAL TEXT DOES NOT CONTAIN EXPECTED TEXT !!!")
+            self.log.warning(
+                f"{"*" * 10}VERIFICATION FAILED --> ACTUAL TEXT DOES NOT CONTAIN EXPECTED TEXT{"*" * 10}")
+            self.log.info(f"------------------------------------------------------------------------")
+
             return False
 
-    def verify_text_match(self, actual_text: str, expected_text: str ) -> bool:
+    def verify_text_match(self, actual_text, expected_text):
         """
         Verify actual text matches with expected text
 
         :return: True/False
         """
-        self.log.info(f"Actual text from application --> | {actual_text} |")
-        self.log.info(f"Expected text from test case --> | {expected_text} |")
+        self.log.info(f"------------------------------------------------------------------------")
+        self.log.info(f"---------------------| VERIFYING TEXT |---------------------------------")
+
+        self.log.info(f"--> Actual text from application --> | {actual_text} |")
+        self.log.info(f"->> Expected text from test case --> | {expected_text} |")
         if actual_text.lower() == expected_text.lower():
-            self.log.info(f"!!! VERIFICATION PASSED !!! ACTUAL TEXT MATCHES EXPECTED TEXT !!!")
+            self.log.info(f"{"-" * 10}VERIFICATION PASSED --> ACTUAL TEXT CONTAINS EXPECTED TEXT{"-" * 10}")
+            self.log.info(f"------------------------------------------------------------------------")
             return True
         else:
-            self.log.info(f"!!! VERIFICATION FAILED !!! ACTUAL TEXT DOES NOT MATCH EXPECTED TEXT !!!")
+            self.log.warning(
+                f"{"*" * 10}VERIFICATION FAILED --> ACTUAL TEXT DOES NOT CONTAIN EXPECTED TEXT{"*" * 10}")
+            self.log.info(f"------------------------------------------------------------------------")
+
             return False

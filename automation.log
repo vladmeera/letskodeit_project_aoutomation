@@ -1,306 +1,238 @@
-03/25/2025 01:08:21 PM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
-03/25/2025 01:08:21 PM - WebDriverFactory - WARNING - Running tests on chrome
-03/25/2025 01:08:21 PM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
-03/25/2025 01:08:22 PM - LoginTest - INFO - Run test_invalid_login_pass test method
-03/25/2025 01:08:22 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:08:22 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:08:22 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:08:22 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:08:22 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:08:22 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:08:22 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:08:22 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:08:22 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:08:24 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:08:24 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:08:24 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:08:24 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:08:24 PM - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:08:24 PM - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:08:24 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:08:24 PM - StatusOfTest - INFO - test_invalid_login !!! PASSED !!!
-03/25/2025 01:08:24 PM - LoginTest - INFO - Run test_valid_login test method
-03/25/2025 01:08:24 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:08:24 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:08:25 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:08:25 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:08:25 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:08:25 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:08:25 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:08:25 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:08:25 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:08:27 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:08:27 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:08:27 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:08:27 PM - Util - INFO - Actual text from application --> | Login |
-03/25/2025 01:08:27 PM - Util - INFO - Expected text from test case --> | Login |
-03/25/2025 01:08:27 PM - Util - INFO - !!! VERIFICATION PASSED !!! ACTUAL TEXT CONTAINS EXPECTED TEXT !!!
-03/25/2025 01:08:27 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:08:27 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:08:28 PM - LoginPage - INFO - Found element with locator: //button[@id='dropdownMenu1'] and locator_type: xpath
-03/25/2025 01:08:28 PM - LoginPage - INFO - Element is presented using locator: //button[@id='dropdownMenu1'] and locator_type: xpath
-03/25/2025 01:08:28 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:08:28 PM - StatusOfTest - INFO - test_valid_login !!! PASSED !!!
-03/25/2025 01:20:20 PM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
-03/25/2025 01:20:20 PM - WebDriverFactory - WARNING - Running tests on chrome
-03/25/2025 01:20:20 PM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
-03/25/2025 01:20:21 PM - LoginTest - INFO - Run test_invalid_login_pass test method
-03/25/2025 01:20:21 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:20:21 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:20:22 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:20:22 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:20:22 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:20:22 PM - LoginPage - INFO - Waiting for 10 seconds for element to appear: //div[@class='zen-course-title']
-03/25/2025 01:20:33 PM - LoginPage - WARNING - Element did not appear on the web page within 10 seconds.
-03/25/2025 01:20:33 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:20:33 PM - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:20:33 PM - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:20:33 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:20:33 PM - StatusOfTest - INFO - test_invalid_login !!! PASSED !!!
-03/25/2025 01:20:33 PM - LoginTest - INFO - Run test_valid_login test method
-03/25/2025 01:20:33 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:20:33 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:20:33 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:20:33 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:20:33 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:20:33 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:20:33 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:20:33 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:20:33 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:20:35 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:20:35 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:20:35 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:20:35 PM - Util - INFO - Actual text from application --> | Login |
-03/25/2025 01:20:35 PM - Util - INFO - Expected text from test case --> | My Courses |
-03/25/2025 01:20:35 PM - Util - INFO - !!! VERIFICATION FAILED !!! ACTUAL TEXT DOES NOT CONTAIN EXPECTED TEXT !!!
-03/25/2025 01:20:35 PM - StatusOfTest - WARNING - | TEST FAILED | Title is not matching
-03/25/2025 01:20:35 PM - StatusOfTest - INFO - Screenshot saved to: /Users/vmeergo/Documents/workspace_p/letskodeit_project_aoutomation/base/../screenshots/Title is not matching_2025-03-25_1742923235478.png. Name of screenshot: Title is not matching_2025-03-25_1742923235478.png
-03/25/2025 01:20:35 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:20:36 PM - LoginPage - INFO - Found element with locator: //button[@id='dropdownMenu1'] and locator_type: xpath
-03/25/2025 01:20:36 PM - LoginPage - INFO - Element is presented using locator: //button[@id='dropdownMenu1'] and locator_type: xpath
-03/25/2025 01:20:36 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:20:36 PM - StatusOfTest - ERROR - test_valid_login !!! FAILED !!!
-03/25/2025 01:27:12 PM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
-03/25/2025 01:27:12 PM - WebDriverFactory - WARNING - Running tests on chrome
-03/25/2025 01:27:12 PM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
-03/25/2025 01:27:12 PM - LoginTest - INFO - Run test_invalid_login_pass test method
-03/25/2025 01:27:12 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:27:13 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:27:13 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:27:13 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:27:13 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:27:13 PM - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:27:13 PM - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:27:13 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:27:13 PM - StatusOfTest - INFO - test_invalid_login !!! PASSED !!!
-03/25/2025 01:27:13 PM - LoginTest - INFO - Run test_valid_login test method
-03/25/2025 01:27:13 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:27:13 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:27:14 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:27:14 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:27:14 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:27:14 PM - LoginPage - INFO - Waiting for 10 seconds for element to appear: //div[@class='zen-course-title']
-03/25/2025 01:27:15 PM - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:27:15 PM - Util - INFO - Actual text from application --> | My Courses |
-03/25/2025 01:27:15 PM - Util - INFO - Expected text from test case --> | My Courses |
-03/25/2025 01:27:15 PM - Util - INFO - !!! VERIFICATION PASSED !!! ACTUAL TEXT CONTAINS EXPECTED TEXT !!!
-03/25/2025 01:27:15 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:27:15 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:27:15 PM - LoginPage - INFO - Found element with locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:27:15 PM - LoginPage - INFO - Element is presented using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:27:15 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:27:15 PM - StatusOfTest - INFO - test_valid_login !!! PASSED !!!
-03/25/2025 01:30:10 PM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
-03/25/2025 01:30:10 PM - WebDriverFactory - WARNING - Running tests on chrome
-03/25/2025 01:30:10 PM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
-03/25/2025 01:30:11 PM - LoginTest - INFO - Run test_01_valid_login test method
-03/25/2025 01:30:11 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:30:11 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:30:11 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:30:11 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:30:11 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:30:11 PM - LoginPage - INFO - Waiting for 10 seconds for element to appear: //div[@class='zen-course-title']
-03/25/2025 01:30:12 PM - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:30:12 PM - Util - INFO - Actual text from application --> | My Courses |
-03/25/2025 01:30:12 PM - Util - INFO - Expected text from test case --> | My Courses |
-03/25/2025 01:30:12 PM - Util - INFO - !!! VERIFICATION PASSED !!! ACTUAL TEXT CONTAINS EXPECTED TEXT !!!
-03/25/2025 01:30:12 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:30:12 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:30:12 PM - LoginPage - INFO - Found element with locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:30:12 PM - LoginPage - INFO - Element is presented using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:30:12 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:30:12 PM - StatusOfTest - INFO - test_valid_login !!! PASSED !!!
-03/25/2025 01:30:12 PM - LoginTest - INFO - Run test_02_invalid_login_pass test method
-03/25/2025 01:30:12 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:30:18 PM - LoginPage - ERROR - Element not found using locator: //a[text()='Sign In'] and locator type: xpath
-03/25/2025 01:30:18 PM - LoginPage - WARNING - Unable to click on element. Element with locator: //a[text()='Sign In'] and locator_type: xpath not found.
-03/25/2025 01:30:18 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:30:18 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:30:23 PM - LoginPage - ERROR - Element not interactable using locator: email and locator_type: id
-03/25/2025 01:30:23 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:30:28 PM - LoginPage - ERROR - Element not found using locator: login-password and locator type: id
-03/25/2025 01:30:28 PM - LoginPage - WARNING - Unable to send keys to element. Element with locator: login-password and locator_type: id not found.
-03/25/2025 01:30:28 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:30:32 PM - LoginPage - DEBUG - An unexpected exception occurred: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-03/25/2025 01:30:32 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:31:36 PM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
-03/25/2025 01:31:36 PM - WebDriverFactory - WARNING - Running tests on chrome
-03/25/2025 01:31:36 PM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
-03/25/2025 01:31:36 PM - LoginTest - INFO - Run test_valid_login test method
-03/25/2025 01:31:36 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:31:37 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:31:37 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:31:37 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:31:37 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:31:37 PM - LoginPage - INFO - Waiting for 10 seconds for element to appear: //div[@class='zen-course-title']
-03/25/2025 01:31:38 PM - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:31:38 PM - Util - INFO - Actual text from application --> | My Courses |
-03/25/2025 01:31:38 PM - Util - INFO - Expected text from test case --> | My Courses |
-03/25/2025 01:31:38 PM - Util - INFO - !!! VERIFICATION PASSED !!! ACTUAL TEXT CONTAINS EXPECTED TEXT !!!
-03/25/2025 01:31:38 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:31:38 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:31:38 PM - LoginPage - INFO - Found element with locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:31:38 PM - LoginPage - INFO - Element is presented using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:31:38 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:31:38 PM - StatusOfTest - INFO - test_valid_login !!! PASSED !!!
-03/25/2025 01:31:38 PM - LoginTest - INFO - Run test_invalid_login_pass test method
-03/25/2025 01:31:38 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:31:42 PM - LoginPage - DEBUG - An unexpected exception occurred: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-03/25/2025 01:31:42 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:31:42 PM - LoginPage - CRITICAL - An unexpected exception occurred: HTTPConnectionPool(host='localhost', port=58129): Max retries exceeded with url: /session/5f8f26c9b423a41da66da2a8a3cb2a41/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1046890f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
-03/25/2025 01:31:42 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:31:42 PM - LoginPage - CRITICAL - An unexpected exception occurred: HTTPConnectionPool(host='localhost', port=58129): Max retries exceeded with url: /session/5f8f26c9b423a41da66da2a8a3cb2a41/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1046f0f30>: Failed to establish a new connection: [Errno 61] Connection refused'))
-03/25/2025 01:31:42 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:31:42 PM - LoginPage - DEBUG - An unexpected exception occurred: HTTPConnectionPool(host='localhost', port=58129): Max retries exceeded with url: /session/5f8f26c9b423a41da66da2a8a3cb2a41/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1046f1e10>: Failed to establish a new connection: [Errno 61] Connection refused'))
-03/25/2025 01:31:42 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:47:10 PM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
-03/25/2025 01:47:10 PM - WebDriverFactory - WARNING - Running tests on chrome
-03/25/2025 01:47:10 PM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
-03/25/2025 01:47:11 PM - LoginTest - INFO - Run test_invalid_login_pass test method
-03/25/2025 01:47:11 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:47:11 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 01:47:12 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:47:12 PM - StatusOfTest - INFO - test_invalid_login !!! PASSED !!!
-03/25/2025 01:47:12 PM - LoginTest - INFO - Run test_valid_login test method
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 01:47:12 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:47:12 PM - LoginPage - INFO - Waiting for 10 seconds for element to appear: //div[@class='zen-course-title']
-03/25/2025 01:47:13 PM - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:47:13 PM - Util - INFO - Actual text from application --> | My Courses |
-03/25/2025 01:47:13 PM - Util - INFO - Expected text from test case --> | My Courses |
-03/25/2025 01:47:13 PM - Util - INFO - !!! VERIFICATION PASSED !!! ACTUAL TEXT CONTAINS EXPECTED TEXT !!!
-03/25/2025 01:47:13 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:47:13 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 01:47:13 PM - LoginPage - INFO - Found element with locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:47:13 PM - LoginPage - INFO - Element is presented using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 01:47:13 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 01:47:13 PM - StatusOfTest - INFO - test_valid_login !!! PASSED !!!
-03/25/2025 10:41:27 PM - WebDriverFactory - WARNING - ######################### NEW SESSION STARTED #########################
-03/25/2025 10:41:27 PM - WebDriverFactory - WARNING - Running tests on chrome
-03/25/2025 10:41:27 PM - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
-03/25/2025 10:41:29 PM - LoginTest - INFO - Run test_invalid_login_pass test method
-03/25/2025 10:41:29 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 10:41:29 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - *****Entered email is correct!*****
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
-03/25/2025 10:41:30 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 10:41:30 PM - StatusOfTest - INFO - test_invalid_login !!! PASSED !!!
-03/25/2025 10:41:30 PM - LoginTest - INFO - Run test_valid_login test method
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - Clicked on element with locator: //a[text()='Sign In'] and locator_type: xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - *****Entered email is correct!*****
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Found element with locator: email and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Sent keys to element with locator: email and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Found element with locator: login-password and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Sent keys to element with locator: login-password and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: id, parsed as By.id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Found element with locator: login and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Clicked on element with locator: login and locator_type: id
-03/25/2025 10:41:30 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 10:41:30 PM - LoginPage - INFO - Waiting for 10 seconds for element to appear: //div[@class='zen-course-title']
-03/25/2025 10:41:31 PM - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 10:41:31 PM - Util - INFO - Actual text from application --> | My Courses |
-03/25/2025 10:41:31 PM - Util - INFO - Expected text from test case --> | My Courses |
-03/25/2025 10:41:31 PM - Util - INFO - !!! VERIFICATION PASSED !!! ACTUAL TEXT CONTAINS EXPECTED TEXT !!!
-03/25/2025 10:41:31 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 10:41:31 PM - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
-03/25/2025 10:41:31 PM - LoginPage - INFO - Found element with locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 10:41:31 PM - LoginPage - INFO - Element is presented using locator: //div[@class='zen-course-title'] and locator_type: xpath
-03/25/2025 10:41:31 PM - StatusOfTest - INFO - | TEST SUCCESSFUL | 
-03/25/2025 10:41:31 PM - StatusOfTest - INFO - test_valid_login !!! PASSED !!!
+04/24/2025 18:53:56 - WebDriverFactory - WARNING -                     
+04/24/2025 18:53:56 - WebDriverFactory - WARNING - ########################################################################################################################
+04/24/2025 18:53:56 - WebDriverFactory - WARNING - ##################################################NEW SESSION STARTED##################################################
+04/24/2025 18:53:56 - WebDriverFactory - WARNING - ########################################################################################################################
+04/24/2025 18:53:56 - WebDriverFactory - WARNING -                     
+04/24/2025 18:53:56 - WebDriverFactory - WARNING - Running tests on chrome
+04/24/2025 18:53:56 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/24/2025 18:53:57 - <module> - WARNING -    
+04/24/2025 18:53:57 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:53:57 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/24/2025 18:53:57 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:53:57 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+04/24/2025 18:53:57 - LoginTest - INFO - ---------------------------------------------------------------------
+04/24/2025 18:53:57 - ExcelLocators - INFO - Locator was found using |> login link | name |> on --> ***start*** page
+04/24/2025 18:53:57 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:57 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:53:57 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/24/2025 18:53:58 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:53:58 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:53:58 - LoginPage - INFO -    
+04/24/2025 18:53:58 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/24/2025 18:53:58 - ExcelLocators - INFO - Locator was found using |> email field | name |> on --> ***login*** page
+04/24/2025 18:53:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:53:58 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/24/2025 18:53:58 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/24/2025 18:53:58 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/24/2025 18:53:58 - LoginPage - INFO -    
+04/24/2025 18:53:58 - ExcelLocators - INFO - Locator was found using |> login button | name |> on --> ***login*** page
+04/24/2025 18:53:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:58 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/24/2025 18:53:58 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/24/2025 18:53:58 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:53:58 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:53:58 - LoginPage - INFO -    
+04/24/2025 18:53:58 - ExcelLocators - INFO - Locator was found using |> error to verify no pass | name |> on --> ***login*** page
+04/24/2025 18:53:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:53:58 - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
+04/24/2025 18:53:58 - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
+04/24/2025 18:53:58 - StatusOfTest - INFO - --> --> --> | TEST 1/1 SUCCESSFUL | Error message is displayed <-- <-- <--
+04/24/2025 18:53:58 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:53:58 - StatusOfTest - INFO - --> --> --> | test_01_invalid_login_no_pass | TEST SUCCESSFUL | <-- <-- <--
+04/24/2025 18:53:58 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:53:58 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:53:58 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/24/2025 18:53:58 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:53:58 - <module> - WARNING -    
+04/24/2025 18:53:58 - <module> - WARNING -    
+04/24/2025 18:53:58 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:53:58 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/24/2025 18:53:58 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:53:58 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+04/24/2025 18:53:58 - LoginTest - INFO - ---------------------------------------------------------------------
+04/24/2025 18:53:58 - ExcelLocators - INFO - Locator was found using |> login link | name |> on --> ***start*** page
+04/24/2025 18:53:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:53:58 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/24/2025 18:53:58 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:53:58 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:53:58 - LoginPage - INFO -    
+04/24/2025 18:53:58 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/24/2025 18:53:58 - ExcelLocators - INFO - Locator was found using |> email field | name |> on --> ***login*** page
+04/24/2025 18:53:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:53:58 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/24/2025 18:53:58 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/24/2025 18:53:58 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/24/2025 18:53:58 - LoginPage - INFO -    
+04/24/2025 18:53:58 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/24/2025 18:53:58 - ExcelLocators - INFO - Locator was found using |> password field | name |> on --> ***login*** page
+04/24/2025 18:53:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:58 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/24/2025 18:53:58 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/24/2025 18:53:59 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/24/2025 18:53:59 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/24/2025 18:53:59 - LoginPage - INFO -    
+04/24/2025 18:53:59 - ExcelLocators - INFO - Locator was found using |> login button | name |> on --> ***login*** page
+04/24/2025 18:53:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:59 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/24/2025 18:53:59 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/24/2025 18:53:59 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:53:59 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:53:59 - LoginPage - INFO -    
+04/24/2025 18:53:59 - ExcelLocators - INFO - Locator was found using |> element to verify login | name |> on --> ***my courses*** page
+04/24/2025 18:53:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:53:59 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/24/2025 18:53:59 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/24/2025 18:53:59 - ExcelLocators - INFO - Locator was found using |> title my courses page | name |> on --> ***my courses*** page
+04/24/2025 18:53:59 - Util - INFO - ------------------------------------------------------------------------
+04/24/2025 18:53:59 - Util - INFO - ---------------------| VERIFYING TEXT |---------------------------------
+04/24/2025 18:53:59 - Util - INFO - --> Actual text from application --> | My Courses |
+04/24/2025 18:53:59 - Util - INFO - ->> Expected text from test case ->> | My Courses |
+04/24/2025 18:53:59 - Util - INFO - ----------VERIFICATION PASSED --> ACTUAL TEXT CONTAINS EXPECTED TEXT----------
+04/24/2025 18:53:59 - Util - INFO - ------------------------------------------------------------------------
+04/24/2025 18:53:59 - StatusOfTest - INFO - --> --> --> | TEST 1/3 SUCCESSFUL | Title matches the original <-- <-- <--
+04/24/2025 18:53:59 - ExcelLocators - INFO - Locator was found using |> element to verify login | name |> on --> ***my courses*** page
+04/24/2025 18:53:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:53:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:53:59 - LoginPage - INFO - Found element with locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/24/2025 18:53:59 - LoginPage - INFO - Element is presented using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/24/2025 18:53:59 - StatusOfTest - INFO - --> --> --> | TEST 2/3 SUCCESSFUL | Login is successful, my courses were on the page <-- <-- <--
+04/24/2025 18:54:00 - ExcelLocators - INFO - Locator was found using |> element to verify login avatar | name |> on --> ***my courses*** page
+04/24/2025 18:54:00 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:54:00 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:54:00 - LoginPage - INFO - Found element with locator: //div[@class='dropdown']//img and locator_type: xpath
+04/24/2025 18:54:00 - LoginPage - INFO - Element is presented using locator: //div[@class='dropdown']//img and locator_type: xpath
+04/24/2025 18:54:00 - StatusOfTest - INFO - --> --> --> | TEST 3/3 SUCCESSFUL | Login was successful, avatar was presented on the page <-- <-- <--
+04/24/2025 18:54:00 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:54:00 - StatusOfTest - INFO - --> --> --> | test_02_valid_login | TEST SUCCESSFUL | <-- <-- <--
+04/24/2025 18:54:00 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:54:00 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:54:00 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/24/2025 18:54:00 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:54:00 - <module> - WARNING -    
+04/24/2025 18:56:57 - WebDriverFactory - WARNING -                     
+04/24/2025 18:56:57 - WebDriverFactory - WARNING - ########################################################################################################################
+04/24/2025 18:56:57 - WebDriverFactory - WARNING - ##################################################NEW SESSION STARTED##################################################
+04/24/2025 18:56:57 - WebDriverFactory - WARNING - ########################################################################################################################
+04/24/2025 18:56:57 - WebDriverFactory - WARNING -                     
+04/24/2025 18:56:57 - WebDriverFactory - WARNING - Running tests on chrome
+04/24/2025 18:56:57 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/24/2025 18:56:58 - <module> - WARNING -    
+04/24/2025 18:56:58 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:56:58 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/24/2025 18:56:58 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:56:58 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+04/24/2025 18:56:58 - LoginTest - INFO - ---------------------------------------------------------------------
+04/24/2025 18:56:58 - ExcelLocators - INFO - Locator was found using |> login link | name |> on --> ***start*** page
+04/24/2025 18:56:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:56:58 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:56:59 - LoginPage - INFO -    
+04/24/2025 18:56:59 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> email field | name |> on --> ***login*** page
+04/24/2025 18:56:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:56:59 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/24/2025 18:56:59 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/24/2025 18:56:59 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/24/2025 18:56:59 - LoginPage - INFO -    
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> login button | name |> on --> ***login*** page
+04/24/2025 18:56:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/24/2025 18:56:59 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:56:59 - LoginPage - INFO -    
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> error to verify no pass | name |> on --> ***login*** page
+04/24/2025 18:56:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:56:59 - LoginPage - INFO - Found element with locator: //span[text()='The password field is required.'] and locator_type: xpath
+04/24/2025 18:56:59 - LoginPage - INFO - Element is presented using locator: //span[text()='The password field is required.'] and locator_type: xpath
+04/24/2025 18:56:59 - StatusOfTest - INFO - --> --> --> | TEST 1/1 SUCCESSFUL | Error message is displayed <-- <-- <--
+04/24/2025 18:56:59 - StatusOfTest - INFO - ------------------------------------------------------------------------------------------------
+04/24/2025 18:56:59 - StatusOfTest - INFO -    
+04/24/2025 18:56:59 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:56:59 - StatusOfTest - INFO - --> --> --> | test_01_invalid_login_no_pass | TEST SUCCESSFUL | <-- <-- <--
+04/24/2025 18:56:59 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:56:59 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:56:59 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/24/2025 18:56:59 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:56:59 - <module> - WARNING -    
+04/24/2025 18:56:59 - <module> - WARNING -    
+04/24/2025 18:56:59 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:56:59 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/24/2025 18:56:59 - <module> - WARNING - ------------------------------------------------------------------------------
+04/24/2025 18:56:59 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+04/24/2025 18:56:59 - LoginTest - INFO - ---------------------------------------------------------------------
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> login link | name |> on --> ***start*** page
+04/24/2025 18:56:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:56:59 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:56:59 - LoginPage - INFO -    
+04/24/2025 18:56:59 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> email field | name |> on --> ***login*** page
+04/24/2025 18:56:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:56:59 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/24/2025 18:56:59 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/24/2025 18:56:59 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/24/2025 18:56:59 - LoginPage - INFO -    
+04/24/2025 18:56:59 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> password field | name |> on --> ***login*** page
+04/24/2025 18:56:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/24/2025 18:56:59 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/24/2025 18:56:59 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/24/2025 18:56:59 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/24/2025 18:56:59 - LoginPage - INFO -    
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> login button | name |> on --> ***login*** page
+04/24/2025 18:56:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/24/2025 18:56:59 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/24/2025 18:56:59 - LoginPage - INFO - -------------------------------------------------------------
+04/24/2025 18:56:59 - LoginPage - INFO -    
+04/24/2025 18:56:59 - ExcelLocators - INFO - Locator was found using |> element to verify login | name |> on --> ***my courses*** page
+04/24/2025 18:56:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:56:59 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/24/2025 18:57:00 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/24/2025 18:57:00 - ExcelLocators - INFO - Locator was found using |> title my courses page | name |> on --> ***my courses*** page
+04/24/2025 18:57:00 - Util - INFO - ------------------------------------------------------------------------
+04/24/2025 18:57:00 - Util - INFO - ---------------------| VERIFYING TEXT |---------------------------------
+04/24/2025 18:57:00 - Util - INFO - --> Actual text from application --> | My Courses |
+04/24/2025 18:57:00 - Util - INFO - ->> Expected text from test case ->> | My Courses |
+04/24/2025 18:57:00 - Util - INFO - ----------VERIFICATION PASSED --> ACTUAL TEXT CONTAINS EXPECTED TEXT----------
+04/24/2025 18:57:00 - Util - INFO - ------------------------------------------------------------------------
+04/24/2025 18:57:00 - StatusOfTest - INFO - --> --> --> | TEST 1/3 SUCCESSFUL | Title matches the original <-- <-- <--
+04/24/2025 18:57:00 - StatusOfTest - INFO - ------------------------------------------------------------------------------------------------
+04/24/2025 18:57:00 - StatusOfTest - INFO -    
+04/24/2025 18:57:00 - ExcelLocators - INFO - Locator was found using |> element to verify login | name |> on --> ***my courses*** page
+04/24/2025 18:57:00 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:57:00 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:57:00 - LoginPage - INFO - Found element with locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/24/2025 18:57:00 - LoginPage - INFO - Element is presented using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/24/2025 18:57:00 - StatusOfTest - INFO - --> --> --> | TEST 2/3 SUCCESSFUL | Login is successful, my courses were on the page <-- <-- <--
+04/24/2025 18:57:00 - StatusOfTest - INFO - ------------------------------------------------------------------------------------------------
+04/24/2025 18:57:00 - StatusOfTest - INFO -    
+04/24/2025 18:57:00 - ExcelLocators - INFO - Locator was found using |> element to verify login avatar | name |> on --> ***my courses*** page
+04/24/2025 18:57:00 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/24/2025 18:57:00 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/24/2025 18:57:00 - LoginPage - INFO - Found element with locator: //div[@class='dropdown']//img and locator_type: xpath
+04/24/2025 18:57:00 - LoginPage - INFO - Element is presented using locator: //div[@class='dropdown']//img and locator_type: xpath
+04/24/2025 18:57:00 - StatusOfTest - INFO - --> --> --> | TEST 3/3 SUCCESSFUL | Login was successful, avatar was presented on the page <-- <-- <--
+04/24/2025 18:57:00 - StatusOfTest - INFO - ------------------------------------------------------------------------------------------------
+04/24/2025 18:57:00 - StatusOfTest - INFO -    
+04/24/2025 18:57:00 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:57:00 - StatusOfTest - INFO - --> --> --> | test_02_valid_login | TEST SUCCESSFUL | <-- <-- <--
+04/24/2025 18:57:00 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/24/2025 18:57:00 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:57:00 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/24/2025 18:57:00 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/24/2025 18:57:00 - <module> - WARNING -    

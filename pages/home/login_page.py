@@ -2,88 +2,83 @@ from base.basepage import BasePage
 from utilities.custom_logger import custom_logger as cl
 import os
 
+from utilities.excel_util import ExcelLocators, ExcelAccounts
+
 class LoginPage(BasePage):
 
+    current_dir = os.path.dirname(__file__)
+    excel_files_path = os.path.join(current_dir, "..", "..")
+    excel_locators_file = os.path.join(excel_files_path, "locators.xlsx")
+    excel_accounts_file = os.path.join(excel_files_path, "accounts.xlsx")
+
+    locators = ExcelLocators(excel_locators_file)
+    accounts = ExcelAccounts(excel_accounts_file)
     log = cl()
 
-    _email = os.environ.get('LETSKODEIT_EMAIL')
-    _password = os.environ.get('LETSKODEIT_PASS')
 
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
 
-
-
-    # Locators
-    _login_link: str = "//a[text()='Sign In']" #xpath
-    _email_field: str = "email" #id
-    _password_field: str = "login-password" #id
-    _login_btn: str = "login" #id
-
-    # Element occurs after successful login
-    _element_to_verify_login: str = "//div[@class='zen-course-title']" #xpath
-
-    #Wrong password error
-    _error_to_verify_password: str = "//span[text()='The password field is required.']" #xpath
-
-    # Titles
-    _titles = ["My Courses"]
-
-    #Valid login
-    _credentials = {"valid_login": "mirgorodvld@gmail.com", "valid_password": "xnDi!1Bxi09bU",
-                    "invalid_login": "vld_123456@gmail.com", "invalid_password": "123456"}
-
-
+    def go_back(self):
+        self.navigate_page()
 
     def click_login_link(self):
-        self.click_element(self._login_link, "xpath")
+        self.click_element(self.locators.get_locator("start",
+                                                     "login link",
+                                                     "xpath"),"xpath")
 
-    def enter_email(self, email):
-        if email == self._credentials["valid_login"]:
-            self.log.info(f"{"*" * 20}Entered email ({email}) is correct{"*" * 20}")
-            self.send_keys_element(email, self._email_field)
-        else:
-            self.log.warning(f"{"!" * 20}Entered password ({email}) is INCORRECT{"!" * 20}")
+    def enter_email(self, email, locator_type):
+        self.send_keys_element(email, self.locators.get_locator(), locator_type)
 
-    def enter_password(self, password = ""):
-        if password == self._credentials["valid_password"]:
-            self.log.info(f"{"*" * 20}Entered password ({password}) is correct!{"*" * 20}")
-            self.send_keys_element(password, self._password_field)
-
-        elif password == self._credentials["invalid_password"]:
-            self.log.info(f"{"*" * 20}Entered invalid password ({password}) is correct!{"*" * 20}")
-            self.send_keys_element(password, self._password_field)
-
+    def enter_password(self, password):
+        self.send_keys_element(password, self.locators.get_locator("login",
+                                                                   "password field",
+                                                                   "id"))
 
     def click_login_btn(self):
-        self.click_element(self._login_btn)
+        self.click_element(self.locators.get_locator("login",
+                                                     "login button",
+                                                     "id"))
 
-    def wait_until_presented(self):
-        self.wait_for_element("//div[@class='zen-course-title']", "xpath")
+    def wait_until_presented_element_courses(self):
+        self.wait_for_element(self.locators.get_locator("my courses",
+                                                        "element to verify login",
+                                                        "xpath"), "xpath")
 
 
-    def login(self, email: str, password: str):
+    def successful_login(self):
         self.click_login_link()
-        self.enter_email(email)
-        self.enter_password(password)
+        self.enter_email(self.accounts.get_login(), "xpath")
+        self.enter_password(self.accounts.get_password())
         self.click_login_btn()
-        self.wait_until_presented()
+        self.wait_until_presented_element_courses()
 
 
-    def verify_login_successful(self) -> bool:
-        return self.is_element_present(self._element_to_verify_login, "xpath")
+    def verify_login_successful(self):
+        return self.is_element_present(self.locators.get_locator("my courses",
+                                                                 "element to verify login",
+                                                                 "xpath"), "xpath")
 
+    def verify_login_successful_avatar(self):
+        return self.is_element_present(self.locators.get_locator("my courses",
+                                                                 "element to verify login avatar",
+                                                                 "xpath"), "xpath")
 
-    def invalid_login(self, email = "", password = ""):
+    def verify_title_my_courses(self):
+        return self.verify_page_title(self.locators.get_locator("my courses",
+                                                                "title my courses page",
+                                                                "name"))
+
+    def unsuccessful_login_no_pass(self):
         self.click_login_link()
-        self.enter_email(email)
-        self.enter_password(password)
+        self.enter_email(self.accounts.get_login(1, "valid"),
+                         "xpath")
         self.click_login_btn()
 
 
-    def verify_login_unsuccessful(self) -> bool:
-        return self.is_element_present(self._error_to_verify_password, "xpath")
+    def verify_login_unsuccessful(self):
+        return self.is_element_present(self.locators.get_locator("login",
+                                                                 "error to verify no pass",
+                                                                 "xpath"), "xpath")
 
-    def verify_title(self, title_number):
-        return self.verify_page_title(self._titles[title_number])

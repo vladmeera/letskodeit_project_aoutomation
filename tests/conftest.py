@@ -15,9 +15,16 @@ def one_time_setup(request, browser):
 
 @pytest.fixture()
 def setup():
-    print('It runs before each test')
+    log.warning('   ')
+
+    log.warning('------------------------------------------------------------------------------')
+    log.warning('################################ RUNNING TEST ################################')
+    log.warning('------------------------------------------------------------------------------')
     yield
-    print('It runs after each test')
+    log.warning('-----------------------------------------------------------------------------------')
+    log.warning('################################ STOP RUNNING TEST ################################')
+    log.warning('-----------------------------------------------------------------------------------')
+    log.warning('   ')
 
 def pytest_addoption(parser):
     parser.addoption('--browser', help='Choose your browser')

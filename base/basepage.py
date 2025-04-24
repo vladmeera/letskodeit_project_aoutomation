@@ -19,7 +19,7 @@ from utilities.util import Util
 
 class BasePage(SeleniumDriver):
 
-    def __init__(self, driver) -> None:
+    def __init__(self, driver):
         """
         Inits BasePage class
 
@@ -29,7 +29,7 @@ class BasePage(SeleniumDriver):
         self.driver = driver
         self.util = Util()
 
-    def verify_page_title(self, title_to_verify: str) -> bool:
+    def verify_page_title(self, title_to_verify):
         """
         Verify page title
 
@@ -37,17 +37,11 @@ class BasePage(SeleniumDriver):
         """
 
         try:
-            actual_title: str = self.get_title()
-            return self.util.verify_text_contains(actual_title, title_to_verify)
-        except AttributeError as e:
-            self.log.error(f"| ATTRIBUTE ERROR | {e}")
-            print_stack()
-        except TypeError as e:
-            self.log.error(f"| TYPE ERROR | {e}")
-            print_stack()
-        except WebDriverException as e:
-            self.log.error(f"| WEB DRIVER ERROR | {e}")
-            print_stack()
+            actual_title = self.get_title()
+            if actual_title is not None:
+                return self.util.verify_text_contains(actual_title, title_to_verify)
+            else:
+                return
         except Exception as e:
-            self.log.error(f"| GENERIC ERROR | {e}")
+            self.log.error(f"{"#"*30}ERROR OCCURRED{"#"*30} --> {e}")
             print_stack()
