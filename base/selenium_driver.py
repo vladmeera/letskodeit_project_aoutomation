@@ -251,3 +251,22 @@ class SeleniumDriver:
                 print_stack()
         return element
 
+    def scroll_page(self, locator, locator_type="id", direction="no", x=0, y=0, into_view=False, to_bottom=False, to_top=False):
+        element = self.get_element(locator, locator_type)
+
+        if into_view and direction.lower() == "no":
+            self.driver.execute_script('arguments[0].scrollIntoView(true)', element)
+            self.log.info(f"Scrolled into view | object - {element}")
+
+        if to_bottom and direction.lower() == "no":
+            self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+        if to_top and direction.lower() == "no":
+            self.driver.execute_script("window.scrollTo(0,0);")
+
+        if direction.lower() == "up":
+            y = -y
+            self.driver.execute_script("window.scrollTo(arguments[0],arguments[1]);", x, y)
+
+        self.driver.execute_script("window.scrollTo(arguments[0],arguments[1]);", x, y)
+

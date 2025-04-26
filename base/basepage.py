@@ -45,3 +45,4 @@ class BasePage(SeleniumDriver):
         except Exception as e:
             self.log.error(f"{"#"*30}ERROR OCCURRED{"#"*30} --> {e}")
             print_stack()
+
