@@ -17,7 +17,7 @@ class ExcelLocators:
                                        & (df['locator name'] == locator_name)
                                        & (df['locator type'] == locator_type)].tolist()
             if df.iloc[row[0]]["locator"] is not None:
-                self.log.info(f"Locator was found using |> {locator_name} | name |> on --> ***{page_name}*** page")
+                self.log.info(f"Locator {df.iloc[row[0]]["locator"]} was found using |> {locator_name} | name |> on --> ***{page_name}*** page")
                 return df.iloc[row[0]]["locator"]
         except Exception as e:
             self.log.error(f"| {locator_name} |> locator on -> {page_name} page was not found in '{self.file}' --> {e}")

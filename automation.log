@@ -494,3 +494,707 @@ Stacktrace:
 04/25/2025 15:45:30 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
 04/25/2025 15:45:30 - <module> - WARNING - -----------------------------------------------------------------------------------
 04/25/2025 15:45:30 - <module> - WARNING -    
+04/27/2025 11:03:36 - WebDriverFactory - WARNING -                     
+04/27/2025 11:03:36 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:03:36 - WebDriverFactory - WARNING - ##################################################NEW SESSION STARTED##################################################
+04/27/2025 11:03:36 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:03:36 - WebDriverFactory - WARNING -                     
+04/27/2025 11:03:36 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 11:03:36 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 11:03:37 - <module> - WARNING -    
+04/27/2025 11:03:37 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:03:37 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 11:03:37 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:03:37 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 11:03:37 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 11:03:37 - ExcelLocators - INFO - Locator was found using |> login link | name |> on --> ***start*** page
+04/27/2025 11:03:37 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:03:37 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:03:37 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 11:03:38 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:03:38 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:03:38 - LoginPage - INFO -    
+04/27/2025 11:03:38 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 11:03:38 - ExcelLocators - INFO - Locator was found using |> email field | name |> on --> ***login*** page
+04/27/2025 11:03:38 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:03:38 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:03:38 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 11:03:38 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 11:03:38 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:03:38 - LoginPage - INFO -    
+04/27/2025 11:03:38 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 11:03:38 - ExcelLocators - INFO - Locator was found using |> password field | name |> on --> ***login*** page
+04/27/2025 11:03:38 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:03:38 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:03:38 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 11:03:38 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 11:03:38 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:03:38 - LoginPage - INFO -    
+04/27/2025 11:03:38 - ExcelLocators - INFO - Locator was found using |> login button | name |> on --> ***login*** page
+04/27/2025 11:03:38 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:03:38 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:03:38 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 11:03:38 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:03:38 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:03:38 - LoginPage - INFO -    
+04/27/2025 11:03:38 - ExcelLocators - INFO - Locator was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 11:03:38 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:03:38 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 11:03:39 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 11:03:39 - ExcelLocators - INFO - Locator was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 11:03:39 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:03:39 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:03:39 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 11:03:40 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:03:40 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 11:03:40 - CoursesPage - INFO -    
+04/27/2025 11:03:40 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:03:40 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 11:03:40 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/27/2025 11:03:40 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 11:03:40 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:03:43 - ExcelLocators - INFO - Locator was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 11:03:43 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:03:43 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:03:43 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:03:43 - CoursesPage - INFO - Element is presented using locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:03:43 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Java course is not shown on the screen <<- <<- <<- <<-
+04/27/2025 11:03:43 - StatusOfTest - INFO - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+04/27/2025 11:03:43 - StatusOfTest - INFO -    
+04/27/2025 11:03:44 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/java_course_is_not_shown_on_the_screen_2025-04-27_1745766223957.png. Name of screenshot: java_course_is_not_shown_on_the_screen_2025-04-27_1745766223957.png
+04/27/2025 11:03:44 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:03:44 - StatusOfTest - ERROR - -------------------| test_03_check_java_course_in_all_courses | TEST FAILED |------------
+04/27/2025 11:03:44 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:03:44 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:03:44 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 11:03:44 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:03:44 - <module> - WARNING -    
+04/27/2025 11:16:36 - WebDriverFactory - WARNING - 
+
+04/27/2025 11:16:36 - WebDriverFactory - WARNING -                     
+04/27/2025 11:16:36 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:16:36 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/27/2025 11:16:36 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:16:36 - WebDriverFactory - WARNING -                     
+04/27/2025 11:16:36 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 11:16:36 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 11:16:37 - <module> - WARNING -    
+04/27/2025 11:16:37 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:16:37 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 11:16:37 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:16:37 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 11:16:37 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 11:16:37 - ExcelLocators - INFO - Locator was found using |> login link | name |> on --> ***start*** page
+04/27/2025 11:16:37 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:16:37 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:16:37 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 11:16:38 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:16:38 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:16:38 - LoginPage - INFO -    
+04/27/2025 11:16:38 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 11:16:38 - ExcelLocators - INFO - Locator was found using |> email field | name |> on --> ***login*** page
+04/27/2025 11:16:38 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:16:38 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:16:38 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 11:16:38 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 11:16:38 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:16:38 - LoginPage - INFO -    
+04/27/2025 11:16:38 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 11:16:38 - ExcelLocators - INFO - Locator was found using |> password field | name |> on --> ***login*** page
+04/27/2025 11:16:38 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:16:38 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:16:38 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 11:16:38 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 11:16:38 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:16:38 - LoginPage - INFO -    
+04/27/2025 11:16:38 - ExcelLocators - INFO - Locator was found using |> login button | name |> on --> ***login*** page
+04/27/2025 11:16:38 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:16:38 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:16:38 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 11:16:38 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:16:38 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:16:38 - LoginPage - INFO -    
+04/27/2025 11:16:38 - ExcelLocators - INFO - Locator was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 11:16:38 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:16:38 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 11:16:39 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 11:16:39 - ExcelLocators - INFO - Locator was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 11:16:39 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:16:39 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:16:39 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 11:16:40 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:16:40 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 11:16:40 - CoursesPage - INFO -    
+04/27/2025 11:16:40 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:16:40 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 11:16:40 - CoursesPage - INFO - Scrolled down by 500 pixels
+04/27/2025 11:16:40 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 11:16:40 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:16:43 - ExcelLocators - INFO - Locator was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 11:16:43 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:16:43 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:16:43 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:16:43 - CoursesPage - INFO - Element is presented using locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:16:43 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Java course is not shown on the screen <<- <<- <<- <<-
+04/27/2025 11:16:43 - StatusOfTest - INFO - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+04/27/2025 11:16:43 - StatusOfTest - INFO -    
+04/27/2025 11:16:43 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/java_course_is_not_shown_on_the_screen_2025-04-27_1745767003665.png. Name of screenshot: java_course_is_not_shown_on_the_screen_2025-04-27_1745767003665.png
+04/27/2025 11:16:43 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:16:43 - StatusOfTest - ERROR - -------------------| test_03_check_java_course_in_all_courses | TEST FAILED |------------
+04/27/2025 11:16:43 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:16:43 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:16:43 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 11:16:43 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:16:43 - <module> - WARNING -    
+04/27/2025 11:23:53 - WebDriverFactory - WARNING - 
+
+04/27/2025 11:23:53 - WebDriverFactory - WARNING -                     
+04/27/2025 11:23:53 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:23:53 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/27/2025 11:23:53 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:23:53 - WebDriverFactory - WARNING -                     
+04/27/2025 11:23:53 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 11:23:53 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 11:23:54 - <module> - WARNING -    
+04/27/2025 11:23:54 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:23:54 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 11:23:54 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:23:54 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 11:23:54 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 11:23:54 - ExcelLocators - INFO - Locator //a[text()='Sign In'] was found using |> login link | name |> on --> ***start*** page
+04/27/2025 11:23:54 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:23:54 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:23:54 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 11:23:54 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:23:54 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:23:54 - LoginPage - INFO -    
+04/27/2025 11:23:54 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 11:23:54 - ExcelLocators - INFO - Locator //input[contains(@id,'email') and contains(@tabindex,'4')] was found using |> email field | name |> on --> ***login*** page
+04/27/2025 11:23:54 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:23:54 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:23:54 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 11:23:54 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 11:23:54 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:23:54 - LoginPage - INFO -    
+04/27/2025 11:23:54 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 11:23:54 - ExcelLocators - INFO - Locator login-password was found using |> password field | name |> on --> ***login*** page
+04/27/2025 11:23:54 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:23:54 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:23:54 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 11:23:55 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 11:23:55 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:23:55 - LoginPage - INFO -    
+04/27/2025 11:23:55 - ExcelLocators - INFO - Locator login was found using |> login button | name |> on --> ***login*** page
+04/27/2025 11:23:55 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:23:55 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:23:55 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 11:23:55 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:23:55 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:23:55 - LoginPage - INFO -    
+04/27/2025 11:23:55 - ExcelLocators - INFO - Locator //div[@class='zen-course-title'] was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 11:23:55 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:23:55 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 11:23:56 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 11:23:56 - ExcelLocators - INFO - Locator //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 11:23:56 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:23:56 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:23:56 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 11:23:57 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:23:57 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 11:23:57 - CoursesPage - INFO -    
+04/27/2025 11:23:57 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:23:57 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 11:23:57 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/27/2025 11:23:57 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 11:23:57 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:24:00 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 11:24:00 - CoursesPage - INFO - Trying to locate the element on the page...
+04/27/2025 11:24:00 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:24:00 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:24:00 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:24:00 - CoursesPage - INFO - Element appeared on the page!
+04/27/2025 11:24:00 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Java course is not shown on the screen <<- <<- <<- <<-
+04/27/2025 11:24:00 - StatusOfTest - INFO - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+04/27/2025 11:24:00 - StatusOfTest - INFO -    
+04/27/2025 11:24:01 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/java_course_is_not_shown_on_the_screen_2025-04-27_1745767440988.png. Name of screenshot: java_course_is_not_shown_on_the_screen_2025-04-27_1745767440988.png
+04/27/2025 11:24:01 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:24:01 - StatusOfTest - ERROR - -------------------| test_03_check_java_course_in_all_courses | TEST FAILED |------------
+04/27/2025 11:24:01 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:24:01 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:24:01 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 11:24:01 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:24:01 - <module> - WARNING -    
+04/27/2025 11:42:49 - WebDriverFactory - WARNING - 
+
+04/27/2025 11:42:49 - WebDriverFactory - WARNING -                     
+04/27/2025 11:42:49 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:42:49 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/27/2025 11:42:49 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:42:49 - WebDriverFactory - WARNING -                     
+04/27/2025 11:42:49 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 11:42:49 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 11:42:51 - <module> - WARNING -    
+04/27/2025 11:42:51 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:42:51 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 11:42:51 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:42:51 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 11:42:51 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 11:42:51 - ExcelLocators - INFO - Locator //a[text()='Sign In'] was found using |> login link | name |> on --> ***start*** page
+04/27/2025 11:42:51 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:42:51 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:42:51 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 11:42:51 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:42:51 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:42:51 - LoginPage - INFO -    
+04/27/2025 11:42:51 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 11:42:51 - ExcelLocators - INFO - Locator //input[contains(@id,'email') and contains(@tabindex,'4')] was found using |> email field | name |> on --> ***login*** page
+04/27/2025 11:42:51 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:42:51 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:42:51 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 11:42:51 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 11:42:51 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:42:51 - LoginPage - INFO -    
+04/27/2025 11:42:51 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 11:42:51 - ExcelLocators - INFO - Locator login-password was found using |> password field | name |> on --> ***login*** page
+04/27/2025 11:42:51 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:42:51 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:42:51 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 11:42:51 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 11:42:51 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:42:51 - LoginPage - INFO -    
+04/27/2025 11:42:51 - ExcelLocators - INFO - Locator login was found using |> login button | name |> on --> ***login*** page
+04/27/2025 11:42:51 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:42:51 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:42:51 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 11:42:51 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:42:51 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:42:51 - LoginPage - INFO -    
+04/27/2025 11:42:51 - ExcelLocators - INFO - Locator //div[@class='zen-course-title'] was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 11:42:51 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:42:51 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 11:42:52 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 11:42:52 - ExcelLocators - INFO - Locator //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 11:42:52 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:42:52 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:42:52 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 11:42:54 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:42:54 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 11:42:54 - CoursesPage - INFO -    
+04/27/2025 11:42:54 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:42:54 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 11:42:54 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/27/2025 11:42:54 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 11:42:54 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:42:57 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 11:42:57 - CoursesPage - INFO - Trying to locate the element on the page...
+04/27/2025 11:42:57 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:42:57 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:42:57 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:42:57 - CoursesPage - INFO - Element appeared on the page!
+04/27/2025 11:42:57 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:42:57 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 11:42:57 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:42:57 - <module> - WARNING -    
+04/27/2025 11:45:46 - WebDriverFactory - WARNING - 
+
+04/27/2025 11:45:46 - WebDriverFactory - WARNING -                     
+04/27/2025 11:45:46 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:45:46 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/27/2025 11:45:46 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:45:46 - WebDriverFactory - WARNING -                     
+04/27/2025 11:45:46 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 11:45:46 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 11:45:47 - <module> - WARNING -    
+04/27/2025 11:45:47 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:45:47 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 11:45:47 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:45:47 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 11:45:47 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 11:45:47 - ExcelLocators - INFO - Locator //a[text()='Sign In'] was found using |> login link | name |> on --> ***start*** page
+04/27/2025 11:45:47 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:45:47 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:45:47 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 11:45:48 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:45:48 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:45:48 - LoginPage - INFO -    
+04/27/2025 11:45:48 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 11:45:48 - ExcelLocators - INFO - Locator //input[contains(@id,'email') and contains(@tabindex,'4')] was found using |> email field | name |> on --> ***login*** page
+04/27/2025 11:45:48 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:45:48 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:45:48 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 11:45:48 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 11:45:48 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:45:48 - LoginPage - INFO -    
+04/27/2025 11:45:48 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 11:45:48 - ExcelLocators - INFO - Locator login-password was found using |> password field | name |> on --> ***login*** page
+04/27/2025 11:45:48 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:45:48 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:45:48 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 11:45:48 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 11:45:48 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:45:48 - LoginPage - INFO -    
+04/27/2025 11:45:48 - ExcelLocators - INFO - Locator login was found using |> login button | name |> on --> ***login*** page
+04/27/2025 11:45:48 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:45:48 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:45:48 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 11:45:48 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:45:48 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:45:48 - LoginPage - INFO -    
+04/27/2025 11:45:48 - ExcelLocators - INFO - Locator //div[@class='zen-course-title'] was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 11:45:48 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:45:48 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 11:45:49 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 11:45:49 - ExcelLocators - INFO - Locator //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 11:45:49 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:45:49 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:45:49 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 11:45:50 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:45:50 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 11:45:50 - CoursesPage - INFO -    
+04/27/2025 11:45:50 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:45:50 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 11:45:50 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/27/2025 11:45:50 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 11:45:50 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:45:53 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 11:45:53 - CoursesPage - INFO - Trying to locate the element on the page...
+04/27/2025 11:45:53 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:45:53 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:45:53 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:45:53 - CoursesPage - INFO - Element appeared on the page!
+04/27/2025 11:45:53 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Java course is not shown on the screen <<- <<- <<- <<-
+04/27/2025 11:45:53 - StatusOfTest - INFO - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+04/27/2025 11:45:53 - StatusOfTest - INFO -    
+04/27/2025 11:45:53 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/java_course_is_not_shown_on_the_screen_2025-04-27_1745768753680.png. Name of screenshot: java_course_is_not_shown_on_the_screen_2025-04-27_1745768753680.png
+04/27/2025 11:45:53 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:45:53 - StatusOfTest - ERROR - -------------------| test_03_check_java_course_in_all_courses | TEST FAILED |------------
+04/27/2025 11:45:53 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:45:53 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:45:53 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 11:45:53 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:45:53 - <module> - WARNING -    
+04/27/2025 11:48:42 - WebDriverFactory - WARNING - 
+
+04/27/2025 11:48:42 - WebDriverFactory - WARNING -                     
+04/27/2025 11:48:42 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:48:42 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/27/2025 11:48:42 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:48:42 - WebDriverFactory - WARNING -                     
+04/27/2025 11:48:42 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 11:48:42 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 11:48:44 - <module> - WARNING -    
+04/27/2025 11:48:44 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:48:44 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 11:48:44 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:48:44 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 11:48:44 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 11:48:44 - ExcelLocators - INFO - Locator //a[text()='Sign In'] was found using |> login link | name |> on --> ***start*** page
+04/27/2025 11:48:44 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:48:44 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:48:44 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 11:48:45 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:48:45 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:48:45 - LoginPage - INFO -    
+04/27/2025 11:48:45 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 11:48:45 - ExcelLocators - INFO - Locator //input[contains(@id,'email') and contains(@tabindex,'4')] was found using |> email field | name |> on --> ***login*** page
+04/27/2025 11:48:45 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:48:45 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:48:45 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 11:48:45 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 11:48:45 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:48:45 - LoginPage - INFO -    
+04/27/2025 11:48:45 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 11:48:45 - ExcelLocators - INFO - Locator login-password was found using |> password field | name |> on --> ***login*** page
+04/27/2025 11:48:45 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:48:45 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:48:45 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 11:48:45 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 11:48:45 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:48:45 - LoginPage - INFO -    
+04/27/2025 11:48:45 - ExcelLocators - INFO - Locator login was found using |> login button | name |> on --> ***login*** page
+04/27/2025 11:48:45 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:48:45 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:48:45 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 11:48:45 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:48:45 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:48:45 - LoginPage - INFO -    
+04/27/2025 11:48:45 - ExcelLocators - INFO - Locator //div[@class='zen-course-title'] was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 11:48:45 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:48:45 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 11:48:46 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 11:48:46 - ExcelLocators - INFO - Locator //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 11:48:46 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:48:46 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:48:46 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 11:48:47 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:48:47 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 11:48:47 - CoursesPage - INFO -    
+04/27/2025 11:48:47 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:48:47 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 11:48:48 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/27/2025 11:48:48 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 11:48:48 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:48:51 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 11:48:51 - CoursesPage - INFO - Trying to locate the element on the page...
+04/27/2025 11:48:51 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:48:51 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:48:51 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:48:51 - CoursesPage - INFO - Element appeared on the page!
+04/27/2025 11:48:51 - StatusOfTest - INFO - None
+04/27/2025 11:48:51 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Java course is not shown on the screen <<- <<- <<- <<-
+04/27/2025 11:48:51 - StatusOfTest - INFO - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+04/27/2025 11:48:51 - StatusOfTest - INFO -    
+04/27/2025 11:48:51 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/java_course_is_not_shown_on_the_screen_2025-04-27_1745768931170.png. Name of screenshot: java_course_is_not_shown_on_the_screen_2025-04-27_1745768931170.png
+04/27/2025 11:48:51 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:48:51 - StatusOfTest - ERROR - -------------------| test_03_check_java_course_in_all_courses | TEST FAILED |------------
+04/27/2025 11:48:51 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:48:51 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:48:51 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 11:48:51 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:48:51 - <module> - WARNING -    
+04/27/2025 11:52:00 - WebDriverFactory - WARNING - 
+
+04/27/2025 11:52:00 - WebDriverFactory - WARNING -                     
+04/27/2025 11:52:00 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:52:00 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/27/2025 11:52:00 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 11:52:00 - WebDriverFactory - WARNING -                     
+04/27/2025 11:52:00 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 11:52:00 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 11:52:01 - <module> - WARNING -    
+04/27/2025 11:52:01 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:52:01 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 11:52:01 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 11:52:01 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 11:52:01 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 11:52:01 - ExcelLocators - INFO - Locator //a[text()='Sign In'] was found using |> login link | name |> on --> ***start*** page
+04/27/2025 11:52:01 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:52:01 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:52:01 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 11:52:02 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:52:02 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:52:02 - LoginPage - INFO -    
+04/27/2025 11:52:02 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 11:52:02 - ExcelLocators - INFO - Locator //input[contains(@id,'email') and contains(@tabindex,'4')] was found using |> email field | name |> on --> ***login*** page
+04/27/2025 11:52:02 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:52:02 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:52:02 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 11:52:02 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 11:52:02 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:52:02 - LoginPage - INFO -    
+04/27/2025 11:52:02 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 11:52:02 - ExcelLocators - INFO - Locator login-password was found using |> password field | name |> on --> ***login*** page
+04/27/2025 11:52:02 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:52:02 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:52:02 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 11:52:02 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 11:52:02 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:52:02 - LoginPage - INFO -    
+04/27/2025 11:52:02 - ExcelLocators - INFO - Locator login was found using |> login button | name |> on --> ***login*** page
+04/27/2025 11:52:02 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:52:02 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 11:52:02 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 11:52:02 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:52:02 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 11:52:02 - LoginPage - INFO -    
+04/27/2025 11:52:02 - ExcelLocators - INFO - Locator //div[@class='zen-course-title'] was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 11:52:02 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:52:02 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 11:52:03 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 11:52:03 - ExcelLocators - INFO - Locator //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 11:52:03 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:52:03 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:52:03 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 11:52:04 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 11:52:04 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 11:52:04 - CoursesPage - INFO -    
+04/27/2025 11:52:04 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:52:04 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 11:52:05 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/27/2025 11:52:05 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 11:52:05 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 11:52:08 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 11:52:08 - CoursesPage - INFO - Trying to locate the element on the page...
+04/27/2025 11:52:08 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 11:52:08 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 11:52:08 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 11:52:08 - CoursesPage - INFO - Element appeared on the page!
+04/27/2025 11:52:08 - CourseTest - INFO - None
+04/27/2025 11:52:08 - StatusOfTest - INFO - None
+04/27/2025 11:52:08 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Java course is not shown on the screen <<- <<- <<- <<-
+04/27/2025 11:52:08 - StatusOfTest - INFO - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+04/27/2025 11:52:08 - StatusOfTest - INFO -    
+04/27/2025 11:52:08 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/java_course_is_not_shown_on_the_screen_2025-04-27_1745769128055.png. Name of screenshot: java_course_is_not_shown_on_the_screen_2025-04-27_1745769128055.png
+04/27/2025 11:52:08 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:52:08 - StatusOfTest - ERROR - -------------------| test_03_check_java_course_in_all_courses | TEST FAILED |------------
+04/27/2025 11:52:08 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 11:52:08 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:52:08 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 11:52:08 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 11:52:08 - <module> - WARNING -    
+04/27/2025 12:04:20 - WebDriverFactory - WARNING - 
+
+04/27/2025 12:04:20 - WebDriverFactory - WARNING -                     
+04/27/2025 12:04:20 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 12:04:20 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/27/2025 12:04:20 - WebDriverFactory - WARNING - ########################################################################################################################
+04/27/2025 12:04:20 - WebDriverFactory - WARNING -                     
+04/27/2025 12:04:20 - WebDriverFactory - WARNING - Running tests on chrome
+04/27/2025 12:04:20 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/27/2025 12:04:21 - <module> - WARNING -    
+04/27/2025 12:04:21 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 12:04:21 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/27/2025 12:04:21 - <module> - WARNING - ------------------------------------------------------------------------------
+04/27/2025 12:04:21 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/27/2025 12:04:21 - CourseTest - INFO - ---------------------------------------------------------------------
+04/27/2025 12:04:21 - ExcelLocators - INFO - Locator //a[text()='Sign In'] was found using |> login link | name |> on --> ***start*** page
+04/27/2025 12:04:21 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 12:04:21 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 12:04:21 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/27/2025 12:04:21 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 12:04:21 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 12:04:21 - LoginPage - INFO -    
+04/27/2025 12:04:21 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/27/2025 12:04:21 - ExcelLocators - INFO - Locator //input[contains(@id,'email') and contains(@tabindex,'4')] was found using |> email field | name |> on --> ***login*** page
+04/27/2025 12:04:21 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 12:04:21 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 12:04:21 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/27/2025 12:04:21 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/27/2025 12:04:21 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 12:04:21 - LoginPage - INFO -    
+04/27/2025 12:04:21 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/27/2025 12:04:21 - ExcelLocators - INFO - Locator login-password was found using |> password field | name |> on --> ***login*** page
+04/27/2025 12:04:21 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 12:04:21 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 12:04:21 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/27/2025 12:04:21 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/27/2025 12:04:21 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 12:04:21 - LoginPage - INFO -    
+04/27/2025 12:04:21 - ExcelLocators - INFO - Locator login was found using |> login button | name |> on --> ***login*** page
+04/27/2025 12:04:21 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 12:04:21 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/27/2025 12:04:21 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/27/2025 12:04:21 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 12:04:21 - LoginPage - INFO - -------------------------------------------------------------
+04/27/2025 12:04:21 - LoginPage - INFO -    
+04/27/2025 12:04:21 - ExcelLocators - INFO - Locator //div[@class='zen-course-title'] was found using |> element to verify login | name |> on --> ***my courses*** page
+04/27/2025 12:04:21 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 12:04:21 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/27/2025 12:04:22 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/27/2025 12:04:22 - ExcelLocators - INFO - Locator //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] was found using |> all courses link | name |> on --> ***header*** page
+04/27/2025 12:04:22 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 12:04:22 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 12:04:22 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/27/2025 12:04:24 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/27/2025 12:04:24 - CoursesPage - INFO - -------------------------------------------------------------
+04/27/2025 12:04:24 - CoursesPage - INFO -    
+04/27/2025 12:04:24 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 12:04:24 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/27/2025 12:04:24 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/27/2025 12:04:24 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/27/2025 12:04:24 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/27/2025 12:04:27 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 12:04:27 - CoursesPage - INFO - Trying to locate the element on the page...
+04/27/2025 12:04:27 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 12:04:27 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 12:04:27 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 12:04:27 - CoursesPage - INFO - Element appeared on the page!
+04/27/2025 12:04:27 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/27/2025 12:04:27 - CoursesPage - INFO - Trying to locate the element on the page...
+04/27/2025 12:04:27 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/27/2025 12:04:27 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/27/2025 12:04:27 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/27/2025 12:04:27 - CoursesPage - INFO - Element appeared on the page!
+04/27/2025 12:04:27 - CoursesPage - INFO - True
+04/27/2025 12:04:27 - CourseTest - INFO - None
+04/27/2025 12:04:27 - StatusOfTest - INFO - None
+04/27/2025 12:04:27 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Java course is not shown on the screen <<- <<- <<- <<-
+04/27/2025 12:04:27 - StatusOfTest - INFO - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+04/27/2025 12:04:27 - StatusOfTest - INFO -    
+04/27/2025 12:04:27 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/java_course_is_not_shown_on_the_screen_2025-04-27_1745769867362.png. Name of screenshot: java_course_is_not_shown_on_the_screen_2025-04-27_1745769867362.png
+04/27/2025 12:04:27 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 12:04:27 - StatusOfTest - ERROR - -------------------| test_03_check_java_course_in_all_courses | TEST FAILED |------------
+04/27/2025 12:04:27 - StatusOfTest - ERROR - ********************************************************************************
+04/27/2025 12:04:27 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 12:04:27 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/27/2025 12:04:27 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/27/2025 12:04:27 - <module> - WARNING -    
+04/28/2025 09:26:45 - WebDriverFactory - WARNING - 
+
+04/28/2025 09:26:45 - WebDriverFactory - WARNING -                     
+04/28/2025 09:26:45 - WebDriverFactory - WARNING - ########################################################################################################################
+04/28/2025 09:26:45 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+04/28/2025 09:26:45 - WebDriverFactory - WARNING - ########################################################################################################################
+04/28/2025 09:26:45 - WebDriverFactory - WARNING -                     
+04/28/2025 09:26:45 - WebDriverFactory - WARNING - Running tests on chrome
+04/28/2025 09:26:45 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+04/28/2025 09:26:46 - <module> - WARNING -    
+04/28/2025 09:26:46 - <module> - WARNING - ------------------------------------------------------------------------------
+04/28/2025 09:26:46 - <module> - WARNING - ################################ RUNNING TEST ################################
+04/28/2025 09:26:46 - <module> - WARNING - ------------------------------------------------------------------------------
+04/28/2025 09:26:46 - CourseTest - INFO -    -------> Running test_03_check_java_course_in_all_courses test method <-------
+04/28/2025 09:26:46 - CourseTest - INFO - ---------------------------------------------------------------------
+04/28/2025 09:26:46 - ExcelLocators - INFO - Locator //a[text()='Sign In'] was found using |> login link | name |> on --> ***start*** page
+04/28/2025 09:26:46 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/28/2025 09:26:46 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/28/2025 09:26:46 - LoginPage - INFO - Found element with locator: //a[text()='Sign In'] and locator_type: xpath
+04/28/2025 09:26:47 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/28/2025 09:26:47 - LoginPage - INFO - -------------------------------------------------------------
+04/28/2025 09:26:47 - LoginPage - INFO -    
+04/28/2025 09:26:47 - ExcelAccounts - INFO - Was found 1 account with login - mirgorodvld@gmail.com | ***valid***
+04/28/2025 09:26:47 - ExcelLocators - INFO - Locator //input[contains(@id,'email') and contains(@tabindex,'4')] was found using |> email field | name |> on --> ***login*** page
+04/28/2025 09:26:47 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/28/2025 09:26:47 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/28/2025 09:26:47 - LoginPage - INFO - Found element with locator: //input[contains(@id,'email') and contains(@tabindex,'4')] and locator_type: xpath
+04/28/2025 09:26:47 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+04/28/2025 09:26:47 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/28/2025 09:26:47 - LoginPage - INFO -    
+04/28/2025 09:26:47 - ExcelAccounts - INFO - Was found 1 account with password - xnDi!1Bxi09bU | ***valid***
+04/28/2025 09:26:47 - ExcelLocators - INFO - Locator login-password was found using |> password field | name |> on --> ***login*** page
+04/28/2025 09:26:47 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/28/2025 09:26:47 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/28/2025 09:26:47 - LoginPage - INFO - Found element with locator: login-password and locator_type: id
+04/28/2025 09:26:47 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+04/28/2025 09:26:47 - LoginPage - INFO - ----------------------------------------------------------------------------
+04/28/2025 09:26:47 - LoginPage - INFO -    
+04/28/2025 09:26:47 - ExcelLocators - INFO - Locator login was found using |> login button | name |> on --> ***login*** page
+04/28/2025 09:26:47 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/28/2025 09:26:47 - LoginPage - INFO - Using locator type: id, parsed as By.id
+04/28/2025 09:26:47 - LoginPage - INFO - Found element with locator: login and locator_type: id
+04/28/2025 09:26:47 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+04/28/2025 09:26:47 - LoginPage - INFO - -------------------------------------------------------------
+04/28/2025 09:26:47 - LoginPage - INFO -    
+04/28/2025 09:26:47 - ExcelLocators - INFO - Locator //div[@class='zen-course-title'] was found using |> element to verify login | name |> on --> ***my courses*** page
+04/28/2025 09:26:47 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/28/2025 09:26:47 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='zen-course-title']
+04/28/2025 09:26:48 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='zen-course-title'] and locator_type: xpath
+04/28/2025 09:26:48 - ExcelLocators - INFO - Locator //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] was found using |> all courses link | name |> on --> ***header*** page
+04/28/2025 09:26:48 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/28/2025 09:26:48 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/28/2025 09:26:48 - CoursesPage - INFO - Found element with locator: //a[contains(@href,'/courses') and contains(text(),'ALL COURSES')] and locator_type: xpath
+04/28/2025 09:26:50 - CoursesPage - INFO - -------------------| Clicked on the element |--------------------
+04/28/2025 09:26:50 - CoursesPage - INFO - -------------------------------------------------------------
+04/28/2025 09:26:50 - CoursesPage - INFO -    
+04/28/2025 09:26:50 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/28/2025 09:26:50 - CoursesPage - INFO - --------------------------| START SCROLLING |-------------------------------
+04/28/2025 09:26:50 - CoursesPage - INFO - Scrolled to the bottom of the page
+04/28/2025 09:26:50 - CoursesPage - INFO - --------------------------| END SCROLLING |---------------------------------
+04/28/2025 09:26:50 - CoursesPage - INFO - ----------------------------------------------------------------------------
+04/28/2025 09:26:50 - ExcelLocators - INFO - Locator //a[@href='/courses/selenium-webdriver-with-java'] was found using |> selenium webdriver 4 with java | name |> on --> ***all courses*** page
+04/28/2025 09:26:50 - CoursesPage - INFO - Trying to locate the element on the page...
+04/28/2025 09:26:50 - CoursesPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+04/28/2025 09:26:50 - CoursesPage - INFO - Using locator type: xpath, parsed as By.xpath
+04/28/2025 09:26:50 - CoursesPage - INFO - Found element with locator: //a[@href='/courses/selenium-webdriver-with-java'] and locator_type: xpath
+04/28/2025 09:26:50 - CoursesPage - INFO - Element appeared on the page!
+04/28/2025 09:26:50 - CourseTest - INFO - True
+04/28/2025 09:26:50 - StatusOfTest - INFO - True
+04/28/2025 09:26:50 - StatusOfTest - INFO - --> --> --> | TEST 1/1 SUCCESSFUL | Java course is shown on the screen <-- <-- <--
+04/28/2025 09:26:50 - StatusOfTest - INFO - ------------------------------------------------------------------------------------------------
+04/28/2025 09:26:50 - StatusOfTest - INFO -    
+04/28/2025 09:26:50 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/28/2025 09:26:50 - StatusOfTest - INFO - --> --> --> | test_03_check_java_course_in_all_courses | TEST SUCCESSFUL | <-- <-- <--
+04/28/2025 09:26:50 - StatusOfTest - INFO - ----------------------------------------------------------------------
+04/28/2025 09:26:50 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/28/2025 09:26:50 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+04/28/2025 09:26:50 - <module> - WARNING - -----------------------------------------------------------------------------------
+04/28/2025 09:26:50 - <module> - WARNING -    

@@ -57,16 +57,17 @@ class SeleniumDriver:
         result_message_final = result_message_lower.replace(" ", "_")
 
         current_date: date = datetime.now().date()
-        file_name: str = f"{result_message_final}_{current_date}_{str(round(time() * 1000))}.png"
-        screenshots_directory: str = "../screenshots/"
-        relative_path: str = f"{screenshots_directory}{file_name}"
-        current_directory: str = os.path.dirname(__file__)
-        destination_path: str = os.path.join(current_directory, relative_path)
-        destination_directory: str = os.path.join(current_directory, screenshots_directory)
+        file_name = f"{result_message_final}_{current_date}_{str(round(time() * 1000))}.png"
+        screenshots_directory = "../screenshots/"
+        relative_path = f"{screenshots_directory}{file_name}"
+        current_directory = os.path.dirname(__file__)
+        destination_path = os.path.join(current_directory, relative_path)
+        destination_directory = os.path.join(current_directory, screenshots_directory)
 
         try:
             if not os.path.exists(destination_directory):
                 os.makedirs(destination_directory)
+
             self.driver.save_screenshot(destination_path)
             self.log.info(f"Screenshot saved to: {destination_path}. Name of screenshot: {file_name}")
 
@@ -84,7 +85,7 @@ class SeleniumDriver:
             title = self.driver.title
             return title
         except Exception as e:
-            self.log.error(f"Error occurred: {e}")
+            self.log.error(f"\nError occurred: {e}\n")
 
     def get_by_type(self, locator_type):
         """
@@ -135,17 +136,22 @@ class SeleniumDriver:
 
 
     def get_elements(self, locator, locator_type ="id"):
+        elements = None
         try:
+            self.log.info(f"--> --> --> LOOKING FOR ELEMENTS <-- <-- <--")
             locator_type = locator_type.lower()
             by_type = self.get_by_type(locator_type)
             elements = self.driver.find_elements(by_type, locator)
-            self.log.info(f"Found elements with locator: {locator} and locator_type: {locator_type}")
+            if len(elements) > 0:
+                self.log.info(f"Found {len(elements)} elements")
+                return elements
+            else:
+                self.log.info(f"Found {len(elements)} elements. Try another locator or locator type")
+                return elements
+
+        except Exception as e:
+            self.log.error(f"WebDriverException occurred: {e}")
             return elements
-        except NoSuchElementException:
-            self.log.error(f"Elements not found using locator: {locator}, and locator_type: {locator_type}")
-        except WebDriverException as e:
-            self.log.critical(f"WebDriverException occurred: {str(e)}")
-        return None
 
     def click_element(self, locator, locator_type ="id"):
         try:
@@ -153,12 +159,10 @@ class SeleniumDriver:
             if element:
                 element.click()
                 self.log.info(f"-------------------| Clicked on the element |--------------------")
-                self.log.info(f"-------------------------------------------------------------")
-                self.log.info(f"   ")
+                self.log.info(f"-------------------------------------------------------------\n")
             else:
                 self.log.warning(f"--------------------- Unable to click on element ---------------------------")
-                self.log.warning(f"----------------------------------------------------------------------------")
-                self.log.warning(f"   ")
+                self.log.warning(f"----------------------------------------------------------------------------\n")
                 return
         except Exception as e:
             self.log.debug(f"An unexpected exception occurred: {str(e)}")
@@ -170,14 +174,12 @@ class SeleniumDriver:
             if element:
                 element.send_keys(text)
                 self.log.info(f"-----------------|Sent '{text}' to the element |---------------------")
-                self.log.info(f"----------------------------------------------------------------------------")
-                self.log.info(f"   ")
+                self.log.info(f"----------------------------------------------------------------------------\n")
 
             else:
                 self.log.warning(
                     f"------------ Unable to send keys to the element -------------------")
-                self.log.warning(f"----------------------------------------------------------------------------")
-                self.log.warning(f"   ")
+                self.log.warning(f"----------------------------------------------------------------------------\n")
 
                 return
 
@@ -187,17 +189,18 @@ class SeleniumDriver:
 
     # To make sure element is presented on the page
     def is_element_present(self, locator, locator_type = "id"):
+        self.log.info(f"Trying to locate the element on the page...")
         try:
             element = self.get_element(locator, locator_type)
             if element is not None:
-                self.log.info(f"Element is presented using locator: {locator} and locator_type: {locator_type}")
+                self.log.info(f"Element appeared on the page!")
                 return True
             else:
-                self.log.warning(f"Element isn't presented on the page using locator: {locator} and locator_type: {locator_type}")
+                self.log.warning(f"Element did not appear on the page...")
                 return False
         except Exception as e:
-            self.log.critical(f"WebDriverException occurred: {str(e)}")
-        return False
+            self.log.critical(f"WebDriverException occurred: {e}")
+            return False
 
     # To check if elements are on the page
     def are_elements_present(self, locator, by_type = "id"):
@@ -251,22 +254,36 @@ class SeleniumDriver:
                 print_stack()
         return element
 
-    def scroll_page(self, locator, locator_type="id", direction="no", x=0, y=0, into_view=False, to_bottom=False, to_top=False):
-        element = self.get_element(locator, locator_type)
+    def scroll_page(self, locator=None, locator_type="id", direction="no", x=0, y=0, into_view=False, to_bottom=False, to_top=False):
 
-        if into_view and direction.lower() == "no":
-            self.driver.execute_script('arguments[0].scrollIntoView(true)', element)
-            self.log.info(f"Scrolled into view | object - {element}")
+        self.log.info(f"----------------------------------------------------------------------------")
+        self.log.info(f"--------------------------| START SCROLLING |-------------------------------")
 
-        if to_bottom and direction.lower() == "no":
-            self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        if direction.lower() == "no":
+            if into_view:
+                element = self.get_element(locator, locator_type)
+                self.driver.execute_script('arguments[0].scrollIntoView(true)', element)
+                self.log.info(f"Scrolled into view | Element - {element}")
 
-        if to_top and direction.lower() == "no":
-            self.driver.execute_script("window.scrollTo(0,0);")
+            elif to_bottom:
+                self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+                self.log.info(f"Scrolled to the bottom of the page")
 
-        if direction.lower() == "up":
+            elif to_top:
+                self.driver.execute_script("window.scrollTo(0,0);")
+                self.log.info(f"Scrolled to the top of the page")
+
+        elif direction.lower() == "up":
             y = -y
             self.driver.execute_script("window.scrollTo(arguments[0],arguments[1]);", x, y)
+            self.log.info(f"Scrolled up by {y} pixels")
 
-        self.driver.execute_script("window.scrollTo(arguments[0],arguments[1]);", x, y)
+        elif direction.lower() == "down":
+            self.driver.execute_script("window.scrollTo(arguments[0],arguments[1]);", x, y)
+            self.log.info(f"Scrolled down by {y} pixels")
 
+        else:
+            self.log.warning("!!! WRONG DIRECTION !!!")
+
+        self.log.info(f"--------------------------| END SCROLLING |---------------------------------")
+        self.log.info(f"----------------------------------------------------------------------------")

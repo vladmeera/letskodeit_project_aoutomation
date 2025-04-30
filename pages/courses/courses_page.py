@@ -35,13 +35,10 @@ class CoursesPage(BasePage):
 
     def scroll_to_see_java_course(self):
         self.open_courses_page()
-        self.scroll_page(self.locators.get_locator("all courses",
-                                                   "selenium webdriver 4 with java",
-                                                   "xpath"), "xpath", into_view=True)
-        time.sleep(3)
+        self.scroll_page(to_bottom=True)
 
 
     def verify_java_course_on_screen(self):
-        self.is_element_present(self.locators.get_locator("all courses",
+        return self.is_element_present(self.locators.get_locator("all courses",
                                                    "selenium webdriver 4 with java",
                                                    "xpath"), "xpath")

@@ -1,63 +1,83 @@
-from socks import HTTPError
-import os
-from selenium.webdriver.common.by import By
-from selenium import webdriver
+
 
 class LinkVerification:
 
-    PROTOCOLS = {"HTTPProtocol": "http://", "HTTPSProtocol": "https://"}
-    TLD = {"com": ".com", "ru": ".ru", "org": ".org", "net": ".net"}
-    ENDINGS = ("/", "//", "?", "!", "@")
-
-    def verify_link (self, link):
-
-        driver = webdriver.Chrome()
-
-        test = "login-password"
-        path = os.path.dirname(__file__)
-        print(f"path is {path}")
-
-        full_path = os.path.join(path, "..", "tests")
-        print(full_path)
-
-        _locators = {"login_link": "//a[text()='Sign In']", "email_field": "email",
-                      "password_field": "login-password", "login_btn": "login"}
-        for _locator in _locators:
-            if test in _locators.get(_locator):
-                print("Yes")
-                break
-
-        functions = {"run": "available", "swim": "not available", "jump": "available", }
-        for i in functions:
-            print(functions[i])
-
-        link = link.strip()
-
-        last_in_link = link[-1:]
-        if last_in_link in self.ENDINGS:
-            link = link.strip(last_in_link)
-
-        domain_name = link[-3:]
-
-        website_no_protocol = link.strip("https://")
-        print(website_no_protocol)
+    def __init__(self, link):
 
 
-        if not self.PROTOCOLS["HTTPSProtocol"] in link:
-            return False
-        else:
+        self.easy_check = False
+        self.link = link
+        self.PROTOCOLS = ("http", "https")
+        self.TOP_LEVEL_DOMAIN_LIST = [".com", ".ru", ".org", ".net", ".io"]
+        # self.ENDINGS = ("/", "//", "?", "!", "@")
 
-            print("https was used")
-            link = link.strip("https://")
+    def get_protocol(self):
+        link = self.link.strip()
+        protocol = []
+        try:
+            for digits in link:
+                if digits == ":":
+                    break
+                protocol.append(digits)
+
+            if protocol != []:
+                result_protocol = "".join(protocol)
+                final = str(result_protocol)
+                result = self.check_protocol(final)
+                if result:
+                    return final
+                else:
+                    print(f"{final} - bad protocol...")
+                    return None
+
+            else:
+                self.easy_check_protocol()
+
+        except Exception as e:
+            print(f"Exception - {e}")
+
+    def easy_check_protocol(self):
+        protocol = None
+        try:
+            protocol = self.link[:len(self.PROTOCOLS[0])]
+            if protocol == self.PROTOCOLS[0] or protocol == self.PROTOCOLS[1]:
+                self.easy_check = True
+                return protocol
+            else:
+                print("There is no protocol...")
+                return None
+
+        except Exception as e:
+            print(f"Error occurred - {e}")
+            return protocol
 
 
-        if domain_name in self.TLD:
-            print(f"Domain name: {domain_name}")
-        elif self.TLD["ru"] in domain_name:
-            return False
-        else:
-            raise UserWarning(f"Wierd domain name!!! - {domain_name}")
+    def check_protocol(self, protocol):
+        for prt in self.PROTOCOLS:
+            if protocol == prt and protocol == "https":
+                print("secured connection")
+                return protocol
+            elif protocol == prt and protocol == "http":
+                print("not secured...")
+                return protocol
+            else:
+                return None
 
+
+    def get_after_domain(self):
+        protocol_len = len(self.get_protocol())
+        link_no_protocol = self.link[protocol_len + 3:]
+
+
+    def get_website_domain(self):
+
+        protocol_len = len(self.get_protocol())
+        link_no_protocol = self.link[protocol_len+3:]
+        return link_no_protocol
+
+    def verify_link (self):
+        if self.get_protocol() is not None:
+            print("Legit protocol")
 
 
 
@@ -67,8 +87,8 @@ class LinkVerification:
 
 
 def main():
-    verification = LinkVerification()
-    verification.verify_link("https://www.letskodeit.com")
+    verification = LinkVerification("http://vrii14.github.io/")
+    verification.verify_link()
 
 if __name__ == '__main__':
     main()

@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Update logs, create new functions, improved performance">
-      <change afterPath="$PROJECT_DIR$/tests/courses/courses_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/basepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/locators.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/webdriverfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/webdriverfactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/courses_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courses_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/courses/courses_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/courses/courses_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/excel_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/excel_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/verify_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/verify_link.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.verify_link">
     <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="letskodeit_project_aoutomation" />
       <option name="ENV_FILES" value="" />
@@ -190,10 +191,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.verify_link" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.login_page" />
         <item itemvalue="Python.excel_util" />
-        <item itemvalue="Python.verify_link" />
         <item itemvalue="Python.data" />
       </list>
     </recent_temporary>
@@ -334,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745535816946</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update logs, create new functions, improved performance">
+      <option name="closed" value="true" />
+      <created>1745630969007</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745630969007</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">

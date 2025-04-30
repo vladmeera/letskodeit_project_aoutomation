@@ -31,9 +31,10 @@ class WebDriverFactory:
 
         if self.browser == "chrome":
             driver = webdriver.Chrome()
+            self.log.warning(f"\n")
             self.log.warning(f"{" " * 20}")
             self.log.warning(f"{"#" * 120}")
-            self.log.warning(f"{"#" * 50}NEW SESSION STARTED{'#' * 50}")
+            self.log.warning(f"{"#" * 50} NEW SESSION STARTED {'#' * 50}")
             self.log.warning(f"{"#" * 120}")
             self.log.warning(f"{" " * 20}")
             self.log.warning("Running tests on chrome")

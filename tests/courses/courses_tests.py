@@ -18,7 +18,7 @@ class CourseTest(TestCase):
 
     def test_03_check_java_course_in_all_courses(self):
         """
-        Test name - Verify java course is shown on the screen (positive)
+        Test name - Verify java course is on the screen (positive)
 
         Valid email
         Valid password
@@ -28,6 +28,8 @@ class CourseTest(TestCase):
 
         self.login_page.scroll_to_see_java_course()
         result1 = self.login_page.verify_java_course_on_screen()
+
+        self.log.info(result1)
 
         self.status_test.mark_final(1, 1, "test_03_check_java_course_in_all_courses",
                                     result1, "Java course is shown on the screen",
