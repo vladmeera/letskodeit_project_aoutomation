@@ -49,6 +49,7 @@ class SeleniumDriver:
                 return
         except Exception as e:
             self.log.error(f"Error occurred - {e}")
+
     def screenshot(self, result_message = "screenshot"):
         """
         Attempts to take a screenshot and save it to the specified path.
@@ -73,7 +74,7 @@ class SeleniumDriver:
 
 
         except Exception as e:
-            self.log.error(f"Error while saving screenshot: {e}")
+            self.log.error(f"Error while saving a screenshot: {e}")
 
     def get_title(self):
         """
@@ -125,7 +126,7 @@ class SeleniumDriver:
             by_type = self.get_by_type(locator_type)
             element = self.driver.find_element(by_type, locator)
             if element is not None:
-                self.log.info(f"Found element with locator: {locator} and locator_type: {locator_type}")
+                self.log.info(f"The element was found! Locator: {locator} | Locator_type: {locator_type}")
                 return element
             else:
                 return element
@@ -143,7 +144,7 @@ class SeleniumDriver:
             by_type = self.get_by_type(locator_type)
             elements = self.driver.find_elements(by_type, locator)
             if len(elements) > 0:
-                self.log.info(f"Found {len(elements)} elements")
+                self.log.info(f"Successfully found {len(elements)} elements!")
                 return elements
             else:
                 self.log.info(f"Found {len(elements)} elements. Try another locator or locator type")
@@ -161,7 +162,7 @@ class SeleniumDriver:
                 self.log.info(f"-------------------| Clicked on the element |--------------------")
                 self.log.info(f"-------------------------------------------------------------\n")
             else:
-                self.log.warning(f"--------------------- Unable to click on element ---------------------------")
+                self.log.warning(f"--------------------- Unable to click on the element ---------------------------")
                 self.log.warning(f"----------------------------------------------------------------------------\n")
                 return
         except Exception as e:

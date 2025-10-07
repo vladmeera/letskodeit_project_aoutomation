@@ -8,13 +8,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/webdriverfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/webdriverfactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/courses_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courses_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/courses/courses_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/courses/courses_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/excel_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/excel_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/custom_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/custom_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/excel_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/data_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/verify_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/verify_link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/vladmeera/letskodeit_project_aoutomation.git&quot;,
-    &quot;accountId&quot;: &quot;3095912e-490c-4482-9716-06c0ab856d34&quot;
+    &quot;accountId&quot;: &quot;9fd476ff-fa41-49cf-90d2-d26aaeb9db19&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -55,30 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in login_tests.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.excel_util.executor&quot;: &quot;Run&quot;,
-    &quot;Python.extro_log.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login_tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.verify_link.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vlad/Documents/workspace_python/letskodeit_project_aoutomation/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in login_tests.py.executor": "Run",
+    "Python.data.executor": "Run",
+    "Python.excel_util.executor": "Run",
+    "Python.extro_log.executor": "Run",
+    "Python.login_page.executor": "Run",
+    "Python.login_tests.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.verify_link.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/Users/vlad/Documents/workspace_python/letskodeit_project_aoutomation/tests",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.verify_link">
+  <component name="RunManager" selected="Python.test">
     <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="letskodeit_project_aoutomation" />
       <option name="ENV_FILES" value="" />
@@ -101,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="excel_util" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="data_util" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="letskodeit_project_aoutomation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utilities/excel_util.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utilities/data_util.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,10 +191,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.verify_link" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.verify_link" />
         <item itemvalue="Python.login_page" />
-        <item itemvalue="Python.excel_util" />
+        <item itemvalue="Python.data_util" />
         <item itemvalue="Python.data" />
       </list>
     </recent_temporary>
@@ -202,7 +202,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
       </set>
     </attachedChunks>
   </component>

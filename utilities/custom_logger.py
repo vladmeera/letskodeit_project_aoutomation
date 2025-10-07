@@ -61,10 +61,10 @@ def custom_logger(log_level=DEBUG, log_filename="automation.log", mode='a'):
         print("Invalid mode for file handler")
 
     num_lines = count_lines()
-    if num_lines is not None and num_lines > 4000:
+    if num_lines > 4000:
         print(f"\n--> Log file '{log_file}' has more than 4000 lines - !!! DELETE ALL LOGS AFTER 5000 !!! - | lines > 4000 | <--\n")
 
-    if num_lines is not None and num_lines > 5000:
+    if num_lines > 5000:
         with open(log_file, 'w') as file:
             file.truncate(0)
             print(f"\n--> Log file '{log_file}' cleared successfully - !!! REASON !!! - | lines > 5000 | <--\n")

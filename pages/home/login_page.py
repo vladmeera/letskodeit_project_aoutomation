@@ -1,7 +1,7 @@
 from base.basepage import BasePage
 from utilities.custom_logger import custom_logger as cl
 import os
-from utilities.excel_util import ExcelLocators, ExcelAccounts
+from utilities.data_util import ExcelLocators, ExcelAccounts
 
 
 class LoginPage(BasePage):

@@ -1,41 +1,27 @@
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-#
-# from time import sleep
-#
-#
-# driver = webdriver.Chrome()
-#
-# url = "https://www.letskodeit.com/courses"
-#
-# driver.get(url)
-#
-#
-# element = driver.find_element(By.XPATH, "//a[@href='/courses/rest-assured-api-automation']")
-#
-# driver.execute_script("arguments[0].scrollIntoView(true);", element)
-#
-#
-# sleep(3)
-#
-# driver.quit()
+import csv
+import pandas as pd
+from utilities import data_util
+from utilities import util
 
-website = "https://vrii14.github.io/"
-
-website_list = []
-
-protocols = ("https", "http")
-element = ["h", "t", "t", "p", "s"]
+random_string = util.Util()
+string_ = random_string.get_alpha_numeric(length=8, char_type='mix')
+print(string_)
 
 
-for digits in protocols:
-    website_list.append(digits)
-    print(digits)
-website_result = website[:len(protocols[0])]
+data = data_util.TestData('utilities/locators.csv')
 
+# data.add_new_locator('login_button', 'xpath', 'sdffdsfdf123')
+reader = pd.read_csv('utilities/locators.csv')
+print(reader)
 
-print(website_result)
-assert  element is not None, 'Should not be NONE'
+try:
+    locator = reader[reader['element_name'] == 'login_button']
+    locator_ = locator.values[-1]
+    print(str(locator_[2]))
+except KeyError:
+    print(f'')
 
+# data.add_new_locator("profile_icon", 'css', 'dsfdh2u22hj')
 
-
+locator = data.get_locator('profile_icon')
+print(f"Locator is - {locator}")

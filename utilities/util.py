@@ -7,19 +7,22 @@ All most common utilities should be implemented here
 Example:
     name = self.util.get_unique_name()
 """
-import time
-import traceback
-import random, string
-import utilities.custom_logger as cl
-import openpyxl
-from logging import DEBUG
+try:
+    from string import ascii_letters, ascii_lowercase, ascii_uppercase, digits
+    import time
+    import traceback
+    import random
+    import utilities.custom_logger as cl
+    from logging import DEBUG
+except (ImportError, ModuleNotFoundError):
+    print(f'Error occurred importing packages/dependencies! Please, make sure you have them all installed on your system!')
 
 
 class Util(object):
 
     log = cl.custom_logger(DEBUG)
 
-    def sleep(self, seconds, message = "") -> None:
+    def sleep(self, seconds, message = "???") -> None:
         """
         Put the program to wait for the specified time
         """
@@ -32,7 +35,7 @@ class Util(object):
             self.log.error(f"| INTERRUPTED ERROR | {e}")
             traceback.print_stack()
 
-    def get_alpha_numeric(self, length, char_type ="letters") -> str:
+    def get_alpha_numeric(self, length, char_type) -> str:
         """
         Get random string of characters
 
@@ -41,18 +44,17 @@ class Util(object):
             char_type: Type of characters string should contain, default is "letters"
             Provide lower/upper/digits/mix for different types
         """
-
         alpha_num = ''
-        if char_type == "lower":
-            case = string.ascii_lowercase
-        elif char_type == "upper":
-            case = string.ascii_uppercase
-        elif char_type == "digits":
-            case = string.digits
-        elif char_type == "mix":
-            case = string.ascii_letters + string.digits
-        else:
-            case = string.ascii_letters
+
+        char_type_dict = {
+            'lower': ascii_lowercase,
+            'upper': ascii_uppercase,
+            'digits': digits,
+            'mix': ascii_letters + digits,
+            'letters': ascii_letters
+        }
+        case = char_type_dict[char_type]
+
         return alpha_num.join(random.choice(case) for i in range(length))
 
     def get_unique_name(self, char_count: int = 5):

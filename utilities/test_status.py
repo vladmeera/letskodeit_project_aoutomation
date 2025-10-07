@@ -2,6 +2,7 @@
 from base.selenium_driver import SeleniumDriver
 from utilities.custom_logger import custom_logger as cl
 
+
 class StatusOfTest(SeleniumDriver):
 
     log = cl()
