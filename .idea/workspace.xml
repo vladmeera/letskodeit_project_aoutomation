@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Update logs, create new functions, improved performance">
+    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Add data_util.py and improve performance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/courses/courses_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courses_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/custom_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/custom_logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/excel_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/data_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/util.py" afterDir="false" />
     </list>
@@ -343,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745630969007</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add data_util.py and improve performance">
+      <option name="closed" value="true" />
+      <created>1759881132465</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1759881132465</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -377,6 +380,7 @@
     <MESSAGE value="Add type hints and browser option help text" />
     <MESSAGE value="Update workspace.xml for improved task management&#10;&#10;Simplified task comments in workspace.xml and added new tasks with summaries for better clarity. Refactored type annotations and included more helpful messages to assist in task tracking and code maintenance." />
     <MESSAGE value="Update logs, create new functions, improved performance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update logs, create new functions, improved performance" />
+    <MESSAGE value="Add data_util.py and improve performance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add data_util.py and improve performance" />
   </component>
 </project>

@@ -1203,3 +1203,46 @@ Stacktrace:
 10/06/2025 16:58:50 - TestData - WARNING - File already exists!
 10/06/2025 16:59:33 - TestData - WARNING - File already exists!
 10/06/2025 17:06:11 - TestData - WARNING - File already exists! File location - utilities/locators.csv
+10/07/2025 20:01:07 - Util - WARNING - There is no - mi - character type!
+10/07/2025 20:02:50 - Util - WARNING - There is no - mi - character type!
+10/07/2025 20:03:13 - Util - WARNING - There is no - mi - character type!
+10/07/2025 20:04:14 - Util - WARNING - There is no - mi - character type!
+10/07/2025 20:12:09 - Util - WARNING - There is no - mi - character type!
+10/07/2025 20:12:27 - Util - WARNING - There is no - mi - character type!
+10/07/2025 20:12:44 - Util - WARNING - There is no - mi - character type!
+10/07/2025 21:35:53 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:35:53 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:35:53 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:35:53 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:35:53 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:35:53 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:37:49 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:37:49 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:37:49 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:37:49 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:37:49 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:37:49 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:41:06 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:41:06 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:41:06 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:42:54 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:42:54 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:42:54 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:47:38 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:47:38 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:47:38 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:49:19 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:49:19 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:49:19 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:49:48 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:49:48 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:49:48 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:50:39 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:50:39 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:50:39 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:51:57 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:51:57 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:51:57 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/07/2025 21:52:34 - Util - INFO - --> Actual text from application --> |  |
+10/07/2025 21:52:34 - Util - INFO - ->> Expected text to be in actual ->> |  |
+10/07/2025 21:52:34 - Util - WARNING - Verification was not successful! Actual or expected can't be empty!
