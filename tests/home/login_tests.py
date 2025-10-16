@@ -18,7 +18,7 @@ class LoginTest(TestCase):
 
 
 
-    # @pytest.mark.run(order=2)
+    @pytest.mark.run(order=2)
     def test_02_valid_login(self):
         """
         Test name - valid login (positive)
@@ -28,8 +28,6 @@ class LoginTest(TestCase):
         Valid password
         """
         self.log.info(f"   -------> Running {currentframe().f_code.co_name} test method <-------")
-        self.log.info(f"---------------------------------------------------------------------")
-
         self.login_page.successful_login()
 
         result1 = self.login_page.verify_title_my_courses()
@@ -50,7 +48,7 @@ class LoginTest(TestCase):
                                     "Login was successful, avatar was presented on the page",
                                     "Login was not successful, avatar was not presented on the page")
 
-    # @pytest.mark.run(order=1)
+    @pytest.mark.run(order=1)
     def test_01_invalid_login_no_pass(self):
         """
         Invalid login - negative
@@ -69,3 +67,4 @@ class LoginTest(TestCase):
                                     ,result,
                                     "Error message is displayed",
                                     "Error message is not displayed")
+        self.login_page.delete_keys_email()

@@ -1,1 +1,8 @@
-element_name,locator_name,locator
+element_name,locator_type,locator
+email_field,id,email
+login_link,xpath,//a[text()='Sign In']
+login_button,id,login
+password_field,id,login-password
+element_to_verify_login_avatar,xpath,//div[@class='dropdown']//img
+element_to_verify_login_java_course,xpath,//div[@class='zen-course-title']
+error_to_verify_no_pass,xpath,//span[text()='The password field is required.']

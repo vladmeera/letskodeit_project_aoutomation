@@ -88,9 +88,10 @@ class SeleniumDriver:
         except Exception as e:
             self.log.error(f"\nError occurred: {e}\n")
 
+    # To get By.type
     def get_by_type(self, locator_type):
         """
-        Get the Selenium By type based on a string identifier.
+        Get the Selenium By type based on a string identifier. Default is ID.
 
         :param locator_type: A string representing the type of locator (e.g., 'id', 'css_selector', 'xpath', etc.).
         :return: Corresponding Selenium By method for the provided locator type. Returns False if the locator type is not supported.
@@ -113,11 +114,10 @@ class SeleniumDriver:
             self.log.info(f"Using locator type: {locator_type}, parsed as By.{by_type}")
             return by_type
         else:
-            self.log.warning(f"Wrong locator type: {locator_type}"
-                             f"List of all locators: {list_of_locators}")
-            return
+            self.log.warning(f"Wrong locator type: {locator_type}! List of all locators: {list_of_locators}")
+            return None
 
-    # To find element (default locator type is ID)
+    # To find an element (default locator type is ID)
     def get_element(self, locator, locator_type ="id"):
         element = None
         try:
@@ -288,3 +288,15 @@ class SeleniumDriver:
 
         self.log.info(f"--------------------------| END SCROLLING |---------------------------------")
         self.log.info(f"----------------------------------------------------------------------------")
+
+    def delete_keys(self, locator, locator_type = "id"):
+        try:
+            element = self.get_element(locator, locator_type)
+            if element:
+                element.clear()
+                self.log.info(f"-----------------|Deleted keys from the element |---------------------")
+                self.log.info(f"----------------------------------------------------------------------------\n")
+
+        except Exception as e:
+            self.log.critical(f"An unexpected exception occurred: {str(e)}")
+            print_stack()

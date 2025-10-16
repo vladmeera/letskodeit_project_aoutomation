@@ -16,7 +16,6 @@ class StatusOfTest(SeleniumDriver):
 
     def set_result(self, test_number, total_tests, result, result_message_success=" ", result_message_fail=" "):
         try:
-            self.log.info(result)
             if result is not None and result:
                 self.result_list.append("Pass")
                 self.log.info(f"--> --> --> | TEST {test_number}/{total_tests} SUCCESSFUL | {result_message_success} <-- <-- <--")

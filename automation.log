@@ -1246,3 +1246,1995 @@ Stacktrace:
 10/07/2025 21:52:34 - Util - INFO - --> Actual text from application --> |  |
 10/07/2025 21:52:34 - Util - INFO - ->> Expected text to be in actual ->> |  |
 10/07/2025 21:52:34 - Util - WARNING - Verification was not successful! Actual or expected can't be empty!
+10/08/2025 03:48:34 - WebDriverFactory - WARNING - 
+
+10/08/2025 03:48:34 - WebDriverFactory - WARNING -                     
+10/08/2025 03:48:34 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 03:48:34 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 03:48:34 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 03:48:34 - WebDriverFactory - WARNING -                     
+10/08/2025 03:48:34 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 03:48:34 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 03:48:35 - <module> - WARNING -    
+10/08/2025 03:48:35 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 03:48:35 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 03:48:35 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 03:48:35 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 03:48:35 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 03:48:35 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:35 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:35 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 03:48:37 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7cd7]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:37 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 03:48:37 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 03:48:37 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:37 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:37 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:37 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 03:48:37 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7a9e]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:37 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 03:48:37 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 03:48:37 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:37 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:37 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 03:48:39 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7cd7]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:39 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 03:48:39 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 03:48:39 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:39 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 03:48:39 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:39 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 03:48:39 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7a9e]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:39 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 03:48:39 - StatusOfTest - INFO - False
+10/08/2025 03:48:39 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Error message is not displayed <<- <<- <<- <<-
+10/08/2025 03:48:39 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/error_message_is_not_displayed_2025-10-08_1759891719299.png. Name of screenshot: error_message_is_not_displayed_2025-10-08_1759891719299.png
+10/08/2025 03:48:39 - StatusOfTest - ERROR - -------------------| test_01_invalid_login_no_pass | TEST FAILED |------------
+10/08/2025 03:48:39 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 03:48:39 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 03:48:39 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 03:48:39 - <module> - WARNING -    
+10/08/2025 03:48:39 - <module> - WARNING -    
+10/08/2025 03:48:39 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 03:48:39 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 03:48:39 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 03:48:39 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 03:48:39 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:39 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:39 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 03:48:41 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7cd7]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:41 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 03:48:41 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 03:48:41 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:41 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:41 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 03:48:41 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7a9e]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:41 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 03:48:41 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 03:48:41 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:41 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:41 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 03:48:43 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7cd7]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:43 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 03:48:43 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 03:48:43 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:43 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:43 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 03:48:45 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7cd7]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:45 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 03:48:45 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 03:48:45 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:45 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 03:48:45 - LoginPage - INFO - Waiting for 3 seconds for element to appear: None
+10/08/2025 03:48:45 - LoginPage - CRITICAL - An unexpected error occurred: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7a9e]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:45 - Util - INFO - --> Actual text from application --> | Home Page |
+10/08/2025 03:48:45 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/08/2025 03:48:45 - Util - WARNING - VERIFICATION FAILED! The actual text is not in the expected text!
+10/08/2025 03:48:45 - StatusOfTest - INFO - False
+10/08/2025 03:48:45 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/3 FAIL | Title does not match the original <<- <<- <<- <<-
+10/08/2025 03:48:45 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/title_does_not_match_the_original_2025-10-08_1759891725656.png. Name of screenshot: title_does_not_match_the_original_2025-10-08_1759891725656.png
+10/08/2025 03:48:45 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:45 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 03:48:45 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:45 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 03:48:45 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7a9e]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:45 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 03:48:45 - StatusOfTest - INFO - False
+10/08/2025 03:48:45 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 2/3 FAIL | Login was not successful, my courses were not presented on the page <<- <<- <<- <<-
+10/08/2025 03:48:46 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/login_was_not_successful,_my_courses_were_not_presented_on_the_page_2025-10-08_1759891725823.png. Name of screenshot: login_was_not_successful,_my_courses_were_not_presented_on_the_page_2025-10-08_1759891725823.png
+10/08/2025 03:48:46 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 03:48:46 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 03:48:46 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 03:48:46 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 03:48:46 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff623a21eb5+80197]
+	GetHandleVerifier [0x0x7ff623a21f10+80288]
+	(No symbol) [0x0x7ff6237a02fa]
+	(No symbol) [0x0x7ff6237f7a9e]
+	(No symbol) [0x0x7ff6237f7f9c]
+	(No symbol) [0x0x7ff62384ba87]
+	(No symbol) [0x0x7ff6238203bf]
+	(No symbol) [0x0x7ff6238487fb]
+	(No symbol) [0x0x7ff623820153]
+	(No symbol) [0x0x7ff6237e8b02]
+	(No symbol) [0x0x7ff6237e98d3]
+	GetHandleVerifier [0x0x7ff623cde83d+2949837]
+	GetHandleVerifier [0x0x7ff623cd8c6a+2926330]
+	GetHandleVerifier [0x0x7ff623cf86c7+3055959]
+	GetHandleVerifier [0x0x7ff623a3cfee+191102]
+	GetHandleVerifier [0x0x7ff623a450af+224063]
+	GetHandleVerifier [0x0x7ff623a2af64+117236]
+	GetHandleVerifier [0x0x7ff623a2b119+117673]
+	GetHandleVerifier [0x0x7ff623a110a8+11064]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 03:48:46 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 03:48:46 - StatusOfTest - INFO - False
+10/08/2025 03:48:46 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 3/3 FAIL | Login was not successful, avatar was not presented on the page <<- <<- <<- <<-
+10/08/2025 03:48:46 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/login_was_not_successful,_avatar_was_not_presented_on_the_page_2025-10-08_1759891726010.png. Name of screenshot: login_was_not_successful,_avatar_was_not_presented_on_the_page_2025-10-08_1759891726010.png
+10/08/2025 03:48:46 - StatusOfTest - ERROR - -------------------| test_02_valid_login | TEST FAILED |------------
+10/08/2025 03:48:46 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 03:48:46 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 03:48:46 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 03:48:46 - <module> - WARNING -    
+10/08/2025 06:23:52 - WebDriverFactory - WARNING - 
+
+10/08/2025 06:23:52 - WebDriverFactory - WARNING -                     
+10/08/2025 06:23:52 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:23:52 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 06:23:52 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:23:52 - WebDriverFactory - WARNING -                     
+10/08/2025 06:23:52 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 06:23:52 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 06:23:53 - <module> - WARNING -    
+10/08/2025 06:23:53 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:23:53 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:23:53 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:23:53 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 06:23:53 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 06:23:53 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:53 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:53 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:23:55 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff766c9e995+80021]
+	GetHandleVerifier [0x0x7ff766c9e9f0+80112]
+	(No symbol) [0x0x7ff766a2060f]
+	(No symbol) [0x0x7ff766a78854]
+	(No symbol) [0x0x7ff766a78b1c]
+	(No symbol) [0x0x7ff766acc927]
+	(No symbol) [0x0x7ff766aa126f]
+	(No symbol) [0x0x7ff766ac968a]
+	(No symbol) [0x0x7ff766aa1003]
+	(No symbol) [0x0x7ff766a695d1]
+	(No symbol) [0x0x7ff766a6a3f3]
+	GetHandleVerifier [0x0x7ff766f5dd4d+2960461]
+	GetHandleVerifier [0x0x7ff766f5800a+2936586]
+	GetHandleVerifier [0x0x7ff766f78a47+3070279]
+	GetHandleVerifier [0x0x7ff766cb847e+185214]
+	GetHandleVerifier [0x0x7ff766cbfecf+216527]
+	GetHandleVerifier [0x0x7ff766ca7bd4+117460]
+	GetHandleVerifier [0x0x7ff766ca7d8f+117903]
+	GetHandleVerifier [0x0x7ff766c8dc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:23:55 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:23:55 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:23:55 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:55 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:55 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:55 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:23:55 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff766c9e995+80021]
+	GetHandleVerifier [0x0x7ff766c9e9f0+80112]
+	(No symbol) [0x0x7ff766a2060f]
+	(No symbol) [0x0x7ff766a7861e]
+	(No symbol) [0x0x7ff766a78b1c]
+	(No symbol) [0x0x7ff766acc927]
+	(No symbol) [0x0x7ff766aa126f]
+	(No symbol) [0x0x7ff766ac968a]
+	(No symbol) [0x0x7ff766aa1003]
+	(No symbol) [0x0x7ff766a695d1]
+	(No symbol) [0x0x7ff766a6a3f3]
+	GetHandleVerifier [0x0x7ff766f5dd4d+2960461]
+	GetHandleVerifier [0x0x7ff766f5800a+2936586]
+	GetHandleVerifier [0x0x7ff766f78a47+3070279]
+	GetHandleVerifier [0x0x7ff766cb847e+185214]
+	GetHandleVerifier [0x0x7ff766cbfecf+216527]
+	GetHandleVerifier [0x0x7ff766ca7bd4+117460]
+	GetHandleVerifier [0x0x7ff766ca7d8f+117903]
+	GetHandleVerifier [0x0x7ff766c8dc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:23:55 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:23:55 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:23:55 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:55 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:55 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:23:57 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff766c9e995+80021]
+	GetHandleVerifier [0x0x7ff766c9e9f0+80112]
+	(No symbol) [0x0x7ff766a2060f]
+	(No symbol) [0x0x7ff766a78854]
+	(No symbol) [0x0x7ff766a78b1c]
+	(No symbol) [0x0x7ff766acc927]
+	(No symbol) [0x0x7ff766aa126f]
+	(No symbol) [0x0x7ff766ac968a]
+	(No symbol) [0x0x7ff766aa1003]
+	(No symbol) [0x0x7ff766a695d1]
+	(No symbol) [0x0x7ff766a6a3f3]
+	GetHandleVerifier [0x0x7ff766f5dd4d+2960461]
+	GetHandleVerifier [0x0x7ff766f5800a+2936586]
+	GetHandleVerifier [0x0x7ff766f78a47+3070279]
+	GetHandleVerifier [0x0x7ff766cb847e+185214]
+	GetHandleVerifier [0x0x7ff766cbfecf+216527]
+	GetHandleVerifier [0x0x7ff766ca7bd4+117460]
+	GetHandleVerifier [0x0x7ff766ca7d8f+117903]
+	GetHandleVerifier [0x0x7ff766c8dc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:23:57 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:23:57 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:23:57 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:57 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:23:57 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:57 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:23:57 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff766c9e995+80021]
+	GetHandleVerifier [0x0x7ff766c9e9f0+80112]
+	(No symbol) [0x0x7ff766a2060f]
+	(No symbol) [0x0x7ff766a7861e]
+	(No symbol) [0x0x7ff766a78b1c]
+	(No symbol) [0x0x7ff766acc927]
+	(No symbol) [0x0x7ff766aa126f]
+	(No symbol) [0x0x7ff766ac968a]
+	(No symbol) [0x0x7ff766aa1003]
+	(No symbol) [0x0x7ff766a695d1]
+	(No symbol) [0x0x7ff766a6a3f3]
+	GetHandleVerifier [0x0x7ff766f5dd4d+2960461]
+	GetHandleVerifier [0x0x7ff766f5800a+2936586]
+	GetHandleVerifier [0x0x7ff766f78a47+3070279]
+	GetHandleVerifier [0x0x7ff766cb847e+185214]
+	GetHandleVerifier [0x0x7ff766cbfecf+216527]
+	GetHandleVerifier [0x0x7ff766ca7bd4+117460]
+	GetHandleVerifier [0x0x7ff766ca7d8f+117903]
+	GetHandleVerifier [0x0x7ff766c8dc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:23:57 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:23:57 - StatusOfTest - INFO - False
+10/08/2025 06:23:57 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Error message is not displayed <<- <<- <<- <<-
+10/08/2025 06:23:57 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/error_message_is_not_displayed_2025-10-08_1759901037388.png. Name of screenshot: error_message_is_not_displayed_2025-10-08_1759901037388.png
+10/08/2025 06:23:57 - StatusOfTest - ERROR - -------------------| test_01_invalid_login_no_pass | TEST FAILED |------------
+10/08/2025 06:23:57 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:23:57 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:23:57 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:23:57 - <module> - WARNING -    
+10/08/2025 06:23:57 - <module> - WARNING -    
+10/08/2025 06:23:57 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:23:57 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:23:57 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:23:57 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 06:23:57 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:57 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:57 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:23:59 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff766c9e995+80021]
+	GetHandleVerifier [0x0x7ff766c9e9f0+80112]
+	(No symbol) [0x0x7ff766a2060f]
+	(No symbol) [0x0x7ff766a78854]
+	(No symbol) [0x0x7ff766a78b1c]
+	(No symbol) [0x0x7ff766acc927]
+	(No symbol) [0x0x7ff766aa126f]
+	(No symbol) [0x0x7ff766ac968a]
+	(No symbol) [0x0x7ff766aa1003]
+	(No symbol) [0x0x7ff766a695d1]
+	(No symbol) [0x0x7ff766a6a3f3]
+	GetHandleVerifier [0x0x7ff766f5dd4d+2960461]
+	GetHandleVerifier [0x0x7ff766f5800a+2936586]
+	GetHandleVerifier [0x0x7ff766f78a47+3070279]
+	GetHandleVerifier [0x0x7ff766cb847e+185214]
+	GetHandleVerifier [0x0x7ff766cbfecf+216527]
+	GetHandleVerifier [0x0x7ff766ca7bd4+117460]
+	GetHandleVerifier [0x0x7ff766ca7d8f+117903]
+	GetHandleVerifier [0x0x7ff766c8dc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:23:59 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:23:59 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:23:59 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:59 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:23:59 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff766c9e995+80021]
+	GetHandleVerifier [0x0x7ff766c9e9f0+80112]
+	(No symbol) [0x0x7ff766a2060f]
+	(No symbol) [0x0x7ff766a7861e]
+	(No symbol) [0x0x7ff766a78b1c]
+	(No symbol) [0x0x7ff766acc927]
+	(No symbol) [0x0x7ff766aa126f]
+	(No symbol) [0x0x7ff766ac968a]
+	(No symbol) [0x0x7ff766aa1003]
+	(No symbol) [0x0x7ff766a695d1]
+	(No symbol) [0x0x7ff766a6a3f3]
+	GetHandleVerifier [0x0x7ff766f5dd4d+2960461]
+	GetHandleVerifier [0x0x7ff766f5800a+2936586]
+	GetHandleVerifier [0x0x7ff766f78a47+3070279]
+	GetHandleVerifier [0x0x7ff766cb847e+185214]
+	GetHandleVerifier [0x0x7ff766cbfecf+216527]
+	GetHandleVerifier [0x0x7ff766ca7bd4+117460]
+	GetHandleVerifier [0x0x7ff766ca7d8f+117903]
+	GetHandleVerifier [0x0x7ff766c8dc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:23:59 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:23:59 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:23:59 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:59 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:23:59 - LoginPage - ERROR - Exception occurred while searching for the element | ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+10/08/2025 06:23:59 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:23:59 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:23:59 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:23:59 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:23:59 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:24:16 - LoginPage - ERROR - Exception occurred while searching for the element | HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDBEC640>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:24:16 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:24:16 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:24:16 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:24:16 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:24:16 - LoginPage - INFO - Waiting for 3 seconds for element to appear: None
+10/08/2025 06:24:32 - LoginPage - CRITICAL - An unexpected error occurred: HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDBEA140>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:24:49 - LoginPage - ERROR - 
+Error occurred: HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/title (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDBEB350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+10/08/2025 06:24:49 - StatusOfTest - INFO - None
+10/08/2025 06:24:49 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/3 FAIL | Title does not match the original <<- <<- <<- <<-
+10/08/2025 06:25:05 - StatusOfTest - ERROR - Error while saving a screenshot: HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDC30380>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:25:05 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:25:05 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:25:05 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:25:05 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:25:21 - LoginPage - ERROR - Exception occurred while searching for the element | HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDC308D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:25:21 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:25:21 - StatusOfTest - INFO - False
+10/08/2025 06:25:21 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 2/3 FAIL | Login was not successful, my courses were not presented on the page <<- <<- <<- <<-
+10/08/2025 06:25:38 - StatusOfTest - ERROR - Error while saving a screenshot: HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDC319D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:25:38 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:25:38 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:25:38 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:25:38 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:25:54 - LoginPage - ERROR - Exception occurred while searching for the element | HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDC32BE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:25:54 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:25:54 - StatusOfTest - INFO - False
+10/08/2025 06:25:54 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 3/3 FAIL | Login was not successful, avatar was not presented on the page <<- <<- <<- <<-
+10/08/2025 06:26:10 - StatusOfTest - ERROR - Error while saving a screenshot: HTTPConnectionPool(host='localhost', port=50794): Max retries exceeded with url: /session/fc47ff01bee57e00f933771f859cd574/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000191FDC33CE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:26:10 - StatusOfTest - ERROR - -------------------| test_02_valid_login | TEST FAILED |------------
+10/08/2025 06:26:10 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:26:10 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:26:10 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:26:10 - <module> - WARNING -    
+10/08/2025 06:43:53 - WebDriverFactory - WARNING - 
+
+10/08/2025 06:43:53 - WebDriverFactory - WARNING -                     
+10/08/2025 06:43:53 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:43:53 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 06:43:53 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:43:53 - WebDriverFactory - WARNING -                     
+10/08/2025 06:43:53 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 06:43:53 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 06:43:54 - <module> - WARNING -    
+10/08/2025 06:43:54 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:43:54 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:43:54 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:43:54 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 06:43:54 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 06:43:54 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:43:54 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:43:54 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:43:56 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:43:56 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:43:56 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:43:56 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:43:56 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:43:56 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:43:56 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:43:56 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca861e]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:43:56 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:43:56 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:43:56 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:43:56 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:43:56 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:43:58 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:43:58 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:43:58 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:43:58 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:43:58 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:43:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:43:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:43:58 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca861e]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:43:58 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:43:58 - StatusOfTest - INFO - False
+10/08/2025 06:43:58 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/1 FAIL | Error message is not displayed <<- <<- <<- <<-
+10/08/2025 06:43:58 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/error_message_is_not_displayed_2025-10-08_1759902238330.png. Name of screenshot: error_message_is_not_displayed_2025-10-08_1759902238330.png
+10/08/2025 06:43:58 - StatusOfTest - ERROR - -------------------| test_01_invalid_login_no_pass | TEST FAILED |------------
+10/08/2025 06:43:58 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:43:58 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:43:58 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:43:58 - <module> - WARNING -    
+10/08/2025 06:43:58 - <module> - WARNING -    
+10/08/2025 06:43:58 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:43:58 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:43:58 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:43:58 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 06:43:58 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:43:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:43:58 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:44:00 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:44:00 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:44:00 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:44:00 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:44:00 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:44:00 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:44:00 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca861e]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:44:00 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:44:00 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:44:00 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:44:00 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:44:00 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:44:02 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:44:02 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:44:02 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:44:02 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:44:02 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:44:02 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:44:04 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="None"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:44:04 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:44:04 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:44:04 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:44:04 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:44:04 - LoginPage - INFO - Waiting for 3 seconds for element to appear: None
+10/08/2025 06:44:04 - LoginPage - CRITICAL - An unexpected error occurred: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca861e]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:44:04 - Util - INFO - --> Actual text from application --> | Home Page |
+10/08/2025 06:44:04 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/08/2025 06:44:04 - Util - WARNING - VERIFICATION FAILED! The actual text is not in the expected text!
+10/08/2025 06:44:04 - StatusOfTest - INFO - False
+10/08/2025 06:44:04 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/3 FAIL | Title does not match the original <<- <<- <<- <<-
+10/08/2025 06:44:04 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/title_does_not_match_the_original_2025-10-08_1759902244646.png. Name of screenshot: title_does_not_match_the_original_2025-10-08_1759902244646.png
+10/08/2025 06:44:04 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:44:04 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:44:04 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:44:04 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:44:04 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca861e]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:44:04 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:44:04 - StatusOfTest - INFO - False
+10/08/2025 06:44:04 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 2/3 FAIL | Login was not successful, my courses were not presented on the page <<- <<- <<- <<-
+10/08/2025 06:44:04 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/login_was_not_successful,_my_courses_were_not_presented_on_the_page_2025-10-08_1759902244812.png. Name of screenshot: login_was_not_successful,_my_courses_were_not_presented_on_the_page_2025-10-08_1759902244812.png
+10/08/2025 06:44:04 - TestData - WARNING - No such file. Create a new file or change the directory path!
+10/08/2025 06:44:04 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:44:04 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:44:04 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:44:04 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid argument: 'value' must be a string
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca861e]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:44:04 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:44:04 - StatusOfTest - INFO - False
+10/08/2025 06:44:04 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 3/3 FAIL | Login was not successful, avatar was not presented on the page <<- <<- <<- <<-
+10/08/2025 06:44:05 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/login_was_not_successful,_avatar_was_not_presented_on_the_page_2025-10-08_1759902244974.png. Name of screenshot: login_was_not_successful,_avatar_was_not_presented_on_the_page_2025-10-08_1759902244974.png
+10/08/2025 06:44:05 - StatusOfTest - ERROR - -------------------| test_02_valid_login | TEST FAILED |------------
+10/08/2025 06:44:05 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:44:05 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:44:05 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:44:05 - <module> - WARNING -    
+10/08/2025 06:45:44 - WebDriverFactory - WARNING - 
+
+10/08/2025 06:45:44 - WebDriverFactory - WARNING -                     
+10/08/2025 06:45:44 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:45:44 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 06:45:44 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:45:44 - WebDriverFactory - WARNING -                     
+10/08/2025 06:45:44 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 06:45:44 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 06:45:45 - <module> - WARNING -    
+10/08/2025 06:45:45 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:45:45 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:45:45 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:45:45 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 06:45:45 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 06:45:45 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:45:45 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:45:47 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="//a[text()='Sign In']"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:45:47 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:45:47 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:45:47 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:45:47 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:45:47 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:45:47 - <module> - WARNING -    
+10/08/2025 06:45:47 - <module> - WARNING -    
+10/08/2025 06:45:47 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:45:47 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:45:47 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:45:47 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 06:45:47 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:45:47 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:45:49 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="//a[text()='Sign In']"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:45:49 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:45:49 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:45:49 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:45:49 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:45:51 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"xpath","selector":"email"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:45:51 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:45:51 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:45:51 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:45:51 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:45:53 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login-password"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:45:53 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:45:53 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:45:53 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:45:53 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:45:55 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="login"]"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:45:55 - LoginPage - WARNING - --------------------- Unable to click on the element ---------------------------
+10/08/2025 06:45:55 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:45:55 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:45:55 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='dropdown']//img
+10/08/2025 06:45:56 - LoginPage - CRITICAL - An unexpected error occurred: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+10/08/2025 06:46:13 - LoginPage - ERROR - 
+Error occurred: HTTPConnectionPool(host='localhost', port=64146): Max retries exceeded with url: /session/a92d7dcd5427d457822fdc6c06159a19/title (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B9B41CC30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+10/08/2025 06:46:13 - StatusOfTest - INFO - None
+10/08/2025 06:46:13 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/3 FAIL | Title does not match the original <<- <<- <<- <<-
+10/08/2025 06:46:29 - StatusOfTest - ERROR - Error while saving a screenshot: HTTPConnectionPool(host='localhost', port=64146): Max retries exceeded with url: /session/a92d7dcd5427d457822fdc6c06159a19/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B9B43E7A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:46:29 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:46:29 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:46:29 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:46:45 - LoginPage - ERROR - Exception occurred while searching for the element | HTTPConnectionPool(host='localhost', port=64146): Max retries exceeded with url: /session/a92d7dcd5427d457822fdc6c06159a19/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B9B43F8A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:46:45 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:46:45 - StatusOfTest - INFO - False
+10/08/2025 06:46:45 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 2/3 FAIL | Login was not successful, my courses were not presented on the page <<- <<- <<- <<-
+10/08/2025 06:47:01 - StatusOfTest - ERROR - Error while saving a screenshot: HTTPConnectionPool(host='localhost', port=64146): Max retries exceeded with url: /session/a92d7dcd5427d457822fdc6c06159a19/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B9B4749E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:47:01 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:47:01 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:47:01 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:47:18 - LoginPage - ERROR - Exception occurred while searching for the element | HTTPConnectionPool(host='localhost', port=64146): Max retries exceeded with url: /session/a92d7dcd5427d457822fdc6c06159a19/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B9B475AE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:47:18 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:47:18 - StatusOfTest - INFO - False
+10/08/2025 06:47:18 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 3/3 FAIL | Login was not successful, avatar was not presented on the page <<- <<- <<- <<-
+10/08/2025 06:47:34 - StatusOfTest - ERROR - Error while saving a screenshot: HTTPConnectionPool(host='localhost', port=64146): Max retries exceeded with url: /session/a92d7dcd5427d457822fdc6c06159a19/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016B9B476BE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+10/08/2025 06:47:34 - StatusOfTest - ERROR - -------------------| test_02_valid_login | TEST FAILED |------------
+10/08/2025 06:47:34 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:47:34 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:47:34 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:47:34 - <module> - WARNING -    
+10/08/2025 06:48:20 - WebDriverFactory - WARNING - 
+
+10/08/2025 06:48:20 - WebDriverFactory - WARNING -                     
+10/08/2025 06:48:20 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:48:20 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 06:48:20 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:48:20 - WebDriverFactory - WARNING -                     
+10/08/2025 06:48:20 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 06:48:20 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 06:48:22 - <module> - WARNING -    
+10/08/2025 06:48:22 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:48:22 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:48:22 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:48:22 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 06:48:22 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 06:48:22 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:48:22 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:48:22 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 06:48:22 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 06:48:22 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 06:48:22 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:48:22 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:48:22 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:48:22 - <module> - WARNING -    
+10/08/2025 06:48:22 - <module> - WARNING -    
+10/08/2025 06:48:22 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:48:22 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:48:22 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:48:22 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 06:48:22 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:48:22 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:48:22 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 06:48:22 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 06:48:22 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 06:48:22 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:48:22 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:48:24 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"xpath","selector":"email"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:48:24 - LoginPage - WARNING - ------------ Unable to send keys to the element -------------------
+10/08/2025 06:48:24 - LoginPage - WARNING - ----------------------------------------------------------------------------
+
+10/08/2025 06:48:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:48:24 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:48:24 - LoginPage - INFO - The element was found! Locator: login-password | Locator_type: id
+10/08/2025 06:48:24 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+10/08/2025 06:48:24 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 06:48:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:48:24 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 06:48:24 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 06:48:25 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 06:48:25 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 06:48:25 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:48:25 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='dropdown']//img
+10/08/2025 06:48:29 - LoginPage - CRITICAL - An unexpected error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:48:29 - Util - INFO - --> Actual text from application --> | Login |
+10/08/2025 06:48:29 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/08/2025 06:48:29 - Util - WARNING - VERIFICATION FAILED! The actual text is not in the expected text!
+10/08/2025 06:48:29 - StatusOfTest - INFO - False
+10/08/2025 06:48:29 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/3 FAIL | Title does not match the original <<- <<- <<- <<-
+10/08/2025 06:48:29 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/title_does_not_match_the_original_2025-10-08_1759902509580.png. Name of screenshot: title_does_not_match_the_original_2025-10-08_1759902509580.png
+10/08/2025 06:48:29 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:48:29 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:48:29 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:48:31 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=141.0.7390.55)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60ec3c77c]
+	(No symbol) [0x0x7ff60ec3c6dc]
+	(No symbol) [0x0x7ff60ec3ae30]
+	(No symbol) [0x0x7ff60ec3bb0b]
+	(No symbol) [0x0x7ff60ec55ce1]
+	(No symbol) [0x0x7ff60ec56817]
+	(No symbol) [0x0x7ff60ec5b26f]
+	(No symbol) [0x0x7ff60ec5b32f]
+	(No symbol) [0x0x7ff60eca8107]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:48:31 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:48:31 - StatusOfTest - INFO - False
+10/08/2025 06:48:31 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 2/3 FAIL | Login was not successful, my courses were not presented on the page <<- <<- <<- <<-
+10/08/2025 06:48:31 - StatusOfTest - ERROR - Error while saving a screenshot: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec50425]
+	(No symbol) [0x0x7ff60ec9864f]
+	(No symbol) [0x0x7ff60ecd10f2]
+	(No symbol) [0x0x7ff60eccb89f]
+	(No symbol) [0x0x7ff60ecca94a]
+	(No symbol) [0x0x7ff60ec1a765]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	(No symbol) [0x0x7ff60ec1970e]
+	GetHandleVerifier [0x0x7ff60f2c6b38+4241976]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:48:31 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 06:48:31 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:48:31 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:48:31 - LoginPage - ERROR - Exception occurred while searching for the element | Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec50425]
+	(No symbol) [0x0x7ff60ec9864f]
+	(No symbol) [0x0x7ff60ecd10f2]
+	(No symbol) [0x0x7ff60eccb89f]
+	(No symbol) [0x0x7ff60ecca94a]
+	(No symbol) [0x0x7ff60ec1a765]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	(No symbol) [0x0x7ff60ec1970e]
+	GetHandleVerifier [0x0x7ff60f2c6b38+4241976]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:48:31 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 06:48:31 - StatusOfTest - INFO - False
+10/08/2025 06:48:31 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 3/3 FAIL | Login was not successful, avatar was not presented on the page <<- <<- <<- <<-
+10/08/2025 06:48:31 - StatusOfTest - ERROR - Error while saving a screenshot: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec50425]
+	(No symbol) [0x0x7ff60ec9864f]
+	(No symbol) [0x0x7ff60ecd10f2]
+	(No symbol) [0x0x7ff60eccb89f]
+	(No symbol) [0x0x7ff60ecca94a]
+	(No symbol) [0x0x7ff60ec1a765]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	(No symbol) [0x0x7ff60ec1970e]
+	GetHandleVerifier [0x0x7ff60f2c6b38+4241976]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 06:48:31 - StatusOfTest - ERROR - -------------------| test_02_valid_login | TEST FAILED |------------
+10/08/2025 06:48:31 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:48:31 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:48:31 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:48:31 - <module> - WARNING -    
+10/08/2025 06:53:23 - WebDriverFactory - WARNING - 
+
+10/08/2025 06:53:23 - WebDriverFactory - WARNING -                     
+10/08/2025 06:53:23 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:53:23 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 06:53:23 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:53:23 - WebDriverFactory - WARNING -                     
+10/08/2025 06:53:23 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 06:53:23 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 06:53:23 - <module> - WARNING -    
+10/08/2025 06:53:23 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:53:23 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:53:23 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:53:23 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 06:53:23 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 06:53:23 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:53:23 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:53:23 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:53:23 - <module> - WARNING -    
+10/08/2025 06:53:23 - <module> - WARNING -    
+10/08/2025 06:53:23 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:53:23 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:53:23 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:53:23 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 06:53:23 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:53:23 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:53:23 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 06:53:24 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 06:53:24 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 06:53:24 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:53:24 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:53:24 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:53:24 - <module> - WARNING -    
+10/08/2025 06:54:49 - WebDriverFactory - WARNING - 
+
+10/08/2025 06:54:49 - WebDriverFactory - WARNING -                     
+10/08/2025 06:54:49 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:54:49 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 06:54:49 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 06:54:49 - WebDriverFactory - WARNING -                     
+10/08/2025 06:54:49 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 06:54:49 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 06:54:50 - <module> - WARNING -    
+10/08/2025 06:54:50 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:54:50 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:54:50 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:54:50 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 06:54:50 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 06:54:50 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 06:54:50 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 06:54:50 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 06:54:51 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 06:54:51 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 06:54:51 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:54:51 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:54:51 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:54:51 - <module> - WARNING -    
+10/08/2025 06:54:51 - <module> - WARNING -    
+10/08/2025 06:54:51 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:54:51 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 06:54:51 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 06:54:51 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 06:54:51 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:54:51 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 06:54:51 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 06:54:51 - <module> - WARNING -    
+10/08/2025 07:04:59 - WebDriverFactory - WARNING - 
+
+10/08/2025 07:04:59 - WebDriverFactory - WARNING -                     
+10/08/2025 07:04:59 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:04:59 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 07:04:59 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:04:59 - WebDriverFactory - WARNING -                     
+10/08/2025 07:04:59 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 07:04:59 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 07:05:00 - <module> - WARNING -    
+10/08/2025 07:05:00 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:05:00 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:05:00 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:05:00 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 07:05:00 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 07:05:00 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:05:00 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:05:00 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 07:05:01 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:05:01 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:05:01 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:05:01 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:05:01 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:05:01 - <module> - WARNING -    
+10/08/2025 07:05:01 - <module> - WARNING -    
+10/08/2025 07:05:01 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:05:01 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:05:01 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:05:01 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 07:05:01 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:05:01 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:05:01 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:05:01 - <module> - WARNING -    
+10/08/2025 07:06:55 - WebDriverFactory - WARNING - 
+
+10/08/2025 07:06:55 - WebDriverFactory - WARNING -                     
+10/08/2025 07:06:55 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:06:55 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 07:06:55 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:06:55 - WebDriverFactory - WARNING -                     
+10/08/2025 07:06:55 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 07:06:55 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 07:06:56 - <module> - WARNING -    
+10/08/2025 07:06:56 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:06:56 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:06:56 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:06:56 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 07:06:56 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 07:06:56 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:06:56 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:06:56 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 07:06:57 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:06:57 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:06:57 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:06:57 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:06:57 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:06:57 - <module> - WARNING -    
+10/08/2025 07:06:57 - <module> - WARNING -    
+10/08/2025 07:06:57 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:06:57 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:06:57 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:06:57 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 07:06:57 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:06:57 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:06:57 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:06:57 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/08/2025 07:06:57 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:06:57 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:06:57 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:06:57 - LoginPage - INFO - The element was found! Locator: login-password | Locator_type: id
+10/08/2025 07:06:57 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+10/08/2025 07:06:57 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:06:57 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:06:57 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:06:57 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 07:06:57 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:06:57 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:06:57 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:06:57 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='dropdown']//img
+10/08/2025 07:06:58 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='dropdown']//img and locator_type: xpath
+10/08/2025 07:06:58 - Util - INFO - --> Actual text from application --> | My Courses |
+10/08/2025 07:06:58 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/08/2025 07:06:58 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/08/2025 07:06:58 - StatusOfTest - INFO - True
+10/08/2025 07:06:58 - StatusOfTest - INFO - --> --> --> | TEST 1/3 SUCCESSFUL | Title matches the original <-- <-- <--
+10/08/2025 07:06:58 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:06:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:06:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:06:58 - LoginPage - INFO - The element was found! Locator: //div[@class='zen-course-title'] | Locator_type: xpath
+10/08/2025 07:06:58 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:06:58 - StatusOfTest - INFO - True
+10/08/2025 07:06:58 - StatusOfTest - INFO - --> --> --> | TEST 2/3 SUCCESSFUL | Login is successful, my courses were on the page <-- <-- <--
+10/08/2025 07:06:58 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:06:58 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:06:58 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:06:58 - LoginPage - INFO - The element was found! Locator: //div[@class='dropdown']//img | Locator_type: xpath
+10/08/2025 07:06:58 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:06:58 - StatusOfTest - INFO - True
+10/08/2025 07:06:58 - StatusOfTest - INFO - --> --> --> | TEST 3/3 SUCCESSFUL | Login was successful, avatar was presented on the page <-- <-- <--
+10/08/2025 07:06:58 - StatusOfTest - INFO - --> --> --> | test_02_valid_login | TEST SUCCESSFUL | <-- <-- <--
+10/08/2025 07:06:58 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:06:58 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:06:58 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:06:58 - <module> - WARNING -    
+10/08/2025 07:15:08 - WebDriverFactory - WARNING - 
+
+10/08/2025 07:15:08 - WebDriverFactory - WARNING -                     
+10/08/2025 07:15:08 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:15:08 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 07:15:08 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:15:08 - WebDriverFactory - WARNING -                     
+10/08/2025 07:15:08 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 07:15:08 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 07:15:09 - <module> - WARNING -    
+10/08/2025 07:15:09 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:15:09 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:15:09 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:15:09 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 07:15:09 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 07:15:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:09 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:15:09 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 07:15:09 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:15:09 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:15:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:09 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:15:10 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:15:10 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/08/2025 07:15:10 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:15:10 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:10 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:15:10 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 07:15:10 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:15:10 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:15:10 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:15:10 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:10 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:15:10 - LoginPage - INFO - The element was found! Locator: //span[text()='The password field is required.'] | Locator_type: xpath
+10/08/2025 07:15:10 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:15:10 - StatusOfTest - INFO - True
+10/08/2025 07:15:10 - StatusOfTest - INFO - --> --> --> | TEST 1/1 SUCCESSFUL | Error message is displayed <-- <-- <--
+10/08/2025 07:15:10 - StatusOfTest - INFO - --> --> --> | test_01_invalid_login_no_pass | TEST SUCCESSFUL | <-- <-- <--
+10/08/2025 07:15:10 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:15:10 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:15:10 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:15:10 - <module> - WARNING -    
+10/08/2025 07:15:10 - <module> - WARNING -    
+10/08/2025 07:15:10 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:15:10 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:15:10 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:15:10 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 07:15:10 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:10 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:15:10 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:15:10 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/08/2025 07:15:10 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:15:10 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:10 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:15:10 - LoginPage - INFO - The element was found! Locator: login-password | Locator_type: id
+10/08/2025 07:15:10 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+10/08/2025 07:15:10 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:15:10 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:10 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:15:10 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 07:15:10 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:15:10 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:15:10 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:15:10 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='dropdown']//img
+10/08/2025 07:15:14 - LoginPage - CRITICAL - An unexpected error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 07:15:14 - Util - INFO - --> Actual text from application --> | Login |
+10/08/2025 07:15:14 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/08/2025 07:15:14 - Util - WARNING - VERIFICATION FAILED! The actual text is not in the expected text!
+10/08/2025 07:15:14 - StatusOfTest - INFO - False
+10/08/2025 07:15:14 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 1/3 FAIL | Title does not match the original <<- <<- <<- <<-
+10/08/2025 07:15:14 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/title_does_not_match_the_original_2025-10-08_1759904114873.png. Name of screenshot: title_does_not_match_the_original_2025-10-08_1759904114873.png
+10/08/2025 07:15:14 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:15:14 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:14 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:15:17 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='zen-course-title']"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 07:15:17 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 07:15:17 - StatusOfTest - INFO - False
+10/08/2025 07:15:17 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 2/3 FAIL | Login was not successful, my courses were not presented on the page <<- <<- <<- <<-
+10/08/2025 07:15:17 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/login_was_not_successful,_my_courses_were_not_presented_on_the_page_2025-10-08_1759904117003.png. Name of screenshot: login_was_not_successful,_my_courses_were_not_presented_on_the_page_2025-10-08_1759904117003.png
+10/08/2025 07:15:17 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:15:17 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:15:17 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:15:19 - LoginPage - ERROR - Exception occurred while searching for the element | Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='dropdown']//img"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60eece995+80021]
+	GetHandleVerifier [0x0x7ff60eece9f0+80112]
+	(No symbol) [0x0x7ff60ec5060f]
+	(No symbol) [0x0x7ff60eca8854]
+	(No symbol) [0x0x7ff60eca8b1c]
+	(No symbol) [0x0x7ff60ecfc927]
+	(No symbol) [0x0x7ff60ecd126f]
+	(No symbol) [0x0x7ff60ecf968a]
+	(No symbol) [0x0x7ff60ecd1003]
+	(No symbol) [0x0x7ff60ec995d1]
+	(No symbol) [0x0x7ff60ec9a3f3]
+	GetHandleVerifier [0x0x7ff60f18dd4d+2960461]
+	GetHandleVerifier [0x0x7ff60f18800a+2936586]
+	GetHandleVerifier [0x0x7ff60f1a8a47+3070279]
+	GetHandleVerifier [0x0x7ff60eee847e+185214]
+	GetHandleVerifier [0x0x7ff60eeefecf+216527]
+	GetHandleVerifier [0x0x7ff60eed7bd4+117460]
+	GetHandleVerifier [0x0x7ff60eed7d8f+117903]
+	GetHandleVerifier [0x0x7ff60eebdc68+11112]
+	BaseThreadInitThunk [0x0x7ffd4af6e8d7+23]
+	RtlUserThreadStart [0x0x7ffd4c668d9c+44]
+
+10/08/2025 07:15:19 - LoginPage - WARNING - Element did not appear on the page...
+10/08/2025 07:15:19 - StatusOfTest - INFO - False
+10/08/2025 07:15:19 - StatusOfTest - INFO - ->> ->> ->> ->> | TEST 3/3 FAIL | Login was not successful, avatar was not presented on the page <<- <<- <<- <<-
+10/08/2025 07:15:19 - StatusOfTest - INFO - Screenshot saved to: C:\Users\mirgo\OneDrive\Documents\vlad_workspace\workspace_python\letskodeit_project_aoutomation\base\../screenshots/login_was_not_successful,_avatar_was_not_presented_on_the_page_2025-10-08_1759904119111.png. Name of screenshot: login_was_not_successful,_avatar_was_not_presented_on_the_page_2025-10-08_1759904119111.png
+10/08/2025 07:15:19 - StatusOfTest - ERROR - -------------------| test_02_valid_login | TEST FAILED |------------
+10/08/2025 07:15:19 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:15:19 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:15:19 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:15:19 - <module> - WARNING -    
+10/08/2025 07:21:07 - WebDriverFactory - WARNING - 
+
+10/08/2025 07:21:07 - WebDriverFactory - WARNING -                     
+10/08/2025 07:21:07 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:21:07 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 07:21:07 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:21:07 - WebDriverFactory - WARNING -                     
+10/08/2025 07:21:07 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 07:21:07 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 07:21:08 - <module> - WARNING -    
+10/08/2025 07:21:08 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:21:08 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:21:08 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:21:08 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 07:21:08 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 07:21:08 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:08 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:21:08 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 07:21:09 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:21:09 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:21:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:21:09 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:21:09 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/08/2025 07:21:09 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:21:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:21:09 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 07:21:09 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:21:09 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:21:09 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:21:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:21:09 - LoginPage - INFO - The element was found! Locator: //span[text()='The password field is required.'] | Locator_type: xpath
+10/08/2025 07:21:09 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:21:09 - StatusOfTest - INFO - True
+10/08/2025 07:21:09 - StatusOfTest - INFO - --> --> --> | TEST 1/1 SUCCESSFUL | Error message is displayed <-- <-- <--
+10/08/2025 07:21:09 - StatusOfTest - INFO - --> --> --> | test_01_invalid_login_no_pass | TEST SUCCESSFUL | <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:21:09 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:21:09 - LoginPage - INFO - -----------------|Deleted keys from the element |---------------------
+10/08/2025 07:21:09 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:21:09 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:21:09 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:21:09 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:21:09 - <module> - WARNING -    
+10/08/2025 07:21:09 - <module> - WARNING -    
+10/08/2025 07:21:09 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:21:09 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:21:09 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:21:09 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 07:21:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:21:09 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:21:09 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/08/2025 07:21:09 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:21:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:21:09 - LoginPage - INFO - The element was found! Locator: login-password | Locator_type: id
+10/08/2025 07:21:09 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+10/08/2025 07:21:09 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:21:09 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:21:09 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 07:21:09 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:21:09 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:21:09 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:21:09 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='dropdown']//img
+10/08/2025 07:21:10 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='dropdown']//img and locator_type: xpath
+10/08/2025 07:21:10 - Util - INFO - --> Actual text from application --> | My Courses |
+10/08/2025 07:21:10 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/08/2025 07:21:10 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/08/2025 07:21:10 - StatusOfTest - INFO - True
+10/08/2025 07:21:10 - StatusOfTest - INFO - --> --> --> | TEST 1/3 SUCCESSFUL | Title matches the original <-- <-- <--
+10/08/2025 07:21:10 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:21:10 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:10 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:21:10 - LoginPage - INFO - The element was found! Locator: //div[@class='zen-course-title'] | Locator_type: xpath
+10/08/2025 07:21:10 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:21:10 - StatusOfTest - INFO - True
+10/08/2025 07:21:10 - StatusOfTest - INFO - --> --> --> | TEST 2/3 SUCCESSFUL | Login is successful, my courses were on the page <-- <-- <--
+10/08/2025 07:21:10 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:21:10 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:21:10 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:21:10 - LoginPage - INFO - The element was found! Locator: //div[@class='dropdown']//img | Locator_type: xpath
+10/08/2025 07:21:10 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:21:10 - StatusOfTest - INFO - True
+10/08/2025 07:21:10 - StatusOfTest - INFO - --> --> --> | TEST 3/3 SUCCESSFUL | Login was successful, avatar was presented on the page <-- <-- <--
+10/08/2025 07:21:10 - StatusOfTest - INFO - --> --> --> | test_02_valid_login | TEST SUCCESSFUL | <-- <-- <--
+10/08/2025 07:21:10 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:21:10 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:21:10 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:21:10 - <module> - WARNING -    
+10/08/2025 07:26:23 - WebDriverFactory - WARNING - 
+
+10/08/2025 07:26:23 - WebDriverFactory - WARNING -                     
+10/08/2025 07:26:23 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:26:23 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/08/2025 07:26:23 - WebDriverFactory - WARNING - ########################################################################################################################
+10/08/2025 07:26:23 - WebDriverFactory - WARNING -                     
+10/08/2025 07:26:23 - WebDriverFactory - WARNING - Running tests on chrome
+10/08/2025 07:26:23 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/08/2025 07:26:24 - <module> - WARNING -    
+10/08/2025 07:26:24 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:26:24 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:26:24 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:26:24 - LoginTest - INFO -    -------> Running test_01_invalid_login_no_pass test method <-------
+10/08/2025 07:26:24 - LoginTest - INFO - ---------------------------------------------------------------------
+10/08/2025 07:26:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:24 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:26:24 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/08/2025 07:26:24 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:26:24 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:26:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:24 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:26:24 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:26:24 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/08/2025 07:26:24 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:26:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:24 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:26:24 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 07:26:24 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:26:24 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:26:24 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:26:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:24 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:26:24 - LoginPage - INFO - The element was found! Locator: //span[text()='The password field is required.'] | Locator_type: xpath
+10/08/2025 07:26:24 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:26:24 - StatusOfTest - INFO - --> --> --> | TEST 1/1 SUCCESSFUL | Error message is displayed <-- <-- <--
+10/08/2025 07:26:24 - StatusOfTest - INFO - --> --> --> | test_01_invalid_login_no_pass | TEST SUCCESSFUL | <-- <-- <--
+10/08/2025 07:26:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:24 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:26:24 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:26:24 - LoginPage - INFO - -----------------|Deleted keys from the element |---------------------
+10/08/2025 07:26:24 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:26:24 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:26:24 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:26:24 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:26:24 - <module> - WARNING -    
+10/08/2025 07:26:24 - <module> - WARNING -    
+10/08/2025 07:26:24 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:26:24 - <module> - WARNING - ################################ RUNNING TEST ################################
+10/08/2025 07:26:24 - <module> - WARNING - ------------------------------------------------------------------------------
+10/08/2025 07:26:24 - LoginTest - INFO -    -------> Running test_02_valid_login test method <-------
+10/08/2025 07:26:24 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:24 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:26:24 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/08/2025 07:26:25 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/08/2025 07:26:25 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:26:25 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:25 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:26:25 - LoginPage - INFO - The element was found! Locator: login-password | Locator_type: id
+10/08/2025 07:26:25 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+10/08/2025 07:26:25 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/08/2025 07:26:25 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:25 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/08/2025 07:26:25 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/08/2025 07:26:25 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/08/2025 07:26:25 - LoginPage - INFO - -------------------------------------------------------------
+
+10/08/2025 07:26:25 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:26:25 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='dropdown']//img
+10/08/2025 07:26:26 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='dropdown']//img and locator_type: xpath
+10/08/2025 07:26:26 - Util - INFO - --> Actual text from application --> | My Courses |
+10/08/2025 07:26:26 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/08/2025 07:26:26 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/08/2025 07:26:26 - StatusOfTest - INFO - --> --> --> | TEST 1/3 SUCCESSFUL | Title matches the original <-- <-- <--
+10/08/2025 07:26:26 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:26:26 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:26 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:26:26 - LoginPage - INFO - The element was found! Locator: //div[@class='zen-course-title'] | Locator_type: xpath
+10/08/2025 07:26:26 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:26:26 - StatusOfTest - INFO - --> --> --> | TEST 2/3 SUCCESSFUL | Login is successful, my courses were on the page <-- <-- <--
+10/08/2025 07:26:26 - LoginPage - INFO - Trying to locate the element on the page...
+10/08/2025 07:26:26 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/08/2025 07:26:26 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/08/2025 07:26:26 - LoginPage - INFO - The element was found! Locator: //div[@class='dropdown']//img | Locator_type: xpath
+10/08/2025 07:26:26 - LoginPage - INFO - Element appeared on the page!
+10/08/2025 07:26:26 - StatusOfTest - INFO - --> --> --> | TEST 3/3 SUCCESSFUL | Login was successful, avatar was presented on the page <-- <-- <--
+10/08/2025 07:26:26 - StatusOfTest - INFO - --> --> --> | test_02_valid_login | TEST SUCCESSFUL | <-- <-- <--
+10/08/2025 07:26:26 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:26:26 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
+10/08/2025 07:26:26 - <module> - WARNING - -----------------------------------------------------------------------------------
+10/08/2025 07:26:26 - <module> - WARNING -    
