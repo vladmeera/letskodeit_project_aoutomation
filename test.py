@@ -1,20 +1,16 @@
-import typing
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("before function")
+        result = func(*args, **kwargs)
+        print("After")
+        return result
 
-RED: typing.Final = "RED"
-GREEN: typing.Final = "GREEN"
-BLUE: typing.Final = "BLUE"
-
-color = RED
+    return wrapper
 
 
-match color:
-    case "RED":
-        print("color is red!")
-    case "GREEN":
-        print("color is green!")
-    case "BLUE":
-        print("color is blue")
+@my_decorator
+def say_hi(name):
+    print(f"Hello {name}")
 
-    case _:
-        print("I dont know this color")
-        
+
+say_hi("Vlad")

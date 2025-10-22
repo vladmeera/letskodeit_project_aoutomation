@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Add data_util.py and improve performance">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Improved">
+      <change beforePath="$PROJECT_DIR$/.idea/letskodeit_project_aoutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/letskodeit_project_aoutomation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/basepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/webdriverfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/webdriverfactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/courses_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courses_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/courses/courses_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/courses/courses_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/home/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home/login_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/locators.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/locators.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/custom_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/custom_logger.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,9 @@
     &quot;assignee&quot;: &quot;vladmeera&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="5b2c4b6b-6c5e-4d0e-825b-0174ad83867e" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/vladmeera/letskodeit_project_aoutomation.git&quot;,
@@ -48,7 +55,7 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2m47JRfdT3q5DMGxDSVi7QCxi35" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -68,12 +75,13 @@
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;Python.verify_link.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vlad/Documents/workspace_python/letskodeit_project_aoutomation/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/meerag/Documents/workspace_vlad/workspace_python/letskodeit_project_aoutomation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -191,7 +199,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
       </set>
     </attachedChunks>
   </component>

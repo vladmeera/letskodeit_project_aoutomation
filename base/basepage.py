@@ -11,14 +11,13 @@ Example:
     class LoginPage(BasePage):
 """
 
-from selenium.common import WebDriverException
+from traceback import print_stack
 
 from base.selenium_driver import SeleniumDriver
-from traceback import print_stack
 from utilities.util import Util
 
-class BasePage(SeleniumDriver):
 
+class BasePage(SeleniumDriver):
     def __init__(self, driver):
         """
         Inits BasePage class
@@ -29,7 +28,7 @@ class BasePage(SeleniumDriver):
         self.driver = driver
         self.util = Util()
 
-    def verify_page_title(self, title_to_verify):
+    def verify_page_title(self, title_to_verify) -> bool:
         """
         Verify page title
 
@@ -41,8 +40,8 @@ class BasePage(SeleniumDriver):
             if actual_title is not None:
                 return self.util.verify_text_contains(actual_title, title_to_verify)
             else:
-                return
+                return False
         except Exception as e:
-            self.log.error(f"{"#"*30}ERROR OCCURRED{"#"*30} --> {e}")
+            self.log.error(f"Error occurred - {e}")
             print_stack()
-
+            return False

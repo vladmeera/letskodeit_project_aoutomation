@@ -10,11 +10,6 @@ from pages.home.login_page import LoginPage
 class CoursesPage(BasePage):
     current_dir = os.path.dirname(__file__)
     excel_files_path = os.path.join(current_dir, "..", "..")
-    excel_locators_file = os.path.join(excel_files_path, "locators.xlsx")
-    excel_accounts_file = os.path.join(excel_files_path, "accounts.xlsx")
-
-    locators = ExcelLocators(excel_locators_file)
-    accounts = ExcelAccounts(excel_accounts_file)
 
     log = cl()
 
