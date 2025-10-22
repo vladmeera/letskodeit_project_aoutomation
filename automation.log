@@ -4245,3 +4245,100 @@ Stacktrace:
 10/21/2025 18:28:53 - <module> - WARNING - ################################ STOP RUNNING TEST ################################
 10/21/2025 18:28:53 - <module> - WARNING - -----------------------------------------------------------------------------------
 10/21/2025 18:28:53 - <module> - WARNING -    
+10/22/2025 10:39:50 - WebDriverFactory - WARNING - 
+
+10/22/2025 10:39:50 - WebDriverFactory - WARNING -                     
+10/22/2025 10:39:50 - WebDriverFactory - WARNING - ########################################################################################################################
+10/22/2025 10:39:50 - WebDriverFactory - WARNING - ################################################## NEW SESSION STARTED ##################################################
+10/22/2025 10:39:50 - WebDriverFactory - WARNING - ########################################################################################################################
+10/22/2025 10:39:50 - WebDriverFactory - WARNING -                     
+10/22/2025 10:39:50 - WebDriverFactory - WARNING - Running tests on chrome
+10/22/2025 10:39:50 - WebDriverFactory - WARNING - Open browser with provided url: https://www.letskodeit.com/
+10/22/2025 10:39:51 - <module> - WARNING -    
+10/22/2025 10:39:51 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:51 - <module> - WARNING - ######################### RUNNING TEST ##############################
+10/22/2025 10:39:51 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:51 - LoginTest - INFO - Running test_01_invalid_login_no_pass test method
+10/22/2025 10:39:51 - LoginTest - INFO - -----------------------------------------------------------------
+10/22/2025 10:39:51 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:51 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/22/2025 10:39:51 - LoginPage - INFO - The element was found! Locator: //a[text()='Sign In'] | Locator_type: xpath
+10/22/2025 10:39:52 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/22/2025 10:39:52 - LoginPage - INFO - -------------------------------------------------------------
+
+10/22/2025 10:39:52 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/22/2025 10:39:52 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/22/2025 10:39:52 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/22/2025 10:39:52 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/22/2025 10:39:52 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/22/2025 10:39:52 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/22/2025 10:39:52 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/22/2025 10:39:52 - LoginPage - INFO - -------------------------------------------------------------
+
+10/22/2025 10:39:52 - LoginPage - INFO - Trying to locate the element on the page...
+10/22/2025 10:39:52 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/22/2025 10:39:52 - LoginPage - INFO - The element was found! Locator: //span[text()='The password field is required.'] | Locator_type: xpath
+10/22/2025 10:39:52 - LoginPage - INFO - Element appeared on the page!
+10/22/2025 10:39:52 - StatusOfTest - INFO - --> --> --> | TEST 1/1 SUCCESSFUL | Error message is displayed <-- <-- <--
+10/22/2025 10:39:52 - StatusOfTest - INFO - --> --> --> | test_01_invalid_login_no_pass | TEST SUCCESSFUL | <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/22/2025 10:39:52 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/22/2025 10:39:52 - LoginPage - INFO - -----------------|Deleted keys from the element |---------------------
+10/22/2025 10:39:52 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/22/2025 10:39:52 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:52 - <module> - WARNING - ######################## STOP RUNNING TEST ##########################
+10/22/2025 10:39:52 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:52 - <module> - WARNING -    
+10/22/2025 10:39:52 - <module> - WARNING -    
+10/22/2025 10:39:52 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:52 - <module> - WARNING - ######################### RUNNING TEST ##############################
+10/22/2025 10:39:52 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:52 - LoginTest - INFO - Running test_02_valid_login test method
+10/22/2025 10:39:52 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/22/2025 10:39:52 - LoginPage - INFO - The element was found! Locator: email | Locator_type: id
+10/22/2025 10:39:52 - LoginPage - INFO - -----------------|Sent 'mirgorodvld@gmail.com' to the element |---------------------
+10/22/2025 10:39:52 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/22/2025 10:39:52 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/22/2025 10:39:52 - LoginPage - INFO - The element was found! Locator: login-password | Locator_type: id
+10/22/2025 10:39:52 - LoginPage - INFO - -----------------|Sent 'xnDi!1Bxi09bU' to the element |---------------------
+10/22/2025 10:39:52 - LoginPage - INFO - ----------------------------------------------------------------------------
+
+10/22/2025 10:39:52 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: id, parsed as By.id
+10/22/2025 10:39:52 - LoginPage - INFO - The element was found! Locator: login | Locator_type: id
+10/22/2025 10:39:52 - LoginPage - INFO - -------------------| Clicked on the element |--------------------
+10/22/2025 10:39:52 - LoginPage - INFO - -------------------------------------------------------------
+
+10/22/2025 10:39:52 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/22/2025 10:39:52 - LoginPage - INFO - Waiting for 3 seconds for element to appear: //div[@class='dropdown']//img
+10/22/2025 10:39:54 - LoginPage - INFO - Element appeared on the web page using locator: //div[@class='dropdown']//img and locator_type: xpath
+10/22/2025 10:39:54 - Util - INFO - --> Actual text from application --> | My Courses |
+10/22/2025 10:39:54 - Util - INFO - ->> Expected text to be in actual ->> | My Courses |
+10/22/2025 10:39:54 - Util - INFO - VERIFICATION PASSED! The actual text is in the expected text!
+10/22/2025 10:39:54 - StatusOfTest - INFO - --> --> --> | TEST 1/3 SUCCESSFUL | Title matches the original <-- <-- <--
+10/22/2025 10:39:54 - LoginPage - INFO - Trying to locate the element on the page...
+10/22/2025 10:39:54 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:54 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/22/2025 10:39:54 - LoginPage - INFO - The element was found! Locator: //div[@class='zen-course-title'] | Locator_type: xpath
+10/22/2025 10:39:54 - LoginPage - INFO - Element appeared on the page!
+10/22/2025 10:39:54 - StatusOfTest - INFO - --> --> --> | TEST 2/3 SUCCESSFUL | Success, my courses were on the page <-- <-- <--
+10/22/2025 10:39:54 - LoginPage - INFO - Trying to locate the element on the page...
+10/22/2025 10:39:54 - LoginPage - INFO - --> --> --> LOOKING FOR THE ELEMENT <-- <-- <--
+10/22/2025 10:39:54 - LoginPage - INFO - Using locator type: xpath, parsed as By.xpath
+10/22/2025 10:39:54 - LoginPage - INFO - The element was found! Locator: //div[@class='dropdown']//img | Locator_type: xpath
+10/22/2025 10:39:54 - LoginPage - INFO - Element appeared on the page!
+10/22/2025 10:39:54 - StatusOfTest - INFO - --> --> --> | TEST 3/3 SUCCESSFUL | Success, avatar was presented on the page <-- <-- <--
+10/22/2025 10:39:54 - StatusOfTest - INFO - --> --> --> | test_02_valid_login | TEST SUCCESSFUL | <-- <-- <--
+10/22/2025 10:39:54 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:54 - <module> - WARNING - ######################## STOP RUNNING TEST ##########################
+10/22/2025 10:39:54 - <module> - WARNING - ---------------------------------------------------------------------
+10/22/2025 10:39:54 - <module> - WARNING -    
