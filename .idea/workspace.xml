@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Improved" />
+    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Logs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/home/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home/login_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +31,6 @@
     &quot;assignee&quot;: &quot;vladmeera&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="5b2c4b6b-6c5e-4d0e-825b-0174ad83867e" />
-  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/vladmeera/letskodeit_project_aoutomation.git&quot;,
@@ -66,7 +67,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/meerag/Documents/workspace_vlad/workspace_python/letskodeit_project_aoutomation",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -333,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759881132465</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Logs">
+      <option name="closed" value="true" />
+      <created>1761144271377</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1761144271377</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -368,6 +377,7 @@
     <MESSAGE value="Update workspace.xml for improved task management&#10;&#10;Simplified task comments in workspace.xml and added new tasks with summaries for better clarity. Refactored type annotations and included more helpful messages to assist in task tracking and code maintenance." />
     <MESSAGE value="Update logs, create new functions, improved performance" />
     <MESSAGE value="Add data_util.py and improve performance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add data_util.py and improve performance" />
+    <MESSAGE value="Logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logs" />
   </component>
 </project>

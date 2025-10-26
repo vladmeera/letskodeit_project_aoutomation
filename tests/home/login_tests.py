@@ -31,8 +31,6 @@ class LoginTest(TestCase):
 
         result1 = self.login_page.verify_title_my_courses()
         self.status_test.mark(
-            1,
-            3,
             result1,
             "Title matches the original",
             "Title does not match the original",
@@ -40,8 +38,6 @@ class LoginTest(TestCase):
 
         result2 = self.login_page.verify_login_successful()
         self.status_test.mark(
-            2,
-            3,
             result2,
             "Success, my courses were on the page",
             "Fail, my courses were not presented on the page",
@@ -49,8 +45,6 @@ class LoginTest(TestCase):
 
         result3 = self.login_page.verify_login_successful_avatar()
         self.status_test.mark_final(
-            3,
-            3,
             "test_02_valid_login",
             result3,
             "Success, avatar was presented on the page",
