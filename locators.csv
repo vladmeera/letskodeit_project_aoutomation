@@ -6,3 +6,4 @@ password_field,id,login-password
 element_to_verify_login_avatar,xpath,//div[@class='dropdown']//img
 element_to_verify_login_java_course,xpath,//div[@class='zen-course-title']
 error_to_verify_no_pass,xpath,//span[text()='The password field is required.']
+all_courses_link,xpath,//a[contains(text(),'ALL COURSES') and contains(@href,'/courses')]

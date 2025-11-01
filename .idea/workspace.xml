@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Logs">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/webdriverfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/webdriverfactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/courses/courses_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courses_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/courses/courses_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/courses/courses_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/home/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home/login_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/custom_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/custom_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/data_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/data_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/locators.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/verify_link.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +73,7 @@
     "Python.extro_log.executor": "Run",
     "Python.login_page.executor": "Run",
     "Python.login_tests.executor": "Run",
-    "Python.test.executor": "Run",
+    "Python.test.executor": "Debug",
     "Python.verify_link.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",

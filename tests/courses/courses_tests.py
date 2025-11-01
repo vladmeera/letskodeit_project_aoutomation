@@ -24,8 +24,7 @@ class CourseTest(TestCase):
         Valid email
         Valid password
         """
-        self.log.info(f"Running {currentframe().f_code.co_name} test method")
-        self.log.info("---------------------------------------------------------------")
+        self.log.info(f"Running {currentframe().f_code.co_name} test method\n")
 
         self.courses_page.scroll_to_see_java_course()
         test_result = self.login_page.verify_java_course_on_screen()
@@ -33,10 +32,5 @@ class CourseTest(TestCase):
         self.log.info(test_result)
 
         self.status_test.mark_final(
-            test_number=3,
-            total_tests=3,
-            test_name="test_03_check_java_course_in_all_courses",
             result=test_result,
-            result_message_success="Java course is shown on the screen",
-            result_message_fail="Java course is not shown on the screen",
         )

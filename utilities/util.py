@@ -7,15 +7,12 @@ All most common utilities should be implemented here
 Example:
     name = self.util.get_unique_name()
 """
-try:
-    from string import ascii_letters, ascii_lowercase, ascii_uppercase, digits, printable
-    import time
-    import traceback
-    import random
-    import utilities.custom_logger as cl
-    from logging import DEBUG
-except (ImportError, ModuleNotFoundError):
-    print(f'Error occurred importing packages/dependencies! Please, make sure you have them all installed on your system!')
+from string import ascii_letters, ascii_lowercase, ascii_uppercase, digits, printable
+import time
+from traceback import print_stack
+import random
+import utilities.custom_logger as cl
+from logging import DEBUG
 
 
 class Util(object):
@@ -23,25 +20,22 @@ class Util(object):
     log = cl.custom_logger(DEBUG)
 
     def sleep(self, seconds, message = "???") -> None:
-        assert seconds > 0, "Seconds can't be negative or 0"
         """
         Put the program to wait for the specified time
         """
-
         if message is not None:
             self.log.info(f"Wait :: {seconds} :: for :: {message}")
         try:
             time.sleep(seconds)
         except InterruptedError as e:
-            self.log.error(f"| INTERRUPTED ERROR | {e}")
-            traceback.print_stack()
+            self.log.error(f"Error occurred - {e}")
+            print_stack()
 
-    def get_alpha_numeric(self, length: int, char_type: str = 'letters', is_password: bool = False) -> str | None:
+    def get_alpha_numeric(self, length: int, char_type: str = 'letters') -> str | None:
         """
         Get random string of characters
 
         Parameters:
-            is_password: False by default
             length: Length of string, number of characters string should contain
             char_type: Type of characters string should contain, default is "letters"
             Provide lower/upper/digits/mix for different types
@@ -56,42 +50,23 @@ class Util(object):
             'letters': ascii_letters,
             'printable': printable
         }
-        if is_password:
-            char_type = 'printable'
-            case = char_type_dict.get(char_type)
-            return alpha_num.join(random.choice(case) for i in range(length))
+        case = char_type_dict.get(char_type.lower())
+        if case is None:
+            self.log.warning(f"There is no - {char_type} - character type!\n")
         else:
-            case = char_type_dict.get(char_type.lower())
-            if case is None:
-                self.log.warning(f"There is no - {char_type} - character type!")
-            else:
-                return alpha_num.join(random.choice(case) for i in range(length))
+            return alpha_num.join(random.choice(case) for i in range(length))
 
     def get_password(self, length: int = 1) -> str:
-        assert length > 0, "Can't be less than 0"
-        assert length <= 64, "Sorry, but it can't be more than 64 characters!"
 
-        return self.get_alpha_numeric(length=length, is_password=True)
+        return self.get_alpha_numeric(length=length, char_type="printable")
 
 
     def get_unique_name_lower(self, char_count: int = 5):
-        assert char_count > 0, "Char_ count can't be less than 1"
-        """
-        Get unique name in lower case
 
-        :param char_count: amount of characters
-        :return: unique name as string
-        """
         return self.get_alpha_numeric(char_count, char_type="lower")
 
     def get_unique_name_upper(self, char_count: int = 5) -> str:
-        assert char_count > 0, "Char_ count can't be less than 1"
-        """
-        Get unique name in upper case
 
-        :param char_count: amount of characters
-        :return: unique name as string
-        """
         return self.get_alpha_numeric(char_count, char_type="upper")
 
     def verify_text_contains(self, actual_text: str, expected_text: str) -> bool | None:
@@ -101,13 +76,13 @@ class Util(object):
 
         :return: True/False
         """
-        self.log.info(f"--> Actual text from application --> | {actual_text} |")
-        self.log.info(f"->> Expected text to be in actual ->> | {expected_text} |")
+        self.log.info(f"Actual text from application - {actual_text}")
+        self.log.info(f"Expected text to be in actual - {expected_text}\n")
         if expected_text.lower() in actual_text.lower() and (expected_text != '' and expected_text != ' '):
-            self.log.info(f"VERIFICATION PASSED! The actual text is in the expected text!")
+            self.log.info("Verification passed\n")
             return True
         elif expected_text.lower() not in actual_text.lower() and (actual_text != '' and actual_text != ' '):
-            self.log.warning(f"VERIFICATION FAILED! The actual text is not in the expected text!")
+            self.log.warning("Verification failed\n")
             return False
         else:
             self.log.warning("Verification was not successful! Actual or expected text can't be empty!")
@@ -125,5 +100,6 @@ class Util(object):
             return True
         else:
             self.log.warning(
-                f"{"*" * 10}VERIFICATION FAILED --> ACTUAL TEXT DOES NOT CONTAIN EXPECTED TEXT{"*" * 10}")
+                f"{'*' * 10}VERIFICATION FAILED --> ACTUAL TEXT DOES NOT CONTAIN EXPECTED TEXT{'*' * 10}"
+            )
             return False

@@ -1,16 +1,15 @@
-def my_decorator(func):
-    def wrapper(*args, **kwargs):
-        print("before function")
-        result = func(*args, **kwargs)
-        print("After")
-        return result
+def function_dict(func_name: str, num_a: int, num_b: int):
+    def add(a, b):
+        print("adding")
+        return a + b
 
-    return wrapper
+    def subtract(a, b):
+        print("subtracting")
+        return a - b
 
-
-@my_decorator
-def say_hi(name):
-    print(f"Hello {name}")
+    fuct_map = {"add": add, "subtract": subtract}
+    return fuct_map[func_name](num_a, num_b)
 
 
-say_hi("Vlad")
+result = function_dict("add", 2, 3)
+print(result)

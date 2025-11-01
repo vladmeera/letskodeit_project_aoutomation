@@ -1,17 +1,16 @@
-import time
-
 from base.basepage import BasePage
 from utilities.custom_logger import custom_logger as cl
-import os
-from utilities.data_util import ExcelLocators, ExcelAccounts
+from utilities.data_util import TestData as Locators
 from pages.home.login_page import LoginPage
+from os.path import dirname, join
+
 
 
 class CoursesPage(BasePage):
-    current_dir = os.path.dirname(__file__)
-    excel_files_path = os.path.join(current_dir, "..", "..")
-
     log = cl()
+    path = dirname(__file__)
+    path_ = join(path, "..", "..", "locators.csv")
+    locators = Locators(path_)
 
 
     def __init__(self, driver):
@@ -24,9 +23,7 @@ class CoursesPage(BasePage):
 
     def open_courses_page(self):
         self.login_page.successful_login()
-        self.click_element(self.locators.get_locator("header",
-                                                     "all courses link",
-                                                     "xpath"), "xpath")
+        self.click_element(self.locators.get_locator("all_courses_link"), "xpath")
 
     def scroll_to_see_java_course(self):
         self.open_courses_page()

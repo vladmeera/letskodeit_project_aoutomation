@@ -5,14 +5,14 @@ from dotenv import load_dotenv
 
 from base.basepage import BasePage
 from utilities.custom_logger import custom_logger as cl
-from utilities.data_util import TestData as LocatorsData
+from utilities.data_util import TestData as Locators
 
 
 class LoginPage(BasePage):
     log = cl()
     path = dirname(__file__)
-    path_ = join(path, "..", "..", "utilities/locators.csv")
-    locators = LocatorsData(path_)
+    path_ = join(path, "..", "..", "locators.csv")
+    locators = Locators(path_)
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -53,7 +53,8 @@ class LoginPage(BasePage):
 
     def wait_until_presented_element_courses(self):
         self.wait_for_element(
-            self.locators.get_locator("element_to_verify_login_avatar"), "xpath")
+            self.locators.get_locator("element_to_verify_login_avatar"), "xpath"
+        )
 
     def successful_login(self):
         self.enter_email(self.get_account("LOGIN_VALID_1"))

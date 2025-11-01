@@ -17,7 +17,6 @@ class LoginTest(TestCase):
         self.login_page = LoginPage(self.driver)
         self.status_test = StatusOfTest(self.driver)
 
-    @pytest.mark.order2
     def test_02_valid_login(self):
         """
         Test name - valid login (positive)
@@ -32,26 +31,18 @@ class LoginTest(TestCase):
         result1 = self.login_page.verify_title_my_courses()
         self.status_test.mark(
             result1,
-            "Title matches the original",
-            "Title does not match the original",
         )
 
         result2 = self.login_page.verify_login_successful()
         self.status_test.mark(
             result2,
-            "Success, my courses were on the page",
-            "Fail, my courses were not presented on the page",
         )
 
         result3 = self.login_page.verify_login_successful_avatar()
         self.status_test.mark_final(
-            "test_02_valid_login",
             result3,
-            "Success, avatar was presented on the page",
-            "Fail, avatar was not presented on the page",
         )
 
-    @pytest.mark.order1
     def test_01_invalid_login_no_pass(self):
         """
         Invalid login - negative
@@ -69,11 +60,6 @@ class LoginTest(TestCase):
 
         result = self.login_page.verify_login_unsuccessful()
         self.status_test.mark_final(
-            1,
-            1,
-            "test_01_invalid_login_no_pass",
             result,
-            "Error message is displayed",
-            "Error message is not displayed",
         )
         self.login_page.delete_keys_email()

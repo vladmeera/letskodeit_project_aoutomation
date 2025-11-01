@@ -38,46 +38,49 @@ class SeleniumDriver:
             refresh
         """
 
-        if direction.lower() == "back":
-            self.driver.back()
-            self.log.info("<-- GOING BACK <--")
-
-        elif direction.lower() == "forward":
-            self.driver.forward()
-            self.log.info("--> GOING FORWARD -->")
-
-        elif direction.lower() == "refresh":
-            self.driver.refresh()
-            self.log.info("--- REFRESHING THE PAGE ---")
-
-        else:
+        direction_list_ = ("back", "forward", "refresh")
+        if (
+            direction == " "
+            or direction.lower() not in direction_list_
+            or direction is None
+        ):
             self.log.warning("Wrong direction")
+            raise TypeError("Wrong direction!")
 
-    def screenshot(self, result_message: str = "screenshot"):
+        def page_back():
+            self.driver.back()
+
+        def page_forward():
+            self.driver.forward()
+
+        def refresh():
+            self.driver.refresh()
+
+        direction_map = {"back": page_back, "forward": page_forward, "refresh": refresh}
+
+        return direction_map[direction]()
+
+    def screenshot(self) -> None:
         """
-        Attempts to take a screenshot and save it to the specified path.
+        Takes a screenshot if the directory exists. If not, creates and then takes a screenshot.
         """
-        result_message_lower = result_message.lower()
-        result_message_final = result_message_lower.replace(" ", "_")
 
         current_date: date = datetime.now().date()
-        file_name = (
-            f"{result_message_final}_{current_date}_{str(round(time() * 1000))}.png"
-        )
-        screenshots_directory = "../screenshots/"
-        relative_path = f"{screenshots_directory}{file_name}"
+
+        file_name: str = f"{current_date}_{str(round(time() * 1000))}.png"
+
+        relative_path = os.path.join("..", "screenshots", file_name)
+
         current_directory = os.path.dirname(__file__)
         destination_path = os.path.join(current_directory, relative_path)
-        destination_directory = os.path.join(current_directory, screenshots_directory)
+        destination_directory = os.path.join(current_directory, "..", "screenshots")
 
         try:
             if not os.path.exists(destination_directory):
                 os.makedirs(destination_directory)
 
             self.driver.save_screenshot(destination_path)
-            self.log.info(
-                f"Screenshot saved to: {destination_path}. Screenshot: {file_name}"
-            )
+            self.log.info(f"Screenshot saved to: {destination_path}")
 
         except Exception as e:
             self.log.error(f"Error occurred while saving a screenshot: {e}")
@@ -90,6 +93,7 @@ class SeleniumDriver:
         """
         try:
             title = self.driver.title
+            self.log.info(f"\nTitle is {title}\n")
             return title
         except Exception as e:
             self.log.error(f"\nError occurred: {e}\n")
@@ -140,40 +144,31 @@ class SeleniumDriver:
     def get_element(self, locator, locator_type="id"):
         element = None
         try:
-            self.log.info("--> --> --> LOOKING FOR THE ELEMENT <-- <-- <--")
             locator_type = locator_type.lower()
             by_type = self.get_by_type(locator_type)
             element = self.driver.find_element(by_type, locator)
             if element is not None:
-                self.log.info(
-                    f"The element was found! Locator: {locator} | Locator_type: {
-                        locator_type
-                    }"
-                )
+                self.log.info("\nElement was found\n")
                 return element
             else:
+                self.log.warning("\nElement was not found\n")
                 return element
 
         except Exception as e:
-            self.log.error(f"Exception occurred while searching for the element | {e}")
+            self.log.error(f"Exception occurred while searching for the element - {e}")
             return element
 
     def get_elements(self, locator, locator_type="id"):
         elements = None
         try:
-            self.log.info("--> --> --> LOOKING FOR ELEMENTS <-- <-- <--")
             locator_type = locator_type.lower()
             by_type = self.get_by_type(locator_type)
             elements = self.driver.find_elements(by_type, locator)
             if len(elements) > 0:
-                self.log.info(f"Successfully found {len(elements)} elements!")
+                self.log.info(f"\nSuccessfully found {len(elements)} elements\n")
                 return elements
             else:
-                self.log.info(
-                    f"Found {
-                        len(elements)
-                    } elements. Try another locator or locator type"
-                )
+                self.log.info(f"Found {len(elements)} elements")
                 return elements
 
         except Exception as e:
@@ -185,22 +180,11 @@ class SeleniumDriver:
             element = self.get_element(locator, locator_type)
             if element:
                 element.click()
-                self.log.info(
-                    "-------------------| Clicked on the element |--------------------"
-                )
-                self.log.info(
-                    "-------------------------------------------------------------\n"
-                )
+                self.log.info("\nClicked on the element\n")
             else:
-                self.log.warning(
-                    "--------------------- Unable to click on the element ---------------------------"
-                )
-                self.log.warning(
-                    "----------------------------------------------------------------------------\n"
-                )
-                return
+                self.log.warning("\nUnable to click on the element\n")
         except Exception as e:
-            self.log.debug(f"An unexpected exception occurred: {str(e)}")
+            self.log.debug(f"\nAn unexpected exception occurred: {str(e)}\n")
             print_stack()
 
     def send_keys_element(self, text, locator, locator_type="id"):
@@ -208,23 +192,9 @@ class SeleniumDriver:
             element = self.get_element(locator, locator_type)
             if element:
                 element.send_keys(text)
-                self.log.info(
-                    f"-----------------|Sent '{
-                        text
-                    }' to the element |---------------------"
-                )
-                self.log.info(
-                    "----------------------------------------------------------------------------\n"
-                )
-
+                self.log.info(f"\nSent '{text}' to the element\n")
             else:
-                self.log.warning(
-                    "------------ Unable to send keys to the element -------------------"
-                )
-                self.log.warning(
-                    "----------------------------------------------------------------------------\n"
-                )
-
+                self.log.warning("Unable to send keys to the element")
                 return
 
         except Exception as e:
@@ -331,17 +301,6 @@ class SeleniumDriver:
         to_bottom=False,
         to_top=False,
     ):
-        self.log.info(
-            "-----------------------------------------------------------------"
-        )
-        self.log.info(
-            "--------------------| START SCROLLING |--------------------------"
-        )
-        direction_dictionary = {"direction": ("no", "up", "down")}
-
-        def is_into_view():
-            pass
-
         if direction.lower() == "no":
             if into_view:
                 element = self.get_element(locator, locator_type)
