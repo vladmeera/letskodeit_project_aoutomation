@@ -4,41 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="Logs">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+    <list default="true" id="cd7f39ea-d7a2-4a95-99e4-9a52474839c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/letskodeit_project_aoutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/letskodeit_project_aoutomation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/basepage.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/base/selenium_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/selenium_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/webdriverfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/webdriverfactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/courses/courses_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/courses/courses_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/courses/courses_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/courses/courses_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/home/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home/login_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/custom_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/custom_logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/data_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/data_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/locators.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/test_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/test_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/verify_link.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -53,150 +43,22 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2m47JRfdT3q5DMGxDSVi7QCxi35" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="34tokso6nNjY7S3I7UIK5hdM5UA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for login_tests.LoginTest.test_01_invalid_login_no_pass.executor": "Run",
-    "Python tests.Python tests for login_tests.LoginTest.test_02_valid_login.executor": "Run",
-    "Python tests.Python tests in login_tests.py.executor": "Run",
-    "Python.data.executor": "Run",
-    "Python.excel_util.executor": "Run",
-    "Python.extro_log.executor": "Run",
-    "Python.login_page.executor": "Run",
-    "Python.login_tests.executor": "Run",
-    "Python.test.executor": "Debug",
-    "Python.verify_link.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/meerag/Documents/workspace_vlad/workspace_python/letskodeit_project_aoutomation",
-    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="login_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="letskodeit_project_aoutomation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/home/login_page.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="letskodeit_project_aoutomation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="verify_link" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="letskodeit_project_aoutomation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utilities" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utilities/verify_link.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for login_tests.LoginTest.test_01_invalid_login_no_pass" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="letskodeit_project_aoutomation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_tests.LoginTest.test_01_invalid_login_no_pass&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for login_tests.LoginTest.test_02_valid_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="letskodeit_project_aoutomation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_tests.LoginTest.test_02_valid_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python tests.Python tests for login_tests.LoginTest.test_02_valid_login" />
-        <item itemvalue="Python tests.Python tests for login_tests.LoginTest.test_01_invalid_login_no_pass" />
-        <item itemvalue="Python.verify_link" />
-        <item itemvalue="Python.login_page" />
-      </list>
-    </recent_temporary>
-  </component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -207,192 +69,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e68294d7-1d36-45ba-ac0f-5d7a8bc40d93" name="Changes" comment="" />
-      <created>1726323922453</created>
+      <changelist id="cd7f39ea-d7a2-4a95-99e4-9a52474839c1" name="Changes" comment="" />
+      <created>1762042375564</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1726323922453</updated>
+      <updated>1762042375564</updated>
     </task>
-    <task id="LOCAL-00001" summary="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included.">
-      <option name="closed" value="true" />
-      <created>1727627202170</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1727627202170</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add element interaction and waiting utility methods&#10;&#10;Enhanced SeleniumDriver with click and wait utilities for elements. New methods include `click_element` and `wait_for_element` to improve element interaction and synchronization on the web page. Updated import statements and type annotations to support these functionalities.">
-      <option name="closed" value="true" />
-      <created>1727631033688</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1727631033688</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Enhance click_element with detailed error handling&#10;&#10;Added comprehensive exception handling to `click_element` for better debugging and robustness. New exceptions handled include `ElementNotInteractableException` and `StaleElementReferenceException`, with corresponding error messages to diagnose issues effectively.">
-      <option name="closed" value="true" />
-      <created>1727631505935</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1727631505935</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add send_keys_element method to SeleniumDriver&#10;&#10;Introduced a new method, `send_keys_element`, for sending text to web elements. This method includes comprehensive exception handling for various scenarios such as element not found, not interactable, or stale reference, ensuring better debugging and robustness. Updated existing documentation format for consistency.">
-      <option name="closed" value="true" />
-      <created>1727632251208</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1727632251208</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add logging integration and enhance login tests&#10;&#10;Integrated custom logging throughout SeleniumDriver and login tests. Logging provides detailed visibility and error handling for web element interactions. Refactored login tests to improve maintainability and added tests for invalid login scenarios.">
-      <option name="closed" value="true" />
-      <created>1727798417911</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1727798417911</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Refactor login tests and integrate custom logging&#10;&#10;Added pytest fixtures for setup and teardown in login tests, removing direct WebDriver interactions. Introduced custom logging for better visibility into test execution and error handling. Removed deprecated automation log file and enhanced WebDriverFactory configuration for multiple browsers.">
-      <option name="closed" value="true" />
-      <created>1728145897398</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1728145897398</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Refactor type hints and minor renaming in selenium_driver&#10;&#10;Added proper type hints to `get_element` and `get_elements` methods for clearer function signatures. Renamed `is_element_presented` to `is_element_present` and `are_elements_presented` to `are_elements_present` for consistency. Additionally, removed unused imports in the login_tests.py and conftest.py files.">
-      <option name="closed" value="true" />
-      <created>1728383107610</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1728383107610</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Enhance logging and test status handling &#10;&#10;Added customizable log filenames to `custom_logger`. Introduced `TestStatus` class for detailed pass/fail logging. Updated `login_page.py` for more robust login verification methods.">
-      <option name="closed" value="true" />
-      <created>1728419468329</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1728419468329</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Add screenshot functionality to SeleniumDriver&#10;&#10;Implemented a method to capture and store screenshots in a defined directory. Included exception handling for potential errors during the screenshot saving process.">
-      <option name="closed" value="true" />
-      <created>1728420960309</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1728420960309</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging.">
-      <option name="closed" value="true" />
-      <created>1728545872956</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1728545872956</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Enhance login tests with comments and update task management&#10;&#10;Added docstrings to clarify the purpose of the login tests. Improved test status messages for better readability. Updated task management comments in workspace.xml for better tracking.">
-      <option name="closed" value="true" />
-      <created>1728827728396</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1728827728396</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Refactor type annotations and improve code clarity">
-      <option name="closed" value="true" />
-      <created>1728828293760</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1728828293760</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Add type hints and browser option help text">
-      <option name="closed" value="true" />
-      <created>1728828664065</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1728828664065</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Update workspace.xml for improved task management&#10;&#10;Simplified task comments in workspace.xml and added new tasks with summaries for better clarity. Refactored type annotations and included more helpful messages to assist in task tracking and code maintenance.">
-      <option name="closed" value="true" />
-      <created>1728828874017</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1728828874017</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Update logs, create new functions, improved performance">
-      <option name="closed" value="true" />
-      <created>1745535816946</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1745535816946</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Update logs, create new functions, improved performance">
-      <option name="closed" value="true" />
-      <created>1745630969007</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1745630969007</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Add data_util.py and improve performance">
-      <option name="closed" value="true" />
-      <created>1759881132465</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1759881132465</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Logs">
-      <option name="closed" value="true" />
-      <created>1761144271377</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1761144271377</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
     <servers />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add login functionality with Selenium tests&#10;&#10;Introduced a new Selenium-based login functionality with test cases. Added necessary page objects, custom logging, and utility methods to support element interactions and verifications. Configuration files for project setup and inspections were also included." />
-    <MESSAGE value="Add element interaction and waiting utility methods&#10;&#10;Enhanced SeleniumDriver with click and wait utilities for elements. New methods include `click_element` and `wait_for_element` to improve element interaction and synchronization on the web page. Updated import statements and type annotations to support these functionalities." />
-    <MESSAGE value="Enhance click_element with detailed error handling&#10;&#10;Added comprehensive exception handling to `click_element` for better debugging and robustness. New exceptions handled include `ElementNotInteractableException` and `StaleElementReferenceException`, with corresponding error messages to diagnose issues effectively." />
-    <MESSAGE value="Add send_keys_element method to SeleniumDriver&#10;&#10;Introduced a new method, `send_keys_element`, for sending text to web elements. This method includes comprehensive exception handling for various scenarios such as element not found, not interactable, or stale reference, ensuring better debugging and robustness. Updated existing documentation format for consistency." />
-    <MESSAGE value="Add logging integration and enhance login tests&#10;&#10;Integrated custom logging throughout SeleniumDriver and login tests. Logging provides detailed visibility and error handling for web element interactions. Refactored login tests to improve maintainability and added tests for invalid login scenarios." />
-    <MESSAGE value="Refactor login tests and integrate custom logging&#10;&#10;Added pytest fixtures for setup and teardown in login tests, removing direct WebDriver interactions. Introduced custom logging for better visibility into test execution and error handling. Removed deprecated automation log file and enhanced WebDriverFactory configuration for multiple browsers." />
-    <MESSAGE value="Refactor type hints and minor renaming in selenium_driver&#10;&#10;Added proper type hints to `get_element` and `get_elements` methods for clearer function signatures. Renamed `is_element_presented` to `is_element_present` and `are_elements_presented` to `are_elements_present` for consistency. Additionally, removed unused imports in the login_tests.py and conftest.py files." />
-    <MESSAGE value="Enhance logging and test status handling &#10;&#10;Added customizable log filenames to `custom_logger`. Introduced `TestStatus` class for detailed pass/fail logging. Updated `login_page.py` for more robust login verification methods." />
-    <MESSAGE value="Add screenshot functionality to SeleniumDriver&#10;&#10;Implemented a method to capture and store screenshots in a defined directory. Included exception handling for potential errors during the screenshot saving process." />
-    <MESSAGE value="Update login tests to use environment variables for credentials&#10;&#10;Replaced hardcoded email and password in login tests with environment variables to enhance security. Additionally, updated the `test_status.py` to capture screenshots on various exceptions. Removed the `automation.log` and adjusted message formats for better clarity." />
-    <MESSAGE value="Update login tests to use environment variables&#10;&#10;Replaced hardcoded credentials with environment variables to enhance security. Updated test status messages for consistency. Added logging and screenshot capture for enhanced debugging." />
-    <MESSAGE value="Enhance login tests with comments and update task management&#10;&#10;Added docstrings to clarify the purpose of the login tests. Improved test status messages for better readability. Updated task management comments in workspace.xml for better tracking." />
-    <MESSAGE value="Refactor type annotations and improve code clarity" />
-    <MESSAGE value="Add type hints and browser option help text" />
-    <MESSAGE value="Update workspace.xml for improved task management&#10;&#10;Simplified task comments in workspace.xml and added new tasks with summaries for better clarity. Refactored type annotations and included more helpful messages to assist in task tracking and code maintenance." />
-    <MESSAGE value="Update logs, create new functions, improved performance" />
-    <MESSAGE value="Add data_util.py and improve performance" />
-    <MESSAGE value="Logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logs" />
   </component>
 </project>

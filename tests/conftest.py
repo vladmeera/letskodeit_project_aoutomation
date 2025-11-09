@@ -25,7 +25,7 @@ def setup():
 
 def pytest_addoption(parser):
     parser.addoption("--browser", help="Choose your browser")
-    parser.addoption("--osType", help="Choose your operating system")
+    parser.addoption("--os_type", help="Choose your operating system")
 
 
 @pytest.fixture(scope="session")
@@ -34,5 +34,5 @@ def browser(request):
 
 
 @pytest.fixture(scope="session")
-def osType(request):
-    return request.config.getoption("--osType")
+def os_type(request):
+    return request.config.getoption("--os_type")

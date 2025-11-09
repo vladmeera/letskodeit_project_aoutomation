@@ -20,7 +20,6 @@ class LoginTest(TestCase):
     def test_02_valid_login(self):
         """
         Test name - valid login (positive)
-
         Valid email
 
         Valid password

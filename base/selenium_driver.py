@@ -3,16 +3,18 @@ from datetime import date, datetime
 from time import time
 from traceback import print_stack
 
+from django.db.models import Expression
 from selenium.common.exceptions import (
     ElementNotSelectableException,
     ElementNotVisibleException,
     NoSuchElementException,
 )
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 
 from utilities.custom_logger import custom_logger as cl
+from utilities.util import Util
 
 # from selenium import webdriver
 # dr = webdriver.Chrome()
@@ -28,6 +30,7 @@ class SeleniumDriver:
 
         :param driver: The Selenium WebDriver instance.
         """
+        self.utility = Util()
         self.driver = driver
 
     def navigate_page(self, direction: str = "back"):
@@ -56,6 +59,7 @@ class SeleniumDriver:
         def refresh():
             self.driver.refresh()
 
+
         direction_map = {"back": page_back, "forward": page_forward, "refresh": refresh}
 
         return direction_map[direction]()
@@ -80,7 +84,6 @@ class SeleniumDriver:
                 os.makedirs(destination_directory)
 
             self.driver.save_screenshot(destination_path)
-            self.log.info(f"Screenshot saved to: {destination_path}")
 
         except Exception as e:
             self.log.error(f"Error occurred while saving a screenshot: {e}")
@@ -93,10 +96,9 @@ class SeleniumDriver:
         """
         try:
             title = self.driver.title
-            self.log.info(f"\nTitle is {title}\n")
             return title
         except Exception as e:
-            self.log.error(f"\nError occurred: {e}\n")
+            self.log.error(f"Error occurred: {e}")
 
     # To get By.type
     def get_by_type(self, locator_type: str):
@@ -118,27 +120,26 @@ class SeleniumDriver:
         )
         locator_type = locator_type.lower()
 
-        if locator_type in list_of_locators:
-            by_types = {
-                "id": By.ID,
-                "name": By.NAME,
-                "xpath": By.XPATH,
-                "css": By.CSS_SELECTOR,
-                "class": By.CLASS_NAME,
-                "link": By.LINK_TEXT,
-                "partial_link": By.PARTIAL_LINK_TEXT,
-                "tag": By.TAG_NAME,
-            }
-            by_type = by_types.get(locator_type, By.ID)
-            self.log.info(f"Using locator type: {locator_type}, parsed as By.{by_type}")
-            return by_type
-        else:
+        if locator_type not in list_of_locators:
             self.log.warning(
                 f"Wrong locator type: {locator_type}! List of all locators: {
                     list_of_locators
-                }"
+                }\n"
             )
             return None
+
+        by_types = {
+            "id": By.ID,
+            "name": By.NAME,
+            "xpath": By.XPATH,
+            "css": By.CSS_SELECTOR,
+            "class": By.CLASS_NAME,
+            "link": By.LINK_TEXT,
+            "partial_link": By.PARTIAL_LINK_TEXT,
+            "tag": By.TAG_NAME,
+        }
+        by_type = by_types.get(locator_type, By.ID)
+        return by_type
 
     # To find an element (default locator type is ID)
     def get_element(self, locator, locator_type="id"):
@@ -148,10 +149,9 @@ class SeleniumDriver:
             by_type = self.get_by_type(locator_type)
             element = self.driver.find_element(by_type, locator)
             if element is not None:
-                self.log.info("\nElement was found\n")
                 return element
             else:
-                self.log.warning("\nElement was not found\n")
+                self.log.warning("Element was not found\n")
                 return element
 
         except Exception as e:
@@ -165,10 +165,9 @@ class SeleniumDriver:
             by_type = self.get_by_type(locator_type)
             elements = self.driver.find_elements(by_type, locator)
             if len(elements) > 0:
-                self.log.info(f"\nSuccessfully found {len(elements)} elements\n")
                 return elements
             else:
-                self.log.info(f"Found {len(elements)} elements")
+                self.log.warning(f"Found {len(elements)} elements\n")
                 return elements
 
         except Exception as e:
@@ -180,11 +179,10 @@ class SeleniumDriver:
             element = self.get_element(locator, locator_type)
             if element:
                 element.click()
-                self.log.info("\nClicked on the element\n")
             else:
-                self.log.warning("\nUnable to click on the element\n")
+                self.log.warning("Unable to click on the element\n")
         except Exception as e:
-            self.log.debug(f"\nAn unexpected exception occurred: {str(e)}\n")
+            self.log.error(f"An unexpected exception occurred: {e}\n")
             print_stack()
 
     def send_keys_element(self, text, locator, locator_type="id"):
@@ -192,32 +190,28 @@ class SeleniumDriver:
             element = self.get_element(locator, locator_type)
             if element:
                 element.send_keys(text)
-                self.log.info(f"\nSent '{text}' to the element\n")
             else:
                 self.log.warning("Unable to send keys to the element")
                 return
 
         except Exception as e:
-            self.log.critical(f"An unexpected exception occurred: {str(e)}")
+            self.log.error(f"An unexpected exception occurred: {str(e)}")
             print_stack()
 
     # To make sure element is presented on the page
     def is_element_present(self, locator, locator_type="id"):
-        self.log.info("Trying to locate the element on the page...")
         try:
             element = self.get_element(locator, locator_type)
             if element is not None:
-                self.log.info("Element appeared on the page!")
                 return True
             else:
-                self.log.warning("Element did not appear on the page...")
                 return False
         except Exception as e:
-            self.log.critical(f"WebDriverException occurred: {e}")
+            self.log.error(f"WebDriverException occurred: {e}")
             return False
 
     # To check if elements are on the page
-    def are_elements_present(self, locator, by_type="id"):
+    def elements_present(self, locator, by_type="id"):
         """
         Checks if one or more web elements are present on the page.
 
@@ -235,14 +229,10 @@ class SeleniumDriver:
                 )
                 return True
             else:
-                self.log.warning(
-                    f"Elements aren't presented on the page using locator: {
-                        locator
-                    } and locator type: {by_type}"
-                )
+                self.log.warning(f"Found {len(element_list)} elements")
                 return False
         except Exception as e:
-            self.log.critical(f"Exception occurred: {e}")
+            self.log.error(f"Exception occurred: {e}")
         return False
 
     def wait_for_element(
@@ -275,7 +265,7 @@ class SeleniumDriver:
                     ElementNotSelectableException,
                 ],
             )
-            element = wait.until(ec.visibility_of_element_located((by_type, locator)))
+            element = wait.until(expected_conditions.visibility_of_element_located((by_type, locator)))
 
             self.log.info(
                 f"Element appeared on the web page using locator: {
@@ -284,74 +274,80 @@ class SeleniumDriver:
             )
 
         except Exception as e:
-            self.log.critical(f"An unexpected error occurred: {e}")
-        finally:
-            if not element:
-                print_stack()
+            self.log.error(f"An unexpected error occurred: {e}")
+
         return element
 
-    def scroll_page(
+    def scroll_page_up(self, pixels):
+        y = -pixels
+        x = 0
+        try:
+            self.driver.execute_script(
+                "window.scrollTo(arguments[0],arguments[1]);", x, y
+            )
+            self.log.info(f"Scrolled up by {pixels} pixels")
+        except Exception as e:
+            self.log.error(f"Exception occurred - {e}")
+
+    def scroll_page_down(self, pixels):
+        x = 0
+        try:
+            self.driver.execute_script("window.scrollTo(arguments[0],arguments[1]);", x, pixels)
+            self.log.info(f"Scrolled down by {pixels} pixels")
+
+        except Exception as e:
+            self.log.error(f"Exception occurred - {e}")
+
+    def scroll_page_bottom(self):
+        try:
+            self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+            self.log.info("Scrolled to the bottom of the page")
+        except Exception as e:
+            self.log.error(f"Exception occurred - {e}")
+
+    def scroll_page_top(self):
+        try:
+            self.driver.execute_script("window.scrollTo(0,0);")
+            self.log.info("Scrolled to the top of the page")
+        except Exception as e:
+            self.log.error(f"Exception occurred - {e}")
+
+
+    def scroll_into_view(
         self,
-        locator=None,
+        locator,
         locator_type="id",
-        direction="no",
-        x=0,
-        y=0,
-        into_view=False,
-        to_bottom=False,
-        to_top=False,
     ):
-        if direction.lower() == "no":
-            if into_view:
-                element = self.get_element(locator, locator_type)
-                self.driver.execute_script("arguments[0].scrollIntoView(true)", element)
-                self.log.info(f"Scrolled into view | Element - {element}")
-
-            elif to_bottom:
-                self.driver.execute_script(
-                    "window.scrollTo(0,document.body.scrollHeight)"
-                )
-                self.log.info("Scrolled to the bottom of the page")
-
-            elif to_top:
-                self.driver.execute_script("window.scrollTo(0,0);")
-                self.log.info("Scrolled to the top of the page")
-
-        elif direction.lower() == "up":
-            y = -y
-            self.driver.execute_script(
-                "window.scrollTo(arguments[0],arguments[1]);", x, y
-            )
-            self.log.info(f"Scrolled up by {y} pixels")
-
-        elif direction.lower() == "down":
-            self.driver.execute_script(
-                "window.scrollTo(arguments[0],arguments[1]);", x, y
-            )
-            self.log.info(f"Scrolled down by {y} pixels")
-
-        else:
-            self.log.warning("!!! WRONG DIRECTION !!!")
-
-        self.log.info(
-            "--------------------------| END SCROLLING |---------------------------------"
-        )
-        self.log.info(
-            "----------------------------------------------------------------------------"
-        )
+        element = self.get_element(locator, locator_type)
+        try:
+            self.driver.execute_script("arguments[0].scrollIntoView(true)", element)
+            self.log.info(f"Scrolled into view - {element}")
+        except Exception as e:
+            self.log.error(f"Exception occurred - {e}")
 
     def delete_keys(self, locator, locator_type="id"):
         try:
             element = self.get_element(locator, locator_type)
             if element:
                 element.clear()
-                self.log.info(
-                    "-----------------|Deleted keys from the element |---------------------"
-                )
-                self.log.info(
-                    "----------------------------------------------------------------------------\n"
-                )
-
         except Exception as e:
-            self.log.critical(f"An unexpected exception occurred: {str(e)}")
+            self.log.error(f"An unexpected exception occurred: {str(e)}")
             print_stack()
+
+    def verify_page_title(self, title_to_verify) -> bool:
+        """
+        Verify page title
+
+        :param title_to_verify: Title on the page that needs to be verified
+        """
+
+        try:
+            actual_title = self.get_title()
+            if actual_title is not None:
+                return self.utility.verify_text_contains(actual_title, title_to_verify)
+            else:
+                return False
+        except Exception as e:
+            self.log.error(f"Error occurred - {e}")
+            print_stack()
+            return False
